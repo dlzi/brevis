@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Frequently Asked Questions | Brevis answers made clear</title>
+		<meta name="description" content="Brevis CSS is engineered for high performance and scalable web applications.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Daniel Zilli">
+		<link rel="stylesheet" href="css/brevis.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+
+	<body class="ftfam--sssrf c--gy8 m--0 lnh--3">
+
+		<!-- NAVIGATION -->
+		<header class="bgc--gy8 py--1 mb--8">
+			<div class="maw--ext3 mx--a px--2">
+				<nav class="d--fx jct--spbtw anis--ctr fxdir--col-m mih--3">
+					<a href="index.html" class="my--1-m"><img class="h--ext1 vertan--mid" src="img/brevis-white.svg" alt="Brevis logo"></a>
+					<ul class="d--infx lssty--n fts--ext1 ltrsp--2 ftwgt--1 txttr--uc c--gy3 m--0 pl--0-m d--blk-m txtan--ctr-m">
+						<li class="mr--4 mr--0-m"><a class="c--i chvr--wt1 txtdecor--n" href="index.html">Home</a></li>
+						<li class="mr--4 mr--0-m"><a class="c--i chvr--wt1 txtdecor--n" href="specification.html">Specification</a></li>
+						<li class="mr--4 mr--0-m"><a class="c--i chvr--wt1 txtdecor--n" href="examples.html">Examples</a></li>
+						<li class="txtan--ctr-m"><a class="c--wt1 txtdecor--n" href="faq.html">FAQ</a></li>
+					</ul>
+
+				</nav>
+			</div>
+		</header>
+
+		<section class="maw--ext3 mx--a px--2">
+
+			<h1 class="fts--3 txttr--uc c--gy7 ftwgt--4 mb--2">Frequently Asked Questions</h1>
+
+
+			<ul class="mb--8 lssty--n lnh--4">
+				<li><a href="#brevis-meaning">What does Brevis mean</a></li>
+				<li><a href="#idea-behind-brevis">What is the idea behind Brevis?</a></li>
+				<li><a href="#why-brevis">Why should I use Brevis?</a></li>
+				<li><a href="#no-javascript">Where is the JavaScript?</a></li>
+				<li><a href="#benefits">What are the benefits of Brevis?</a></li>
+				<li><a href="#naming-the-approach">How do you call this CSS approach?</a></li>
+				<li><a href="#brevis-vs-inline">What’s the difference between Brevis and inline styles?</a></li>
+				<li><a href="#learning-nomeclature">How do I memorize all those weird class names?</a></li>
+				<li><a href="#separation-of-concerns">What about the separation of concerns?</a></li>
+				<li><a href="#html-size">Will all those classes bloat the size of my HTML?</a></li>
+				<li><a href="#all-css-properties">Does Brevis have a class for each CSS properties?</a></li>
+				<li><a href="#declaration-order">Does the CSS declaration order matter?</a></li>
+				<li><a href="#declaration-style">Does Brevis enforce any CSS declaration order style?</a></li>
+				<li><a href="#related">Are there autocomplete plugins?</a></li>
+			</ul>
+
+
+			<h3 class="mb--1" id="brevis-meaning">What does Brevis mean?</h3>
+			<p>Brevis means short in latin.</p>
+
+			<h3 class="mb--1" id="idea-behind-brevis">What is the idea behind Brevis?</h3>
+			<p class="maw--ext2">Brevis was built on top of four pillars:
+
+			<ul>
+				<li>A class should do one thing only</li>
+				<li>A class should be composable</li>
+				<li>A class should behave exactly as expect</li>
+				<li>A class once declared cannot be changed</li>
+			</ul>
+
+			To get your head around it, think of classes that do only one thing. With Brevis, classes no longer represent objects - like buttons -, but single a function. Those classes once defined, cannot be changed. It's like Lego© blocks. Combine a bunch of those classes together and you can create just about any UI you want.</p>
+
+			<h3 class="mb--1" id="why-brevis">Why should I use Brevis?</h3>
+			<p>Let's enumerate a few things that set us apart:</p>
+			<ol class="maw--ext2">
+				<li>
+					<p>Brevis <strong>DOES NOT</strong> use a single <code class="language-css">!important</code> rule.</p>
+					<p>Per se, <code class="language-css">!important</code> is not evil, it's just a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception" rel="nofollow">bad practice</a> that breaks the natural cascading of the style sheet. That's why a <code class="language-css">!important</code> declaration should be treated as the <b>last resort</b>. Unfortunately, most frameworks like to use it a lot. See the table below:</p>
+					
+					<table class="brdrcoll--coll brdrsp--0">
+						<thead class="bgc--gy1">
+							<tr>
+								<th class="ftwgt--6 fts--ext2">CSS</th>
+								<th class="ftwgt--6 fts--ext2">VERSION</th>
+								<th class="ftwgt--6 fts--ext2">!IMPORTANT RULE</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Brevis</td>
+								<td>1.0.0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Bulma</td>
+								<td>0.7.4</td>
+								<td>264</td>
+							</tr>
+							<tr>
+								<td>Materialize</td>
+								<td>1.0.0</td>
+								<td>578</td>
+							</tr>
+							<tr>
+								<td>Bootstrap</td>
+								<td>4.3.1</td>
+								<td>1031</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>The use of <code class="language-css">!important</code> is not prohibited. Yet, the abundant use of it may be a sign of a flaw HTML/CSS structure. What Brevis does, is to have <strong>ZERO</strong> <code class="language-css">!important</code> rule by default. That way, the developer has full control of where and when to use <code class="language-css">!important</code> or not.</p>
+				</li>
+				<li>Selector-first design. Each class selector is responsive, allowing you to have a very granular control.</li>
+
+				<li>
+					<p>There's no pre-defined style. Brevis believes that the design should come from you, and not from the framework.</p>
+				</li>
+				<li>
+					<p>Because of its utility-first approach, Brevis is DRY by default.</p>
+				</li>
+				<li>
+					<p>Brevis is a CSS only toolkit, which is a major benefit for its high performance and scalability nature. For a website where every byte and second counts, a CSS framework with built-in JavaScript components is more trouble than it's worth. Simply, because you may use your own customised JavaScript code that is compatible with your unique website's requirements.</p>
+				</li>
+				<li>
+					<p>Naming things is hard. But with Brevis, you don't ever have to think about naming your classes, thanks to our <a href="specification.html#rules">naming convention</a>.</p>
+				</li>
+				<li>
+					<p>Brevis makes easier to visualize what something looks like just by reading the markup.</p>
+				</li>
+				<li>
+					<p>It's simple to erase a style by just removing the class; as opposed to component-first frameworks where you usually have to override it. Meaning, you end up writing more CSS.</p>
+				</li>
+				<li>
+					<p>Brevis is teamwork friendly.</p>
+				</li>
+			</ol>
+
+
+			<h3 class="mb--1" id="no-javascript">Where is the JavaScript?</h3>
+			<p>Brevis is a CSS only framework.</p>
+			
+			<h3 class="mb--1">How is the browser support?</h3>
+			<p>Brevis is compatible with <i>modern</i> versions of:</p>
+			<ul>
+				<li>Firefox</li>
+				<li>Chrome</li>
+				<li>Safari</li>
+				<li>Edge</li>
+				<li>Opera</li>
+				<li>Internet Explorer 10+ - <i><b>It may work, it may not. Who knows?</b></i>
+				</li>
+			</ul>
+
+			<h3 class="mb--1" id="naming-the-approach">How do you call this CSS approach?</h3>
+			<p class="maw--ext2">There's no standard definition for this approach. You may find terms like functional, atomic, utility-first, low-level, toolkit, immutable and so on. Just pick one. It really doesn't matter, as long as you understand the concept.</p>
+			
+			<h3 class="mb--1" id="brevis-vs-inline">What’s the difference between Brevis and inline styles?</h3>
+			<p>Same as comparing apples and oranges.</p>
+
+			<ol>
+				<li>Inline styles directly affect the tag they are written in, <strong>without</strong> the use of <strong>selectors</strong>.</li>
+				<li>Inline styles need the <strong>style</strong> attribute.</li>
+			</ol>
+			
+			<p>Inline style:</p>
+			<pre><code class="language-html">&lt;body style="font-weight:bold;"&gt;</code></pre>
+			
+			<p>Brevis:</p>
+			<pre><code class="language-html">&lt;body class="ftwgt--7"&gt;</code></pre>
+			
+			<p>They are really completly two different things.</p>
+			
+			<h3 class="mb--1" id="learning-nomeclature">How do I memorize all those weird class names?</h3>
+			<p class="maw--ext2">You don't. Our naming convention is based on word's abbreviations and it follows simple and logical rules. No need to memorize names, just learn the rules and you are good to go.</p>
+			
+			<h3 class="mb--1" id="separation-of-concerns">What about the separation of concerns?</h3>
+			<p class="maw--ext2">The concerns are still separated. The HTML gives you the structure, and it should work without the CSS. The styling is still applied via CSS.</p>
+			
+			<h3 class="mb--1" id="html-size">Will all those classes bloat the size of my HTML?</h3>
+			<p class="maw--ext2">The bloated stuff is already there, just take a look at yours CSS file(s). What most of CSS frameworks do is to <strong>transfer the complexity of UIs to the style sheet</strong>. Thus, because larger and similar components reuse the same CSS properties as others, you inevitably end up with duplicate code. So, to answer the question. On the one hand it <em>may</em> increase the HTML size, but on the other hand your CSS file can be incredibly smaller.</p>
+
+			<h3 class="mb--1" id="all-css-properties">Does Brevis have a class for each CSS property?</h3>
+			<p class="maw--ext2">It doesn't, and it may never will. Like other frameworks, Brevis doesn't try to cover all the CSS spectrum. We are focusing on best practices and real-world usage, to bring the best experience for the users and developers. However, you can always extend Brevis with custom classes for properties that are absent.</p>
+
+
+			<h3 class="mb--1" id="declaration-order">Does the CSS declaration order matter?</h3>
+			<p class="maw--ext2">In the CSS file, it does. Brevis ordering its classes starts from outside the box model and moves inward. Check out <a href="https://github.com/dlzi/brevis/blob/master/brevis.css">brevis.css</a> to see how we did.</p>
+
+			<h3 class="mb--1" id="declaration-style">Does Brevis enforce any CSS declaration order style?</h3>
+			<p class="maw--ext2">No, it doesn’t. But you should have a methodology to order your classes. It will be helpful to you and whom you share your code. <strong><em>Remember the order of classes within the HTML class attribute is irrelevant. The order only matters in the CSS file</em>.</strong></p>
+
+			<h3 class="mb--1" id="related">Are there autocomplete plugins?</h3>
+			<ul class="mb--8 lssty--n mt--0 pl--0">
+				<li><a href="https://github.com/dlzi/brevis-autocomplete" target="_blank">Brevis CSS Autocomplete for Sublime Text 3</a></li>
+			</ul>
+
+
+		</section>
+
+		<footer class="bgc--bk1 py--3 c--gy5 txttr--uc fts--ext1">
+			<div class="maw--ext3 mx--a px--2">
+				<div class="d--fx fxwp--wp">
+					<div class="w--50p w--80p-m mx--a-m">
+						<ul class="mb--2 mt--0 p--0 txtan--ctr-m">
+							<li class="d--inblk mr--1"><a class="c--i chvr--wt1 txtdecor--n" target="_blank" rel="noopener" href="https://github.com/dlzi/brevis"><img class="h--ext1" src="img/github.svg"></a></li>
+							<li class="d--inblk mr--1"><a class="c--i chvr--wt1 txtdecor--n" target="_blank" rel="noopener" href="https://twitter.com/getbrevis"><img class="h--ext1" src="img/twitter.svg"></a></li>
+							<li class="d--inblk mr--1"><img class="h--ext1" src="img/analytics.svg"></li>
+							<li class="d--inblk"><img class="h--ext1" src="img/facebook.svg"></li>
+						</ul>
+						<p class="m--0 mb--2-m txtan--ctr-m">This website doesn't use Google Anayltics and Facebook, because respect for your privacy is the way we function.</p>
+					</div>
+
+					<div class="w--50p w--80p-m mx--a-m txtan--r txtan--ctr-m">
+						<p class="mt--0">&copy; 2019 Daniel Zilli - Code Licensed <a class="c--gy2" href="https://github.com/dlzi/brevis/blob/master/LICENSE" target="_blank" rel="license noopener">MIT</a>, Docs <a class="c--gy2" href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</p></a>
+					</div>
+		</footer>
+		<script src="js/prism.js"></script>
+	</body>
+</html>

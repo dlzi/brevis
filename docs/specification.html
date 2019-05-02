@@ -1,0 +1,3392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Specification | Brevis documentation</title>
+		<meta name="description" content="Get started with Brevis, a CSS toolkit engineered for high performance and scalable web applications.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Daniel Zilli">
+		<link rel="stylesheet" href="css/brevis.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+
+	<body class="ftfam--sssrf c--gy8 m--0 lnh--3">
+
+		<!-- NAVIGATION -->
+		<header class="bgc--gy8 py--1 mb--8">
+			<div class="maw--ext3 mx--a px--2">
+				<nav class="d--fx jct--spbtw anis--ctr fxdir--col-m mih--3">
+					<a href="index.html" class="my--1-m"><img class="h--ext1 vertan--mid" src="img/brevis-white.svg" alt="Brevis logo"></a>
+					<ul class="d--infx lssty--n fts--ext1 ltrsp--2 ftwgt--1 txttr--uc c--gy3 m--0 pl--0-m d--blk-m txtan--ctr-m">
+						<li class="mr--4 mr--0-m"><a class="c--i chvr--wt1 txtdecor--n" href="index.html">Home</a></li>
+						<li class="mr--4 mr--0-m"><a class="c--wt1 txtdecor--n" href="specification.html">Specification</a></li>
+						<li class="mr--4 mr--0-m"><a class="c--i chvr--wt1 txtdecor--n" href="examples.html">Examples</a></li>
+						<li class="txtan--ctr-m"><a class="c--i chvr--wt1 txtdecor--n" href="faq.html">FAQ</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="maw--ext3 mx--a px--2">
+
+			<h1 class="fts--3 txttr--uc c--gy7 ftwgt--4 mb--2">Specification</h1>
+
+			<h2 class="mb--6 fts--3 ftwgt--3 maw--ext2 c--gy7 mt--0 lnh--3">The primary documentation for Brevis is this specification file, that can be read online here. It's also included in the package downloads. This page lists all the classes and their modifiers used in Brevis. There are also information about the naming convention, scale pattern and colours.</h2>
+
+
+			<div id="start" class="mb--6">
+				<a href="#reference" class="d--blk-m mb--1-m mr--2 brdrw--1 brdrsty--sol bgc--yl1 c--bk1 chvr--wt1 bgchvr--bk1 d--inblk py--2 px--3 txttr--uc fts--ext1 txtdecor--n">Class Reference</a>
+
+				<a href="#rules" class="d--blk-m mb--1-m mr--2 brdrw--1 brdrsty--sol bgc--yl1 c--bk1 chvr--wt1 bgchvr--bk1 d--inblk py--2 px--3 txttr--uc fts--ext1 txtdecor--n">Naming Convention</a>
+		
+				<a href="#scale" class="d--blk-m mb--1-m mr--2 brdrw--1 brdrsty--sol bgc--yl1 c--bk1 chvr--wt1 bgchvr--bk1 d--inblk py--2 px--3 txttr--uc fts--ext1 txtdecor--n">Scale Pattern</a>
+
+				<a href="#palette" class="d--blk-m mb--1-m mr--2-m brdrw--1 brdrsty--sol bgc--yl1 c--bk1 chvr--wt1 bgchvr--bk1 d--inblk py--2 px--3 txttr--uc fts--ext1 txtdecor--n">Colour Palette</a>
+			</div>
+
+
+			<h2 class="fts--3 txttr--uc c--gy7 ftwgt--4 mb--3">Class Reference</h2>
+
+			<div id="reference" class="pb--4">
+				<table class="brdrcoll--coll brdrsp--0">
+					<tbody>
+						<tr>
+							<td>Box-sizing</td>
+							<td>
+								<a href="#box-sizing">box-sizing</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Position</td>
+							<td>
+								<a href="#display">display</a>,
+								<a href="#position">position</a>,
+								<a href="#top">top</a>,
+								<a href="#right">right</a>,
+								<a href="#bottom">bottom</a>,
+								<a href="#left">left</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Float</td>
+							<td>
+								<a href="#float">float</a>,
+								<a href="#clear">clear</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Justify-content</td>
+							<td>
+								<a href="#justify-content">justify-content</a>,
+								<a href="#justify-items">justify-items</a>,
+								<a href="#justify-self">justify-self</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Align-content</td>
+							<td>
+								<a href="#align-content">align-content</a>,
+								<a href="#align-items">align-items</a>,
+								<a href="#align-self">align-self</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Flex</td>
+							<td>
+								<a href="#flex">flex</a>,
+								<a href="#flex-basis">flex-basis</a>,
+								<a href="#flex-direction">flex-direction</a>,
+								<a href="#flex-flow">flex-flow</a>,
+								<a href="#flex-grow">flex-grow</a>,
+								<a href="#flex-shrink">flex-shrink</a>,
+								<a href="#flex-wrap">flex-wrap</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Order</td>
+							<td>
+								<a href="#order">order</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Visibility</td>
+							<td>
+								<a href="#visibility">visibility</a>,
+								<a href="#opacity">opacity</a>,
+								<a href="#z-index">z-index</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Margin</td>
+							<td>
+								<a href="#margin">margin</a>,
+								<a href="#margin-top">margin-top</a>,
+								<a href="#margin-right">margin-right</a>,
+								<a href="#margin-bottom">margin-bottom</a>,
+								<a href="#margin-left">margin-left</a>,
+								<a href="#margin-y">margin-y</a>,
+								<a href="#margin-x">margin-x</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Outline</td>
+							<td>
+								<a href="#outline">outline</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Border</td>
+							<td>
+								<a href="#border-radius">border-radius</a>,
+								<a href="#border-style">border-style</a>,
+								<a href="#border-width">border-width</a>,
+								<a href="#border-color">border-color</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Box-shadow</td>
+							<td>
+								<a href="#box-shadow">box-shadow</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Background</td>
+							<td>
+								<a href="#background-color">background-color</a>,
+								<a href="#background-color">background-color:hover</a>,
+								<a href="#background-position">background-position</a>,
+								<a href="#background-repeat">background-repeat</a>,
+								<a href="#background-size">background-size</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Cursor</td>
+							<td>
+								<a href="#cursor">cursor</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Padding</td>
+							<td>
+								<a href="#padding">padding</a>,
+								<a href="#padding-top">padding-top</a>,
+								<a href="#padding-right">padding-right</a>,
+								<a href="#padding-bottom">padding-bottom</a>,
+								<a href="#padding-left">padding-left</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Width</td>
+							<td>
+								<a href="#width">width</a>,
+								<a href="#min-width">min-width</a>,
+								<a href="#max-width">max-width</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Height</td>
+							<td>
+								<a href="#height">height</a>,
+								<a href="#min-height">min-height</a>,
+								<a href="#max-height">max-height</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Overflow</td>
+							<td>
+								<a href="#overflow">overflow</a>,
+								<a href="#resize">resize</a>
+							</td>
+						</tr>
+						<tr>
+							<td>List-style</td>
+							<td>
+								<a href="#list-style">list-style</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Table</td>
+							<td>
+								<a href="#table-layout">table-layout</a>,
+								<a href="#border-collapse">border-collapse</a>,
+								<a href="#border-spacing">border-spacing</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Vertical-algin</td>
+							<td>
+								<a href="#vertical-align">vertical-align</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Text-alignment &amp; Decoration</td>
+							<td>
+								<a href="#direction">direction</a>,
+								<a href="#text-align">text-align</a>,
+								<a href="#text-indent">text-indent</a>,
+								<a href="#text-transform">text-transform</a>,
+								<a href="#text-decoration">text-decoration</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Text-spacing &amp; Color</td>
+							<td>
+								<a href="#line-height">line height</a>,
+								<a href="#word-spacing">word-spacing</a>,
+								<a href="#letter-spacing">letter-spacing</a>,
+								<a href="#white-space">white-space</a>,
+								<a href="#word-wrap">word-wrap</a>,
+								<a href="#color">color</a>,
+								<a href="#color-hover">color:hover</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Font</td>
+							<td>
+								<a href="#font-family">font-family</a>,
+								<a href="#font-size">font-size</a>,
+								<a href="#font-weight">font-weight</a>,
+								<a href="#font-style">font-style</a>
+							</td>
+						</tr>
+						<tr>
+							<td>Pointer-events</td>
+							<td>
+								<a href="#pointer-events">pointer-events</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+				<!-- BOX SIZING -->
+				<h3 id="box-sizing">BOX-SIZING</h3>
+				<h4>BOX-SIZING</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	bxs = box-sizing
+
+# Modifiers
+	--brdrbx = border-box
+	--ctbx = content-box
+
+# Note
+	You don't need to box-sizing everything - https://aastudio.fr/box-sizing.html
+
+	When you DON’T need it:
+		- for element without width or height or min/max-width or min/max-height
+		- for inline elements
+	
+	When you MAY need it:
+		- when the element is a column’s grid
+		- when you have width and padding or borders
+		- when a form field needs a full-width</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.bxs--brdrbx { box-sizing: border-box }
+.bxs--ctbx { box-sizing: content-box }</code></pre>
+				
+				<p><a href="#reference">top↑</a></p>
+
+				<hr>
+				
+				<!-- POSITION -->
+				<h3>POSITION</h3>
+
+				<!-- Display -->
+				<h4 id="display">DISPLAY</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+
+				<pre><code class="language-markup"># Base
+	d = display
+
+# Modifiers
+	--blk = block
+	--fx = flex
+	--in = inline
+	--inblk = inline-block
+	--infx = inline-flex
+	--intbl = inline-table
+	--n = none
+	--tbl = table
+	--tblcl = table-cell
+	--tblrw = table-row
+	--tblrwgrp = table-row-group
+	--tblcol = table-column
+	--tblcolgrp = table-column-group</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.d--blk { display: block }
+.d--fx { display: flex }
+.d--in { display: inline }
+.d--inblk { display: inline-block }
+.d--intbl { display: inline-table }
+.d--infx { display: inline-flex }
+.d--n { display: none }
+.d--tbl { display: table }
+.d--tblcl { display: table-cell }
+.d--tblrw { display: table-row }
+.d--tblrwgrp { display: table-row-group }
+.d--tblcol { display: table-column }
+.d--tblcolgrp { display: table-column-group }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<!-- Posiiton -->
+				<h4 id="position">POSITION</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	pos = position
+
+# Modifiers
+	--sta = static
+	--rel = relative 
+	--abs = absolute 
+	--fix = fixed</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.pos--sta { position: static }
+.pos--rel { position: relative }
+.pos--abs { position: absolute }
+.pos--fix { position: fixed }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<!-- Top -->
+				<h4 id="top">TOP</h4>
+				
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	t = top
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--50p = 50%
+	--100p = 100%
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.t--0 { top: 0 }
+.t--1 { top: 8px }
+.t--2 { top: 16px }
+.t--3 { top: 24px }
+.t--4 { top: 32px }
+.t--5 { top: 40px }
+.t--6 { top: 48px }
+.t--7 { top: 56px }
+.t--8 { top: 64px }
+.t--50p { top: 50% }
+.t--100p { top: 100% }
+.t--n1 { top: -8px }
+.t--n2 { top: -16px }
+.t--n3 { top: -24px }
+.t--n4 { top: -32px }
+.t--n5 { top: -40px }
+.t--n6 { top: -48px }
+.t--n7 { top: -56px }
+.t--n8 { top: -64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<!-- Right -->
+				<h4 id="right">RIGHT</h4>
+				
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	r = right
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--50p = 50%
+	--100p = 100%
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px</code></pre>
+			
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.r--0 { right: 0 }
+.r--1 { right: 8px }
+.r--2 { right: 16px }
+.r--3 { right: 24px }
+.r--4 { right: 32px }
+.r--5 { right: 40px }
+.r--6 { right: 48px }
+.r--7 { right: 56px }
+.r--8 { right: 64px }
+.r--50p { right: 50% }
+.r--100p { right: 100% }
+.r--n1 { right: -8px }
+.r--n2 { right: -16px }
+.r--n3 { right: -24px }
+.r--n4 { right: -32px }
+.r--n5 { right: -40px }
+.r--n6 { right: -48px }
+.r--n7 { right: -56px }
+.r--n8 { right: -64px }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<!-- Bottom -->
+				<h4 id="bottom">BOTTOM</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	b = bottom
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--50p = 50%
+	--100p = 100%
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.b--0 { bottom: 0 }
+.b--1 { bottom: 8px }
+.b--2 { bottom: 16px }
+.b--3 { bottom: 24px }
+.b--4 { bottom: 32px }
+.b--5 { bottom: 40px }
+.b--6 { bottom: 48px }
+.b--7 { bottom: 56px }
+.b--8 { bottom: 64px }
+.b--50p { bottom: 50% }
+.b--100p { bottom: 100% }
+.b--n1 { bottom: -8px }
+.b--n2 { bottom: -16px }
+.b--n3 { bottom: -24px }
+.b--n4 { bottom: -32px }
+.b--n5 { bottom: -40px }
+.b--n6 { bottom: -48px }
+.b--n7 { bottom: -56px }
+.b--n8 { bottom: -64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<!-- Left -->
+				<h4 id="left">LEFT</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	l = left
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--50p = 50%
+	--100p = 100%
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.l--0 { left: 0 }
+.l--1 { left: 8px }
+.l--2 { left: 16px }
+.l--3 { left: 24px }
+.l--4 { left: 32px }
+.l--5 { left: 40px }
+.l--6 { left: 48px }
+.l--7 { left: 56px }
+.l--8 { left: 64px }
+.l--50p { left: 50% }
+.l--100p { left: 100% }
+.l--n1 { left: -8px }
+.l--n2 { left: -16px }
+.l--n3 { left: -24px }
+.l--n4 { left: -32px }
+.l--n5 { left: -40px }
+.l--n6 { left: -48px }
+.l--n7 { left: -56px }
+.l--n8 { left: -64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<hr />
+				
+				<!-- FLOAT -->
+				<h3 id="float">FLOAT</h3>
+
+				<!-- Float -->
+				<h4>FLOAT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	f = float
+
+# Modifiers
+	--r = right
+	--l = left
+	--n = none</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.f--r { float: right }
+.f--l { float: left }
+.f--n { float: none }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<!-- Clear -->
+				<h4 id="clear">CLEAR</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	clr = clear
+
+# Modifiers
+	--r = right
+	--l = left
+	--bh = both
+	--n = none</code></pre>
+	
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.clr--r { clear: right }
+.clr--l { clear: left }
+.clr--bh { clear: both }
+.clr--n { clear: none }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<hr />
+
+				<!-- JUSTIFY-CONTENT -->
+				<h3 id="justify-content">JUSTIFY-CONTENT</h3>
+
+				<!-- Justify-content -->
+				<h4>JUSTIFY-CONTENT</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	jct = justify-content
+
+# Modifiers
+	--ctr = center
+	--fxe = flex-end
+	--fxst = flex-start
+	--spard = space-around
+	--spbtw = space-between</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.jct--ctr { justify-content: center }
+.jct--fxe { justify-content: flex-end }
+.jct--fxst { justify-content: flex-start }
+.jct--spard { justify-content: space-around }
+.jct--spbtw { justify-content: space-between }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<!-- Justify-items -->
+				<h4 id="justify-items">JUSTIFY-ITEMS</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	jis = justify-items
+
+# Modifiers
+	--ctr = center
+	--fxe = flex-end
+	--fxst = flex-start
+	--sfst = self-start
+	--sfe = self-end
+	--str = stretch</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.jis--ctr { justify-items: center }
+.jis--fxe { justify-items: flex-end }
+.jis--fxst { justify-items: flex-start }
+.jis--sfst { justify-items: self-start }
+.jis--sfe { justify-items: self-end }
+.jis--str { justify-items: stretch }</code></pre>
+
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<!-- Justify-self -->
+				<h4 id="justify-self">JUSTIFY-SELF</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	jsf = justify-self
+
+# Modifiers
+	--ctr = center
+	--fxe = flex-end
+	--fxst = flex-start
+	--sfst = self-start
+	--sfe = self-end</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.jsf--ctr { justify-self: center }
+.jsf--fxe { justify-self: flex-end }
+.jsf--fxst { justify-self: flex-start }
+.jsf--sfst { justify-self: self-start }
+.jsf--sfe { justify-self: self-end }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<hr />
+
+				<!-- ALIGN-CONTENT -->
+				<h3 id="align-content">ALIGN-CONTENT</h3>
+				
+				<h4>ALIGN-CONTENT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	anct = align-content
+
+# Modifiers
+	--ctr = center
+	--fxe = flex-end
+	--fxst = flex-start
+	--spard = space-around
+	--spbtw = space-between</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.anct--ctr { align-content: center }
+.anct--fxe { align-content: flex-end }
+.anct--fxst { align-content: flex-start }
+.anct--spard { align-content: space-around }
+.anct--spbtw { align-content: space-between }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+
+				<!-- Align-items -->
+				<h4 id="align-items">ALIGN-ITEMS</h4>
+				
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	anis = align-items
+
+# Modifiers
+	--bln = baseline
+	--ctr = center
+	--fxe = flex-end
+	--fxst = flex-start
+	--str = stretch</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.anis--bln { align-items: baseline }
+.anis--ctr { align-items: center }
+.anis--fxe { align-items: flex-end }
+.anis--fxst { align-items: flex-start }
+.anis--str { align-items: stretch }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<!-- Align-self -->
+				<h4 id="align-self">ALIGN-SELF</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	ansf = align-self
+
+# Modifiers
+	--a = auto
+	--ctr = center
+	--fxe = flex-end
+	--fxst = flex-start
+	--str = stretch</code></pre>
+				
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.ansf--a { align-self: auto }
+.ansf--ctr { align-self: center }
+.ansf--fxe { align-self: flex-end }
+.ansf--fxst { align-self: flex-start }
+.ansf--str { align-self: stretch }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<hr />
+
+				<!-- FLEX -->
+				<h3 id="flex">FLEX</h3>
+
+				<!-- Flex -->
+				<h4>FLEX</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	fx = flex
+
+# Modifiers
+	--1 = 1 | this is equivalent to setting "flex: 1 1 0%"
+	--a = auto | this is equivalent to setting "flex: 1 1 auto"
+	--ini = initial | this is equivalent to setting "flex: 0 1 auto"
+	--n = none | this is equivalent to setting "flex: 0 0 auto"
+
+# Note
+	See why 0% at https://github.com/philipwalton/flexbugs#flexbug-4</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.fx--1 { flex: 1 1 0% }
+.fx--a { flex: 1 1 auto }
+.fx--ini { flex: 0 1 auto }
+.fx--n { flex: 0 0 auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<!-- Flex Basis -->
+				<h4 id="flex-basis">FLEX BASIS</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	fxbs = flex-basis
+
+# Modifiers
+	--0 = 0%
+	--1 = 8px
+	--2 = 16px
+	--3 = 32px
+	--4 = 64px
+	--5 = 128px
+	--6 = 256px
+	--7 = 512px
+	--8 = 1024px
+	--10p = 10%
+	--20p = 20%
+	--25p = 25%
+	--30p = 30%
+	--33p = 33.33333%
+	--40p = 40%
+	--50p = 50%
+	--60p = 60%
+	--66p = 66.66667%
+	--70p = 70%
+	--75p = 75%
+	--80p = 80%
+	--90p = 90%
+	--100p = 100%
+	--ext1 = 384px
+	--ext2 = 768px
+	--ext3 = 1152px
+	--ext4 = 1920px	
+	--a = auto
+
+# Note
+	See why "0%" at https://github.com/philipwalton/flexbugs#flexbug-4</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.fxbs--0 { flex-basis: 0% }
+.fxbs--1 { flex-basis: 8px }
+.fxbs--2 { flex-basis: 16px }
+.fxbs--3 { flex-basis: 32px }
+.fxbs--4 { flex-basis: 64px }
+.fxbs--5 { flex-basis: 128px }
+.fxbs--6 { flex-basis: 256px }
+.fxbs--7 { flex-basis: 512px }
+.fxbs--8 { flex-basis: 1024px }
+.fxbs--10p { flex-basis: 10% }
+.fxbs--20p { flex-basis: 20% }
+.fxbs--25p { flex-basis: 25% }
+.fxbs--30p { flex-basis: 30% }
+.fxbs--33p { flex-basis: 33.33333% }
+.fxbs--40p { flex-basis: 40% }
+.fxbs--50p { flex-basis: 50% }
+.fxbs--60p { flex-basis: 60% }
+.fxbs--66p { flex-basis: 66.66667% }
+.fxbs--70p { flex-basis: 70% }
+.fxbs--75p { flex-basis: 75% }
+.fxbs--80p { flex-basis: 80% }
+.fxbs--90p { flex-basis: 90% }
+.fxbs--100p { flex-basis: 100% }
+.fxbs--ext1 { flex-basis: 384px }
+.fxbs--ext2 { flex-basis: 768px }
+.fxbs--ext3 { flex-basis: 1152px }
+.fxbs--ext4 { flex-basis: 1920px }
+.fxbs--a { flex-basis: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<!-- Flex Direction -->
+				<h4 id="flex-direction">FLEX-DIRECTION</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	fxdir = flex-direction
+
+# Modifiers
+	--rw = row
+	--rwrvs = row-reverse
+	--col = column
+	--colrvs = column-reverse</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.fxdir--rw { flex-direction: row }
+.fxdir--rwrvs { flex-direction: row-reverse }
+.fxdir--col { flex-direction: column }
+.fxdir--colrvs { flex-direction: column-reverse }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<!-- Flex-flow -->
+				<h4 id="flex-flow">FLEX-FLOW</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	fxfw = flex-flow (shorthand for flex-direction and flex-wrap properties)
+
+# Modifiers
+	--rwwp = row wrap
+	--rwrvsn = row-reverse nowrap
+	--colwprvs = column wrap-reverse
+	--colwp = column wrap</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.fxfw--rwwp { flex-flow: row wrap }
+.fxfw--rwrvsn { flex-flow: row-reverse nowrap }
+.fxfw--colwprvs { flex-flow: column wrap-reverse }
+.fxfw--colwp { flex-flow: column wrap }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<!-- Flex-grow -->
+				<h4 id="flex-grow">FLEX-GROW</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	fxgw = flex-grow
+
+# Modifiers
+	--0 = no grow
+	--1 = grow</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.fxgw--0 { flex-grow: 0 }
+.fxgw--1 { flex-grow: 1 }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<!-- Flex-shrink -->
+				<h4 id="flex-shrink">FLEX-SHRINK</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	fxsk = flex-shrink
+
+# Modifiers
+	--0 = no shrink
+	--1 = shrink</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.fxsk--0 { flex-shrink: 0 }
+.fxsk--1 { flex-shrink: 1 }</code></pre>
+
+				<!-- Flex-wrap -->
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="flex-wrap">FLEX-WRAP</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	fxwp = flex-wrap
+
+# Modifiers
+	--n = nowrap
+	--wp = wrap
+	--wprvs = wrap-reverse</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.fxwp--n { flex-wrap: nowrap }
+.fxwp--wp { flex-wrap: wrap }
+.fxwp--wprvs { flex-wrap: wrap-reverse }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<hr />
+<!-- ORDER -->
+				<h3 id="order">ORDER</h3>
+
+				<h4>ORDER</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+
+				<pre><code class="language-markup"># Base
+	or = order
+
+# Modifiers
+	--0 = literal value 0
+	--1 = literal value 1
+	--2 = literal value 2
+	--3 = literal value 3
+	--4 = literal value 4
+	--5 = literal value 5
+	--6 = literal value 6
+	--7 = literal value 7
+	--8	= literal value 8
+
+# Note
+	https://developer.mozilla.org/en-US/docs/Web/CSS/order#Accessibility_concerns</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.or--0 { order: 0 }
+.or--1 { order: 1 }
+.or--2 { order: 2 }
+.or--3 { order: 3 }
+.or--4 { order: 4 }
+.or--5 { order: 5 }
+.or--6 { order: 6 }
+.or--7 { order: 7 }
+.or--8 { order: 8 }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<hr>
+
+				<!-- VISIBILITY -->
+				<h3 id="visibility">VISIBILITY</h3>
+
+				<h4>VISIBILITY</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+
+				<pre><code class="language-markup"># Base
+	v = visibility
+
+# Modifiers
+
+	--hid = hidden
+	--v = visible
+	--i = inherit</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.v--hid { visibility: hidden }
+.v--v { visibility: visible }
+.v--i { visibility: inherit }</code></pre>
+
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<!-- Opacity -->
+				<h4 id="opacity">OPACITY</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	o = opacity
+
+# Modifiers
+
+	--0 = literal value 0
+	--1 = literal value .1
+	--2 = literal value .2
+	--3 = literal value .3
+	--4 = literal value .5
+	--5 = literal value .7
+	--6 = literal value .8
+	--7 = literal value .9
+	--8	= literal value 1</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.o--0 { opacity: 0 }
+.o--1 { opacity: .1 }
+.o--2 { opacity: .2 }
+.o--3 { opacity: .3 }
+.o--4 { opacity: .5 }
+.o--5 { opacity: .7 }
+.o--6 { opacity: .8 }
+.o--7 { opacity: .9 }
+.o--8 { opacity: 1 }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em> </p>
+
+				<h4 id="z-index">Z-INDEX</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	zidx = z-index
+
+# Modifiers
+	--1 = 1
+	--2 = 2
+	--3 = 4
+	--4 = 8
+	--5 = 16
+	--6 = 32
+	--7 = 64
+	--8 = 128
+	--a = auto
+
+# Note
+	Any element with 'z-index: auto' can be treated as 'z-index: 0'.</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.zidx--1 { z-index: 1 }
+.zidx--2 { z-index: 2 }
+.zidx--3 { z-index: 4 }
+.zidx--4 { z-index: 8 }
+.zidx--5 { z-index: 16 }
+.zidx--6 { z-index: 32 }
+.zidx--7 { z-index: 64 }
+.zidx--8 { z-index: 128 }
+.zidx--a { z-index: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<hr />
+
+				<h3 id="margin">MARGIN</h3>
+
+				<h4>MARGIN</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+
+				<pre><code class="language-markup"># Base
+	m = margin (shorthand for all the margin-* properties)
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px
+	--a = auto
+
+# Note
+	Negative values for margin properties are allowed, but there may be implementation-specific limits.
+	https://www.w3.org/TR/css-box-3/#margins</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.m--0 { margin: 0 }
+.m--1 { margin: 8px }
+.m--2 { margin: 16px }
+.m--3 { margin: 24px }
+.m--4 { margin: 32px }
+.m--5 { margin: 40px }
+.m--6 { margin: 48px }
+.m--7 { margin: 56px }
+.m--8 { margin: 64px }
+.m--n1 { margin: -8px }
+.m--n2 { margin: -16px }
+.m--n3 { margin: -24px }
+.m--n4 { margin: -32px }
+.m--n5 { margin: -40px }
+.m--n6 { margin: -48px }
+.m--n7 { margin: -56px }
+.m--n8 { margin: -64px }
+.m--a { margin: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<h4 id="margin-top">MARGIN-TOP</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	mt = margin-top
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.mt--0 { margin-top: 0 }
+.mt--1 { margin-top: 8px }
+.mt--2 { margin-top: 16px }
+.mt--3 { margin-top: 24px }
+.mt--4 { margin-top: 32px }
+.mt--5 { margin-top: 40px }
+.mt--6 { margin-top: 48px }
+.mt--7 { margin-top: 56px }
+.mt--8 { margin-top: 64px }
+.mt--n1 { margin-top: -8px }
+.mt--n2 { margin-top: -16px }
+.mt--n3 { margin-top: -24px }
+.mt--n4 { margin-top: -32px }
+.mt--n5 { margin-top: -40px }
+.mt--n6 { margin-top: -48px }
+.mt--n7 { margin-top: -56px }
+.mt--n8 { margin-top: -64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<h4 id="margin-right">MARGIN-RIGHT</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	mr = margin-right
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px	
+	--a = auto</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.mr--0 { margin-right: 0 }
+.mr--1 { margin-right: 8px }
+.mr--2 { margin-right: 16px }
+.mr--3 { margin-right: 24px }
+.mr--4 { margin-right: 32px }
+.mr--5 { margin-right: 40px }
+.mr--6 { margin-right: 48px }
+.mr--7 { margin-right: 56px }
+.mr--8 { margin-right: 64px }
+.mr--n1 { margin-right: -8px }
+.mr--n2 { margin-right: -16px }
+.mr--n3 { margin-right: -24px }
+.mr--n4 { margin-right: -32px }
+.mr--n5 { margin-right: -40px }
+.mr--n6 { margin-right: -48px }
+.mr--n7 { margin-right: -56px }
+.mr--n8 { margin-right: -64px }
+.mr--a { margin-right: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<h4 id="margin-bottom">MARGIN-BOTTOM</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	mb = margin-bottom
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.mb--0 { margin-bottom: 0 }
+.mb--1 { margin-bottom: 8px }
+.mb--2 { margin-bottom: 16px }
+.mb--3 { margin-bottom: 24px }
+.mb--4 { margin-bottom: 32px }
+.mb--5 { margin-bottom: 40px }
+.mb--6 { margin-bottom: 48px }
+.mb--7 { margin-bottom: 56px }
+.mb--8 { margin-bottom: 64px }
+.mb--n1 { margin-bottom: -8px }
+.mb--n2 { margin-bottom: -16px }
+.mb--n3 { margin-bottom: -24px }
+.mb--n4 { margin-bottom: -32px }
+.mb--n5 { margin-bottom: -40px }
+.mb--n6 { margin-bottom: -48px }
+.mb--n7 { margin-bottom: -56px }
+.mb--n8 { margin-bottom: -64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<h4 id="margin-left">MARGIN-LEFT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	ml = margin-left
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px
+	--a = auto</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.ml--0 { margin-left: 0 }
+.ml--1 { margin-left: 8px }
+.ml--2 { margin-left: 16px }
+.ml--3 { margin-left: 24px }
+.ml--4 { margin-left: 32px }
+.ml--5 { margin-left: 40px }
+.ml--6 { margin-left: 48px }
+.ml--7 { margin-left: 56px }
+.ml--8 { margin-left: 64px }
+.ml--n1 { margin-left: -8px }
+.ml--n2 { margin-left: -16px }
+.ml--n3 { margin-left: -24px }
+.ml--n4 { margin-left: -32px }
+.ml--n5 { margin-left: -40px }
+.ml--n6 { margin-left: -48px }
+.ml--n7 { margin-left: -56px }
+.ml--n8 { margin-left: -64px }
+.ml--a { margin-left: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="margin-y">MARGIN-Y</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	my = margin-top; margin-bottom
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.my--0 { margin-top: 0; margin-bottom: 0 }
+.my--1 { margin-top: 8px; margin-bottom: 8px }
+.my--2 { margin-top: 16px; margin-bottom: 16px }
+.my--3 { margin-top: 24px; margin-bottom: 24px }
+.my--4 { margin-top: 32px; margin-bottom: 32px }
+.my--5 { margin-top: 40px; margin-bottom: 40px }
+.my--6 { margin-top: 48px; margin-bottom: 48px }
+.my--7 { margin-top: 56px; margin-bottom: 56px }
+.my--8 { margin-top: 64px; margin-bottom: 64px }
+.my--n1 { margin-top: -8px; margin-bottom: -8px }
+.my--n2 { margin-top: -16px; margin-bottom: -16px }
+.my--n3 { margin-top: -24px; margin-bottom: -24px }
+.my--n4 { margin-top: -32px; margin-bottom: -32px }
+.my--n5 { margin-top: -40px; margin-bottom: -40px }
+.my--n6 { margin-top: -48px; margin-bottom: -48px }
+.my--n7 { margin-top: -56px; margin-bottom: -56px }
+.my--n8 { margin-top: -64px; margin-bottom: -64px }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<h4 id="margin-x">MARGIN-X</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	mx = margin-right; margin-left
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--n1 = -8px
+	--n2 = -16px
+	--n3 = -24px
+	--n4 = -32px
+	--n5 = -40px
+	--n6 = -48px
+	--n7 = -56px
+	--n8 = -64px
+	--a = auto</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.mx--0 { margin-right: 0; margin-left: 0 }
+.mx--1 { margin-right: 8px; margin-left: 8px }
+.mx--2 { margin-right: 16px; margin-left: 16px }
+.mx--3 { margin-right: 24px; margin-left: 24px }
+.mx--4 { margin-right: 32px; margin-left: 32px }
+.mx--5 { margin-right: 40px; margin-left: 40px }
+.mx--6 { margin-right: 48px; margin-left: 48px }
+.mx--7 { margin-right: 56px; margin-left: 56px }
+.mx--8 { margin-right: 64px; margin-left: 64px }
+.mx--n1 { margin-right: -8px; margin-left: -8px }
+.mx--n2 { margin-right: -16px; margin-left: -16px }
+.mx--n3 { margin-right: -24px; margin-left: -24px }
+.mx--n4 { margin-right: -32px; margin-left: -32px }
+.mx--n5 { margin-right: -40px; margin-left: -40px }
+.mx--n6 { margin-right: -48px; margin-left: -48px }
+.mx--n7 { margin-right: -56px; margin-left: -56px }
+.mx--n8 { margin-right: -64px; margin-left: -64px }
+.mx--a { margin-right: auto; margin-left: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<hr />
+
+				<h3 id="outline">OUTLINE</h3>
+
+				<h4>OUTLINE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	oln = outline (shorthand for various outline-* properties)
+
+# Modifiers
+	--0 = 0
+
+# Note
+	Don't forget this, ok?
+	https://developer.mozilla.org/en-US/docs/Web/CSS/outline#Accessibility_concerns</code></pre>
+		
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.oln--0 { outline: 0 }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<hr />
+
+				<!-- BORDER -->
+				<h3 id="border">BORDER</h3>
+				<h4>BORDER-WIDTH</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	brdrw = border-width (shorthand for the border-*-width properties)
+	brdrtw = border-top-width
+	brdrrw = border-right-width
+	brdrbw = border-bottom-width
+	brdrlw = border-left-width
+	brdryw = border-top-width; border-bottom-width
+	brdrxw = border-right-width; border-left-width
+
+# Modifiers
+	--0 = 0
+	--1 = 1px
+	--2 = 2px
+	--3 = 4px
+	--4 = 8px
+	--5 = 16px
+	--6 = 32px
+	--7 = 64px
+	--8 = 128px</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.brdrw--0 { border-width: 0 }
+.brdrw--1 { border-width: 1px }
+.brdrw--2 { border-width: 2px }
+.brdrw--3 { border-width: 4px }
+.brdrw--4 { border-width: 8px }
+.brdrw--5 { border-width: 16px }
+.brdrw--6 { border-width: 32px }
+.brdrw--7 { border-width: 64px }
+.brdrw--8 { border-width: 128px }
+
+.brdrtw--0 { border-top-width: 0 }
+.brdrtw--1 { border-top-width: 1px }
+.brdrtw--2 { border-top-width: 2px }
+.brdrtw--3 { border-top-width: 4px }
+.brdrtw--4 { border-top-width: 8px }
+.brdrtw--5 { border-top-width: 16px }
+.brdrtw--6 { border-top-width: 32px }
+.brdrtw--7 { border-top-width: 64px }
+.brdrtw--8 { border-top-width: 128px }
+
+.brdrrw--0 { border-right-width: 0 }
+.brdrrw--1 { border-right-width: 1px }
+.brdrrw--2 { border-right-width: 2px }
+.brdrrw--3 { border-right-width: 4px }
+.brdrrw--4 { border-right-width: 8px }
+.brdrrw--5 { border-right-width: 16px }
+.brdrrw--6 { border-right-width: 32px }
+.brdrrw--7 { border-right-width: 64px }
+.brdrrw--8 { border-right-width: 128px }
+
+.brdrbw--0 { border-bottom-width: 0 }
+.brdrbw--1 { border-bottom-width: 1px }
+.brdrbw--2 { border-bottom-width: 2px }
+.brdrbw--3 { border-bottom-width: 4px }
+.brdrbw--4 { border-bottom-width: 8px }
+.brdrbw--5 { border-bottom-width: 16px }
+.brdrbw--6 { border-bottom-width: 32px }
+.brdrbw--7 { border-bottom-width: 64px }
+.brdrbw--8 { border-bottom-width: 128px }
+
+.brdrlw--0 { border-left-width: 0 }
+.brdrlw--1 { border-left-width: 1px }
+.brdrlw--2 { border-left-width: 2px }
+.brdrlw--3 { border-left-width: 4px }
+.brdrlw--4 { border-left-width: 8px }
+.brdrlw--5 { border-left-width: 16px }
+.brdrlw--6 { border-left-width: 32px }
+.brdrlw--7 { border-left-width: 64px }
+.brdrlw--8 { border-left-width: 128px }
+
+.brdryw--0 { border-top-width: 0; border-bottom-width: 0 }
+.brdryw--1 { border-top-width: 1px; border-bottom-width: 1px }
+.brdryw--2 { border-top-width: 2px; border-bottom-width: 2px }
+.brdryw--3 { border-top-width: 4px; border-bottom-width: 4px }
+.brdryw--4 { border-top-width: 8px; border-bottom-width: 8px }
+.brdryw--5 { border-top-width: 16px; border-bottom-width: 16px }
+.brdryw--6 { border-top-width: 32px; border-bottom-width: 32px }
+.brdryw--7 { border-top-width: 64px; border-bottom-width: 64px }
+.brdryw--8 { border-top-width: 128px; border-bottom-width: 128px }
+
+.brdrxw--0 { border-right-width: 0; border-left-width: 0 }
+.brdrxw--1 { border-right-width: 1px; border-left-width: 1px }
+.brdrxw--2 { border-right-width: 2px; border-left-width: 2px }
+.brdrxw--3 { border-right-width: 4px; border-left-width: 4px }
+.brdrxw--4 { border-right-width: 8px; border-left-width: 8px }
+.brdrxw--5 { border-right-width: 16px; border-left-width: 16px }
+.brdrxw--6 { border-right-width: 32px; border-left-width: 32px }
+.brdrxw--7 { border-right-width: 64px; border-left-width: 64px }
+.brdrxw--8 { border-right-width: 128px; border-left-width: 128px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<h4 id="border-style">BORDER-STYLE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	brdrsty = border-style (shorthand for the border-*-style properties)
+	brdrtsty = border-top-style
+	brdrrsty = border-right-style
+	brdrbsty = border-bottom-style
+	brdrlsty = border-left-style
+
+# Modifiers
+	--das = dashed
+	--dot = dotted
+	--n = none
+	--sol = solid</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.brdrsty--das { border-style: dashed }
+.brdrsty--dot { border-style: dotted }
+.brdrsty--n { border-style: none }
+.brdrsty--sol { border-style: solid }
+
+.brdrtsty--das { border-top-style: dashed }
+.brdrtsty--dot { border-top-style: dotted }
+.brdrtsty--n { border-top-style: none }
+.brdrtsty--sol { border-top-style: solid }
+
+.brdrrsty--das { border-right-style: dashed }
+.brdrrsty--dot { border-right-style: dotted }
+.brdrrsty--n { border-right-style: none }
+.brdrrsty--sol { border-right-style: solid }
+
+.brdrbsty--das { border-bottom-style: dashed }
+.brdrbsty--dot { border-bottom-style: dotted }
+.brdrbsty--n { border-bottom-style: none }
+.brdrbsty--sol { border-bottom-style: solid }
+
+.brdrlsty--das { border-left-style: dashed }
+.brdrlsty--dot { border-left-style: dotted }
+.brdrlsty--n { border-left-style: none }
+.brdrlsty--sol { border-left-style: solid }
+
+.brdrysty--das { border-top-style: dashed; border-bottom-style: dashed }
+.brdrysty--dot { border-top-style: dotted; border-bottom-style: dotted }
+.brdrysty--n { border-top-style: none; border-bottom-style: none }
+.brdrysty--sol { border-top-style: solid; border-bottom-style: solid }
+
+.brdrxsty--das { border-right-style: dashed; border-left-style: dashed }
+.brdrxsty--dot { border-right-style: dotted; border-left-style: dotted }
+.brdrxsty--n { border-right-style: none; border-left-style: none }
+.brdrxsty--sol { border-right-style: solid; border-left-style: solid }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<h4 id="border-radius">BORDER-RADIUS</h4>
+				
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	brdrrad = border-radius (shorthand for the border-*-radius properties)
+	brdrtrrad = border-top-right-radius
+	brdrtlrad = border-top-left-radius
+	brdrbrrad = border-bottom-right-radius
+	brdrblrad = border-bottom-left-radius
+
+# Modifiers
+	--0 = 0
+	--1 = 1px
+	--2 = 2px
+	--3 = 4px
+	--4 = 8px
+	--5 = 16px
+	--6 = 32px
+	--7 = 64px
+	--8 = 128px
+	--100p = 100% (only for border-radius shorthand)</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.brdrrad--0 { border-radius: 0 }
+.brdrrad--1 { border-radius: 1px }
+.brdrrad--2 { border-radius: 2px }
+.brdrrad--3 { border-radius: 4px }
+.brdrrad--4 { border-radius: 8px }
+.brdrrad--5 { border-radius: 16px }
+.brdrrad--6 { border-radius: 32px }
+.brdrrad--7 { border-radius: 64px }
+.brdrrad--8 { border-radius: 128px }
+.brdrrad--100p { border-radius: 100% }
+
+.brdrtrrad--0 { border-top-right-radius: 0 }
+.brdrtlrad--0 { border-top-left-radius: 0 }
+.brdrbrrad--0 { border-bottom-right-radius: 0 }
+.brdrblrad--0 { border-bottom-left-radius: 0 }
+
+.brdrtrrad--1 { border-top-right-radius: 1px }
+.brdrtlrad--1 { border-top-left-radius: 1px }
+.brdrbrrad--1 { border-bottom-right-radius: 1px }
+.brdrblrad--1 { border-bottom-left-radius: 1px }
+
+.brdrtrrad--2 { border-top-right-radius: 2px }
+.brdrtlrad--2 { border-top-left-radius: 2px }
+.brdrbrrad--2 { border-bottom-right-radius: 2px }
+.brdrblrad--2 { border-bottom-left-radius: 2px }
+
+.brdrtrrad--3 { border-top-right-radius: 4px }
+.brdrtlrad--3 { border-top-left-radius: 4px }
+.brdrbrrad--3 { border-bottom-right-radius: 4px }
+.brdrblrad--3 { border-bottom-left-radius: 4px }
+
+.brdrtrrad--4 { border-top-right-radius: 8px }
+.brdrtlrad--4 { border-top-left-radius: 8px }
+.brdrbrrad--4 { border-bottom-right-radius: 8px }
+.brdrblrad--4 { border-bottom-left-radius: 8px }
+
+.brdrtrrad--5 { border-top-right-radius: 16px }
+.brdrtlrad--5 { border-top-left-radius: 16px }
+.brdrbrrad--5 { border-bottom-right-radius: 16px }
+.brdrblrad--5 { border-bottom-left-radius: 16px }
+
+.brdrtrrad--6 { border-top-right-radius: 32px }
+.brdrtlrad--6 { border-top-left-radius: 32px }
+.brdrbrrad--6 { border-bottom-right-radius: 32px }
+.brdrblrad--6 { border-bottom-left-radius: 32px }
+
+.brdrtrrad--7 { border-top-right-radius: 64px }
+.brdrtlrad--7 { border-top-left-radius: 64px }
+.brdrbrrad--7 { border-bottom-right-radius: 64px }
+.brdrblrad--7 { border-bottom-left-radius: 64px }
+
+.brdrtrrad--8 { border-top-right-radius: 128px }
+.brdrtlrad--8 { border-top-left-radius: 128px }
+.brdrbrrad--8 { border-bottom-right-radius: 128px }
+.brdrblrad--8 { border-bottom-left-radius: 128px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<h4 id="border-color">BORDER-COLOR</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	brdrc = border-color (shorthand for the border-*-color properties)
+	brdrtc = border-top-color
+	brdrrc = border-right-color
+	brdrbc = border-bottom-color
+	brdrlc = border-left-color
+
+	brdrchvr = border-color:hover
+	brdrtchvr = border-top-color:hover
+	brdrrchvr = border-right-color:hover
+	brdrbchvr = border-bottom-color:hover
+	brdrlchvr = border-left-color:hover
+
+# Modifiers
+	--gy1 = #fafafa (grey)
+	--gy2 = #ededed (grey)
+	--gy3 = #dddddd (grey)
+	--gy4 = #b1b1b1 (grey)
+	--gy5 = #878787 (grey)
+	--gy6 = #6a6a6a (grey)
+	--gy7 = #4d4d4d (grey)
+	--gy8 = #303030 (grey)
+	--rd1 = #c6262e (red)
+	--gn1 = #68b723 (green)
+	--bl1 = #3689e6 (blue)
+	--yl1 = #f9c440 (yellow)
+	--bk1 = #000000 (black)
+	--wt1 = #ffffff (white)
+	--tp = transparent</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.brdrc--gy1 { border-color: #fafafa }
+.brdrc--gy2 { border-color: #ededed }
+.brdrc--gy3 { border-color: #dddddd }
+.brdrc--gy4 { border-color: #b1b1b1 }
+.brdrc--gy5 { border-color: #878787 }
+.brdrc--gy6 { border-color: #6a6a6a }
+.brdrc--gy7 { border-color: #4d4d4d }
+.brdrc--gy8 { border-color: #303030 }
+.brdrc--rd1 { border-color: #c6262e }
+.brdrc--gn1 { border-color: #68b723 }
+.brdrc--bl1 { border-color: #3689e6 }
+.brdrc--yl1 { border-color: #f9c440 }
+.brdrc--bk1 { border-color: #000000 }
+.brdrc--wt1 { border-color: #ffffff }
+.brdrc--tp { border-color: transparent }
+
+.brdrtc--gy1 { border-top-color: #fafafa }
+.brdrtc--gy2 { border-top-color: #ededed }
+.brdrtc--gy3 { border-top-color: #dddddd }
+.brdrtc--gy4 { border-top-color: #b1b1b1 }
+.brdrtc--gy5 { border-top-color: #878787 }
+.brdrtc--gy6 { border-top-color: #6a6a6a }
+.brdrtc--gy7 { border-top-color: #4d4d4d }
+.brdrtc--gy8 { border-top-color: #303030 }
+.brdrtc--rd1 { border-top-color: #c6262e }
+.brdrtc--gn1 { border-top-color: #68b723 }
+.brdrtc--bl1 { border-top-color: #3689e6 }
+.brdrtc--yl1 { border-top-color: #f9c440 }
+.brdrtc--bk1 { border-top-color: #000000 }
+.brdrtc--wt1 { border-top-color: #ffffff }
+.brdrtc--tp { border-top-color: transparent }
+
+.brdrrc--gy1 { border-right-color: #fafafa }
+.brdrrc--gy2 { border-right-color: #ededed }
+.brdrrc--gy3 { border-right-color: #dddddd }
+.brdrrc--gy4 { border-right-color: #b1b1b1 }
+.brdrrc--gy5 { border-right-color: #878787 }
+.brdrrc--gy6 { border-right-color: #6a6a6a }
+.brdrrc--gy7 { border-right-color: #4d4d4d }
+.brdrrc--gy8 { border-right-color: #303030 }
+.brdrrc--rd1 { border-right-color: #c6262e }
+.brdrrc--gn1 { border-right-color: #68b723 }
+.brdrrc--bl1 { border-right-color: #3689e6 }
+.brdrrc--yl1 { border-right-color: #f9c440 }
+.brdrrc--bk1 { border-right-color: #000000 }
+.brdrrc--wt1 { border-right-color: #ffffff }
+.brdrrc--tp { border-right-color: transparent }
+
+.brdrbc--gy1 { border-bottom-color: #fafafa }
+.brdrbc--gy2 { border-bottom-color: #ededed }
+.brdrbc--gy3 { border-bottom-color: #dddddd }
+.brdrbc--gy4 { border-bottom-color: #b1b1b1 }
+.brdrbc--gy5 { border-bottom-color: #878787 }
+.brdrbc--gy6 { border-bottom-color: #6a6a6a }
+.brdrbc--gy7 { border-bottom-color: #4d4d4d }
+.brdrbc--gy8 { border-bottom-color: #303030 }
+.brdrbc--rd1 { border-bottom-color: #c6262e }
+.brdrbc--gn1 { border-bottom-color: #68b723 }
+.brdrbc--bl1 { border-bottom-color: #3689e6 }
+.brdrbc--yl1 { border-bottom-color: #f9c440 }
+.brdrbc--bk1 { border-bottom-color: #000000 }
+.brdrbc--wt1 { border-bottom-color: #ffffff }
+.brdrbc--tp { border-bottom-color: transparent }
+
+.brdrlc--gy1 { border-left-color: #fafafa }
+.brdrlc--gy2 { border-left-color: #ededed }
+.brdrlc--gy3 { border-left-color: #dddddd }
+.brdrlc--gy4 { border-left-color: #b1b1b1 }
+.brdrlc--gy5 { border-left-color: #878787 }
+.brdrlc--gy6 { border-left-color: #6a6a6a }
+.brdrlc--gy7 { border-left-color: #4d4d4d }
+.brdrlc--gy8 { border-left-color: #303030 }
+.brdrlc--rd1 { border-left-color: #c6262e }
+.brdrlc--gn1 { border-left-color: #68b723 }
+.brdrlc--bl1 { border-left-color: #3689e6 }
+.brdrlc--yl1 { border-left-color: #f9c440 }
+.brdrlc--bk1 { border-left-color: #000000 }
+.brdrlc--wt1 { border-left-color: #ffffff }
+.brdrlc--tp { border-left-color: transparent }
+
+.brdrchvr--gy1:hover { border-color: #fafafa }
+.brdrchvr--gy2:hover { border-color: #ededed }
+.brdrchvr--gy3:hover { border-color: #dddddd }
+.brdrchvr--gy4:hover { border-color: #b1b1b1 }
+.brdrchvr--gy5:hover { border-color: #878787 }
+.brdrchvr--gy6:hover { border-color: #6a6a6a }
+.brdrchvr--gy7:hover { border-color: #4d4d4d }
+.brdrchvr--gy8:hover { border-color: #303030 }
+.brdrchvr--rd1:hover { border-color: #c6262e }
+.brdrchvr--gn1:hover { border-color: #68b723 }
+.brdrchvr--bl1:hover { border-color: #3689e6 }
+.brdrchvr--yl1:hover { border-color: #f9c440 }
+.brdrchvr--bk1:hover { border-color: #000000 }
+.brdrchvr--wt1:hover { border-color: #ffffff }
+.brdrchvr--tp:hover { border-color: transparent }
+
+.brdrtchvr--gy1:hover { border-top-color: #fafafa }
+.brdrtchvr--gy2:hover { border-top-color: #ededed }
+.brdrtchvr--gy3:hover { border-top-color: #dddddd }
+.brdrtchvr--gy4:hover { border-top-color: #b1b1b1 }
+.brdrtchvr--gy5:hover { border-top-color: #878787 }
+.brdrtchvr--gy6:hover { border-top-color: #6a6a6a }
+.brdrtchvr--gy7:hover { border-top-color: #4d4d4d }
+.brdrtchvr--gy8:hover { border-top-color: #303030 }
+.brdrtchvr--rd1:hover { border-top-color: #c6262e }
+.brdrtchvr--gn1:hover { border-top-color: #68b723 }
+.brdrtchvr--bl1:hover { border-top-color: #3689e6 }
+.brdrtchvr--yl1:hover { border-top-color: #f9c440 }
+.brdrtchvr--bk1:hover { border-top-color: #000000 }
+.brdrtchvr--wt1:hover { border-top-color: #ffffff }
+.brdrtchvr--tp:hover{ border-top-color: transparent }
+
+.brdrrchvr--gy1:hover { border-right-color: #fafafa }
+.brdrrchvr--gy2:hover { border-right-color: #ededed }
+.brdrrchvr--gy3:hover { border-right-color: #dddddd }
+.brdrrchvr--gy4:hover { border-right-color: #b1b1b1 }
+.brdrrchvr--gy5:hover { border-right-color: #878787 }
+.brdrrchvr--gy6:hover { border-right-color: #6a6a6a }
+.brdrrchvr--gy7:hover { border-right-color: #4d4d4d }
+.brdrrchvr--gy8:hover { border-right-color: #303030 }
+.brdrrchvr--rd1:hover { border-right-color: #c6262e }
+.brdrrchvr--gn1:hover { border-right-color: #68b723 }
+.brdrrchvr--bl1:hover { border-right-color: #3689e6 }
+.brdrrchvr--yl1:hover { border-right-color: #f9c440 }
+.brdrrchvr--bk1:hover { border-right-color: #000000 }
+.brdrrchvr--wt1:hover { border-right-color: #ffffff }
+.brdrrchvr--tp:hover { border-right-color: transparent }
+
+.brdrbchvr--gy1:hover { border-bottom-color: #fafafa }
+.brdrbchvr--gy2:hover { border-bottom-color: #ededed }
+.brdrbchvr--gy3:hover { border-bottom-color: #dddddd }
+.brdrbchvr--gy4:hover { border-bottom-color: #b1b1b1 }
+.brdrbchvr--gy5:hover { border-bottom-color: #878787 }
+.brdrbchvr--gy6:hover { border-bottom-color: #6a6a6a }
+.brdrbchvr--gy7:hover { border-bottom-color: #4d4d4d }
+.brdrbchvr--gy8:hover { border-bottom-color: #303030 }
+.brdrbchvr--rd1:hover { border-bottom-color: #c6262e }
+.brdrbchvr--gn1:hover { border-bottom-color: #68b723 }
+.brdrbchvr--bl1:hover { border-bottom-color: #3689e6 }
+.brdrbchvr--yl1:hover { border-bottom-color: #f9c440 }
+.brdrbchvr--bk1:hover { border-bottom-color: #000000 }
+.brdrbchvr--wt1:hover { border-bottom-color: #ffffff }
+.brdrbchvr--tp:hover { border-bottom-color: transparent }
+
+.brdrlchvr--gy1:hover { border-left-color: #fafafa }
+.brdrlchvr--gy2:hover { border-left-color: #ededed }
+.brdrlchvr--gy3:hover { border-left-color: #dddddd }
+.brdrlchvr--gy4:hover { border-left-color: #b1b1b1 }
+.brdrlchvr--gy5:hover { border-left-color: #878787 }
+.brdrlchvr--gy6:hover { border-left-color: #6a6a6a }
+.brdrlchvr--gy7:hover { border-left-color: #4d4d4d }
+.brdrlchvr--gy8:hover { border-left-color: #303030 }
+.brdrlchvr--rd1:hover { border-left-color: #c6262e }
+.brdrlchvr--gn1:hover { border-left-color: #68b723 }
+.brdrlchvr--bl1:hover { border-left-color: #3689e6 }
+.brdrlchvr--yl1:hover { border-left-color: #f9c440 }
+.brdrlchvr--bk1:hover { border-left-color: #000000 }
+.brdrlchvr--wt1:hover { border-left-color: #ffffff }
+.brdrlchvr--tp:hover { border-left-color: transparent }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<hr />
+
+				<h3 id="box-sshadow">BOX-SHADOW</h3>
+
+				<h4>BOX-SHADOW</h4>
+
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	bxsw = box-shadow
+
+# Modifiers
+	--0 = none
+	--1 = offset all 0 1px 2px
+	--2 = offset all 0 4px 8px
+	--3 = offset all 0 8px 16px 
+	--4 = offset all 0 16px 32px
+	
+	--t1 = offset top 0 -4px 4px -4px
+	--t2 = offset top 0 -8px 8px -8px
+	--t3 = offset top 0 -16px 16px -16px
+	--t4 = offset top 0 -32px 32px -32px
+	
+	--r1 = offset right 4px 0 4px -4px
+	--r2 = offset right 8px 0 8px -8px
+	--r3 = offset right 16px 0 16px -16px
+	--r4 = offset right 32px 0 32px -32px
+	
+	--b1 = offset bottom 0 4px 4px -4px
+	--b2 = offset bottom 0 8px 8px -8px
+	--b3 = offset bottom 0 16px 16px -16px
+	--b4 = offset bottom 0 32px 32px -32px
+	
+	--l1 = offset left -4px 0 4px -4px
+	--l2 = offset left -8px 0 8px -8px
+	--l3 = offset left -16px 0 16px -16px
+	--l4 = offset left -32px 0 32px -32px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.bxsw--0 { box-shadow: none }
+.bxsw--1 { box-shadow: 0 1px 2px rgba( 0, 0, 0, .4 ) }
+.bxsw--2 { box-shadow: 0 4px 8px rgba( 0, 0, 0, .4 ) }
+.bxsw--3 { box-shadow: 0 8px 16px rgba( 0, 0, 0, .4 ) }
+.bxsw--4 { box-shadow: 0 16px 32px rgba( 0, 0, 0, .4 ) }
+
+.bxsw--t1 { box-shadow: 0 -4px 4px -4px rgba( 0, 0, 0, .4 ) }
+.bxsw--t2 { box-shadow: 0 -8px 8px -8px rgba( 0, 0, 0, .4 ) }
+.bxsw--t3 { box-shadow: 0 -16px 16px -16px rgba( 0, 0, 0, .4 ) }
+.bxsw--t4 { box-shadow: 0 -32px 32px -32px rgba( 0, 0, 0, .4 ) }
+
+.bxsw--r1 { box-shadow: 4px 0 4px -4px rgba( 0, 0, 0, .4 ) }
+.bxsw--r2 { box-shadow: 8px 0 8px -8px rgba( 0, 0, 0, .4 ) }
+.bxsw--r3 { box-shadow: 16px 0 16px -16px rgba( 0, 0, 0, .4 ) }
+.bxsw--r4 { box-shadow: 32px 0 32px -32px rgba( 0, 0, 0, .4 ) }
+
+.bxsw--b1 { box-shadow: 0 4px 4px -4px rgba( 0, 0, 0, .4 ) }
+.bxsw--b2 { box-shadow: 0 8px 8px -8px rgba( 0, 0, 0, .4 ) }
+.bxsw--b3 { box-shadow: 0 16px 16px -16px rgba( 0, 0, 0, .4 ) }
+.bxsw--b4 { box-shadow: 0 32px 32px -32px rgba( 0, 0, 0, .4 ) }
+
+.bxsw--l1 { box-shadow: -4px 0 4px -4px rgba( 0, 0, 0, .4 ) }
+.bxsw--l2 { box-shadow: -8px 0 8px -8px rgba( 0, 0, 0, .4 ) }
+.bxsw--l3 { box-shadow: -16px 0 16px -16px rgba( 0, 0, 0, .4 ) }
+.bxsw--l4 { box-shadow: -32px 0 32px -32px rgba( 0, 0, 0, .4 ) }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<hr />
+
+				<h3 id="background">BACKGROUND</h3>
+				<h4 id="background-color">BACKGROUND-COLOR</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	bgc = background-color
+	bgchvr = background-color:hover
+
+# Modifiers
+	--gy1 = #fafafa (grey)
+	--gy2 = #ededed (grey)
+	--gy3 = #dddddd (grey)
+	--gy4 = #b1b1b1 (grey)
+	--gy5 = #878787 (grey)
+	--gy6 = #6a6a6a (grey)
+	--gy7 = #4d4d4d (grey)
+	--gy8 = #303030 (grey)
+	--rd1 = #c6262e (red)
+	--gn1 = #68b723 (green)
+	--bl1 = #3689e6 (blue)
+	--yl1 = #f9c440 (yellow))
+	--bk1 = #000000 (black)
+	--wt1 = #ffffff (white)
+	--tp = transparent</code></pre>
+				
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.bgc--gy1 { background-color: #fafafa }
+.bgc--gy2 { background-color: #ededed }
+.bgc--gy3 { background-color: #dddddd }
+.bgc--gy4 { background-color: #b1b1b1 }
+.bgc--gy5 { background-color: #878787 }
+.bgc--gy6 { background-color: #6a6a6a }
+.bgc--gy7 { background-color: #4d4d4d }
+.bgc--gy8 { background-color: #303030 }
+.bgc--rd1 { background-color: #c6262e }
+.bgc--gn1 { background-color: #68b723 }
+.bgc--bl1 { background-color: #3689e6 }
+.bgc--yl1 { background-color: #f9c440 }
+.bgc--bk1 { background-color: #000000 }
+.bgc--wt1 { background-color: #ffffff }
+.bgc--tp { background-color: transparent }
+
+.bgchvr--gy1:hover { background-color: #fafafa }
+.bgchvr--gy2:hover { background-color: #ededed }
+.bgchvr--gy3:hover { background-color: #dddddd }
+.bgchvr--gy4:hover { background-color: #b1b1b1 }
+.bgchvr--gy5:hover { background-color: #878787 }
+.bgchvr--gy6:hover { background-color: #6a6a6a }
+.bgchvr--gy7:hover { background-color: #4d4d4d }
+.bgchvr--gy8:hover { background-color: #303030 }
+.bgchvr--rd1:hover { background-color: #c6262e }
+.bgchvr--gn1:hover { background-color: #68b723 }
+.bgchvr--bl1:hover { background-color: #3689e6 }
+.bgchvr--yl1:hover { background-color: #f9c440 }
+.bgchvr--bk1:hover { background-color: #000000 }
+.bgchvr--wt1:hover { background-color: #ffffff }
+.bgchvr--tp:hover { background-color: transparent }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="background-position">BACKGROUND-POSITION</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	bgpos = background-position
+
+# Modifiers
+	--t = top 
+	--r = right
+	--b = bottom
+	--l = left
+	--ctr = center</code></pre>
+				
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.bgpos--t { background-position: top center }
+.bgpos--r { background-position: center right }
+.bgpos--b { background-position: bottom center }
+.bgpos--l { background-position: center left }
+.bgpos--ctr { background-position: center center }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+				<h4 id="background-repeat">BACKGROUND-REPEAT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	bgrpt = background-repeat
+
+# Modifiers
+	--n = no-repeat
+	--y = repeat-y
+	--x = repeat-x</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.bgrpt--n { background-repeat: no-repeat }
+.bgrpt--x { background-repeat: repeat-x }
+.bgrpt--y { background-repeat: repeat-y }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<h4 id="background-size">BACKGROUND-SIZE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	bgs = background-size 
+
+# Modifiers
+	--cn = contain
+	--cr = cover</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.bgs--cn { background-size: contain }
+.bgs--cr { background-size: cover }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+
+				<h3 id="cursor">CURSOR</h3>
+				<h4>CURSOR</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+
+				<pre><code class="language-markup"># Base
+	cur = cursor
+
+# Modifiers
+	--def = default
+	--ptr = pointer
+	--n = not-allowed
+ 	--i = inherit</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.cur--def { cursor: default }
+.cur--ptr { cursor: pointer }
+.cur--n { cursor: not-allowed }
+.cur--i { cursor: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+				<h3 id="padding">PADDING</h3>
+				<h4>PADDING</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	p = padding (shorthand for all the padding-* properties)
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.p--0 { padding: 0 }
+.p--1 { padding: 8px }
+.p--2 { padding: 16px }
+.p--3 { padding: 24px }
+.p--4 { padding: 32px }
+.p--5 { padding: 40px }
+.p--6 { padding: 48px }
+.p--7 { padding: 56px }
+.p--8 { padding: 64px }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<h4 id="padding-top">PADDING-TOP</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	pt = padding-top
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="css language-css">.pt--0 { padding-top: 0 }
+.pt--1 { padding-top: 8px }
+.pt--2 { padding-top: 16px }
+.pt--3 { padding-top: 24px }
+.pt--4 { padding-top: 32px }
+.pt--5 { padding-top: 40px }
+.pt--6 { padding-top: 48px }
+.pt--7 { padding-top: 56px }
+.pt--8 { padding-top: 64px }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em></p>
+				<h4 id="padding-right">PADDING-RIGHT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	pr = padding-right
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.pr--0 { padding-right: 0 }
+.pr--1 { padding-right: 8px }
+.pr--2 { padding-right: 16px }
+.pr--3 { padding-right: 24px }
+.pr--4 { padding-right: 32px }
+.pr--5 { padding-right: 40px }
+.pr--6 { padding-right: 48px }
+.pr--7 { padding-right: 56px }
+.pr--8 { padding-right: 64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				<h4 id="padding-bottom">PADDING-BOTTOM</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	pb = padding-bottom
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.pb--0 { padding-bottom: 0 }
+.pb--1 { padding-bottom: 8px }
+.pb--2 { padding-bottom: 16px }
+.pb--3 { padding-bottom: 24px }
+.pb--4 { padding-bottom: 32px }
+.pb--5 { padding-bottom: 40px }
+.pb--6 { padding-bottom: 48px }
+.pb--7 { padding-bottom: 56px }
+.pb--8 { padding-bottom: 64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+				<h4 id="padding-left">PADDING-LEFT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code  class="language-markup"># Base
+	pl = padding-left
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.pl--0 { padding-left: 0 }
+.pl--1 { padding-left: 8px }
+.pl--2 { padding-left: 16px }
+.pl--3 { padding-left: 24px }
+.pl--4 { padding-left: 32px }
+.pl--5 { padding-left: 40px }
+.pl--6 { padding-left: 48px }
+.pl--7 { padding-left: 56px }
+.pl--8 { padding-left: 64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="padding-y">PADDING-Y</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	py = padding-top; padding-bottom
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.py--0 { padding-top: 0; padding-bottom: 0 }
+.py--1 { padding-top: 8px; padding-bottom: 8px }
+.py--2 { padding-top: 16px; padding-bottom: 16px }
+.py--3 { padding-top: 24px; padding-bottom: 24px }
+.py--4 { padding-top: 32px; padding-bottom: 32px }
+.py--5 { padding-top: 40px; padding-bottom: 40px }
+.py--6 { padding-top: 48px; padding-bottom: 48px }
+.py--7 { padding-top: 56px; padding-bottom: 56px }
+.py--8 { padding-top: 64px; padding-bottom: 64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="padding-x">PADDING-X</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	px = padding-right; padding-left
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px</code></pre>
+			
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.px--0 { padding-right: 0; padding-left: 0 }
+.px--1 { padding-right: 8px; padding-left: 8px }
+.px--2 { padding-right: 16px; padding-left: 16px }
+.px--3 { padding-right: 24px; padding-left: 24px }
+.px--4 { padding-right: 32px; padding-left: 32px }
+.px--5 { padding-right: 40px; padding-left: 40px }
+.px--6 { padding-right: 48px; padding-left: 48px }
+.px--7 { padding-right: 56px; padding-left: 56px }
+.px--8 { padding-right: 64px; padding-left: 64px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+				<hr />
+
+				<h3 id="width">WIDTH</h3>
+				<h4>WIDTH</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	w = width
+
+# Modifiers
+	--1 = 8px
+	--2 = 16px
+	--3 = 32px
+	--4 = 64px
+	--5 = 128px
+	--6 = 256px
+	--7 = 512px
+	--8 = 1024px
+	--10p = 10%
+	--20p = 20%
+	--25p = 25%
+	--30p = 30%
+	--33p = 33.33333%
+	--40p = 40%
+	--50p = 50%
+	--60p = 60%
+	--66p = 66.66667%
+	--70p = 70%
+	--75p = 75%
+	--80p = 80%
+	--90p = 90%
+	--100p = 100%
+	--ext1 = 384px
+	--ext2 = 768px
+	--ext3 = 1152px
+	--ext4 = 1920px	
+	--a = auto</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.w--1 { width: 8px }
+.w--2 { width: 16px }
+.w--3 { width: 32px }
+.w--4 { width: 64px }
+.w--5 { width: 128px }
+.w--6 { width: 256px }
+.w--7 { width: 512px }
+.w--8 { width: 1024px }
+.w--10p { width: 10% }
+.w--20p { width: 20% }
+.w--25p { width: 25% }
+.w--30p { width: 30% }
+.w--33p { width: 33.33333% }
+.w--40p { width: 40% }
+.w--50p { width: 50% }
+.w--60p { width: 60% }
+.w--66p { width: 66.66667% }
+.w--70p { width: 70% }
+.w--75p { width: 75% }
+.w--80p { width: 80% }
+.w--90p { width: 90% }
+.w--100p { width: 100% }
+.w--ext1 { width: 384px }
+.w--ext2 { width: 768px }
+.w--ext3 { width: 1152px }
+.w--ext4 { width: 1920px }
+.w--a { width: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="min-width">MIN-WIDTH</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	miw = min-width
+
+# Modifiers
+	--1 = 8px
+	--2 = 16px
+	--3 = 32px
+	--4 = 64px
+	--5 = 128px
+	--6 = 256px
+	--7 = 512px
+	--8 = 1024px
+	--10p  = 10%
+	--20p  = 20%
+	--25p  = 25%
+	--30p  = 30%
+	--33p  = 33.33333%
+	--40p  = 40%
+	--50p  = 50%
+	--60p  = 60%
+	--66p  = 66.66667% 
+	--70p  = 70%
+	--75p  = 75%
+	--80p  = 80%
+	--90p  = 90%
+	--100p = 100%
+	--ext1 = 384px
+	--ext2 = 768px
+	--ext3 = 1152px
+	--ext4 = 1920px	
+	--a = auto</code></pre>
+			
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.miw--1 { min-width: 8px }
+.miw--2 { min-width: 16px }
+.miw--3 { min-width: 32px }
+.miw--4 { min-width: 64px }
+.miw--5 { min-width: 128px }
+.miw--6 { min-width: 256px }
+.miw--7 { min-width: 512px }
+.miw--8 { min-width: 1024px }
+.miw--10p { min-width: 10% }
+.miw--20p { min-width: 20% }
+.miw--25p { min-width: 25% }
+.miw--30p { min-width: 30% }
+.miw--33p { min-width: 33.33333% }
+.miw--40p { min-width: 40% }
+.miw--50p { min-width: 50% }
+.miw--60p { min-width: 60% }
+.miw--66p { min-width: 66.66667% }
+.miw--70p { min-width: 70% }
+.miw--75p { min-width: 75% }
+.miw--80p { min-width: 80% }
+.miw--90p { min-width: 90% }
+.miw--100p { min-width: 100% }
+.miw--ext1 { min-width: 384px }
+.miw--ext2 { min-width: 768px }
+.miw--ext3 { min-width: 1152px }
+.miw--ext4 { min-width: 1920px }
+.miw--a { min-width: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="max-width">MAX-WIDTH</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	maw = max-width
+
+# Modifiers
+	--1 = 8px
+	--2 = 16px
+	--3 = 32px
+	--4 = 64px
+	--5 = 128px
+	--6 = 256px
+	--7 = 512px
+	--8 = 1024px
+	--10p  = 10%
+	--20p  = 20%
+	--25p  = 25%
+	--30p  = 30%
+	--33p  = 33.33333%
+	--40p  = 40%
+	--50p  = 50%
+	--60p  = 60%
+	--66p  = 66.66667% 
+	--70p  = 70%
+	--75p  = 75%
+	--80p  = 80%
+	--90p  = 90%
+	--100p = 100%
+	--ext1 = 384px
+	--ext2 = 768px
+	--ext3 = 1152px
+	--ext4 = 1920px	
+	--n = none</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.maw--1 { max-width: 8px }
+.maw--2 { max-width: 16px }
+.maw--3 { max-width: 32px }
+.maw--4 { max-width: 64px }
+.maw--5 { max-width: 128px }
+.maw--6 { max-width: 256px }
+.maw--7 { max-width: 512px }
+.maw--8 { max-width: 1024px }
+.maw--10p { max-width: 10% }
+.maw--20p { max-width: 20% }
+.maw--25p { max-width: 25% }
+.maw--30p { max-width: 30% }
+.maw--33p { max-width: 33.33333% }
+.maw--40p { max-width: 40% }
+.maw--50p { max-width: 50% }
+.maw--60p { max-width: 60% }
+.maw--66p { max-width: 66.66667% }
+.maw--70p { max-width: 70% }
+.maw--75p { max-width: 75% }
+.maw--80p { max-width: 80% }
+.maw--90p { max-width: 90% }
+.maw--100p { max-width: 100% }
+.maw--ext1 { max-width: 384px }
+.maw--ext2 { max-width: 768px }
+.maw--ext3 { max-width: 1152px }
+.maw--ext4 { max-width: 1920px }
+.maw--n { max-width: none }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+				<hr />
+				<h3 id="height">HEIGHT</h3>
+				<h4>HEIGHT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	h = height
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 32px
+	--4 = 64px
+	--5 = 128px
+	--6 = 256px
+	--7 = 512px
+	--8 = 1024px
+	--25p = 25%
+	--50p = 50%
+	--75p = 75%
+	--100p = 100%
+	--25vh = a quarter of viewport height
+	--50vh = half of viewport height
+	--75vh = three-quarter of viewport height
+	--100vh = full viewport height
+	--ext1 = 24px
+	--ext2 = 48px
+	--ext3 = 96px
+	--ext4 = 320px
+	--a = auto</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.h--0 { height: 0 }
+.h--1 { height: 8px }
+.h--2 { height: 16px }
+.h--3 { height: 32px }
+.h--4 { height: 64px }
+.h--5 { height: 128px }
+.h--6 { height: 256px }
+.h--7 { height: 512px }
+.h--8 { height: 1024px }
+.h--25p { height: 25% }
+.h--50p { height: 50% }
+.h--75p { height: 75% }
+.h--100p { height: 100% }
+.h--25vh { height: 25vh }
+.h--50vh { height: 50vh }
+.h--75vh { height: 75vh }
+.h--100vh { height: 100vh }
+.h--ext1 { height: 24px }
+.h--ext2 { height: 48px }
+.h--ext3 { height: 96px }
+.h--ext4 { height: 320px }
+.h--a { height: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="min-height">MIN-HEIGHT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	mih = min-height
+
+# Modifiers
+	--0 = 0
+	--1 = 8px
+	--2 = 16px
+	--3 = 32px
+	--4 = 64px
+	--5 = 128px
+	--6 = 256px
+	--7 = 512px
+	--8 = 1024px
+	--25p = 25%
+	--50p = 50%
+	--75p = 75%
+	--100p = 100%
+	--25vh = a quarter of viewport height
+	--50vh = half of viewport height
+	--75vh = three-quarter of viewport height
+	--100vh = full viewport height
+	--ext1 = 24px
+	--ext2 = 48px
+	--ext3 = 96px
+	--ext4 = 320px
+	--a = auto</code></pre>
+				
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.mih--0 { min-height: 0 }
+.mih--1 { min-height: 8px }
+.mih--2 { min-height: 16px }
+.mih--3 { min-height: 32px }
+.mih--4 { min-height: 64px }
+.mih--5 { min-height: 128px }
+.mih--6 { min-height: 256px }
+.mih--7 { min-height: 512px }
+.mih--8 { min-height: 1024px }
+.mih--25p { min-height: 25% }
+.mih--50p { min-height: 50% }
+.mih--75p { min-height: 75% }
+.mih--100p { min-height: 100% }
+.mih--25vh { min-height: 25vh }
+.mih--50vh { min-height: 50vh }
+.mih--75vh { min-height: 75vh }
+.mih--100vh { min-height: 100vh }
+.mih--ext1 { min-height: 24px }
+.mih--ext2 { min-height: 48px }
+.mih--ext3 { min-height: 96px }
+.mih--ext4 { min-height: 320px }
+.mih--a { min-height: auto }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="max-height">MAX-HEIGHT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	mah = max-height
+
+# Modifiers
+	--1 = 8px
+	--2 = 16px
+	--3 = 32px
+	--4 = 64px
+	--5 = 128px
+	--6 = 256px
+	--7 = 512px
+	--8 = 1024px
+	--25p = 25%
+	--50p = 50%
+	--75p = 75%
+	--100p = 100%
+	--25vh = a quarter of viewport height
+	--50vh = half of viewport height
+	--75vh = three-quarter of viewport height
+	--100vh = full viewport height
+	--ext1 = 24px
+	--ext2 = 48px
+	--ext3 = 96px
+	--ext4 = 320px
+	--n = none</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.mah--1 { max-height: 8px }
+.mah--2 { max-height: 16px }
+.mah--3 { max-height: 32px }
+.mah--4 { max-height: 64px }
+.mah--5 { max-height: 128px }
+.mah--6 { max-height: 256px }
+.mah--7 { max-height: 512px }
+.mah--8 { max-height: 1024px }
+.mah--25p { max-height: 25% }
+.mah--50p { max-height: 50% }
+.mah--75p { max-height: 75% }
+.mah--100p { max-height: 100% }
+.mah--25vh { max-height: 25vh }
+.mah--50vh { max-height: 50vh }
+.mah--75vh { max-height: 75vh }
+.mah--100vh { max-height: 100vh }
+.mah--ext1 { max-height: 24px }
+.mah--ext2 { max-height: 48px }
+.mah--ext3 { max-height: 96px }
+.mah--ext4 { max-height: 320px }
+.mah--n { max-height: none }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+				<h3 id="overflow">OVERFLOW</h3>
+				<h4>OVERFLOW</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	ovf = overflow
+	ovfx = overflow-x
+	ovfy = overflow-y
+
+# Modifiers
+	--a = auto
+	--hid = hidden
+	--sl = scrolll
+	--v = visible
+
+# Note
+	You can use 'ovf--a' as a clearfix.
+	https://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.ovf--a { overflow: auto }
+.ovf--hid { overflow: hidden }
+.ovf--sl { overflow: scroll }
+.ovf--v { overflow: visible }
+
+.ovfx--a { overflow-x: auto }
+.ovfx--hid { overflow-x: hidden }
+.ovfx--sl { overflow-x: scroll }
+.ovfx--v { overflow-x: visible }
+
+.ovfy--a { overflow-y: auto }
+.ovfy--hid { overflow-y: hidden }
+.ovfy--sl { overflow-y: scroll }
+.ovfy--v { overflow-y: visible }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="resize">RESIZE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	re = resize
+
+# Modifiers
+	--bh = both
+	--n = none
+	--x = horizontal
+	--y = vertical</code></pre>
+					<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.re--bh { resize: both }
+.re--n { resize: none }
+.re--x { resize: horizontal }
+.re--y { resize: vertical }</code></pre>
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+				<h3 id="list-style">LIST-STYLE</h3>
+				<h4>LIST-STYLE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	lssty = list-style
+
+# Modifiers
+	--ins = inside
+	--n = none
+	--sq = square
+	--i = inherit</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.lssty--ins { list-style: inside }
+.lssty--n { list-style: none }
+.lssty--sq { list-style: square }
+.lssty--i { list-style: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+				<h3 id="table">TABLE</h3>
+				<h4>TABLE-LAYOUT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	tbllyt = table-layout
+
+# Modifiers
+	--a = auto
+	--fix = fixed</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.tbllyt--a { table-layout: auto }
+.tbllyt--fix { table-layout: fixed }</code></pre>
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="border-collapse">BORDER-COLLAPSE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	brdrcoll = border-collapse
+
+# Modifiers
+	--coll = collapse
+	--sep = separate
+	--i = inherit</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.brdrcoll--coll { border-collapse: collapse }
+.brdrcoll--sep { border-collapse: separate }
+.brdrcoll--i { border-collapse: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="border-spacing">BORDER-SPACING</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	brdrsp = border-spacing
+
+# Modifiers
+	--0 = 0
+	--1 = 1px
+	--2 = 2px
+	--3 = 4px
+	--4 = 8px
+	--5 = 16px
+	--6 = 32px
+	--7 = 64px
+	--8 = 128px
+	--i = inherit</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.brdrsp--0 { border-spacing: 0 }
+.brdrsp--1 { border-spacing: 1px }
+.brdrsp--2 { border-spacing: 2px }
+.brdrsp--3 { border-spacing: 4px }
+.brdrsp--4 { border-spacing: 8px }
+.brdrsp--5 { border-spacing: 16px }
+.brdrsp--6 { border-spacing: 32px }
+.brdrsp--7 { border-spacing: 64px }
+.brdrsp--8 { border-spacing: 128px }
+.brdrsp--i { border-spacing: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+				<h3 id="vertical-align">VERTICAL-ALIGN</h3>
+				<h4>VERTICAL-ALIGN</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	vertan = vertical-align
+
+# Modifiers
+	--t = top
+	--b = bottom    
+	--bln = baseline
+	--mid = middle</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.vertan--t { vertical-align: top }
+.vertan--b { vertical-align: bottom }
+.vertan--bln { vertical-align: baseline }
+.vertan--mid { vertical-align: middle }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+				<h3 id="textalignmentdecoration">TEXT-ALIGNMENT &amp; DECORATION</h3>
+				<h4 id="direction">DIRECTION</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	dir = direction
+
+# Modifiers
+	--ltr = ltr (left to right)
+	--rtl = rtl (right to left)
+	--i = inherit</code></pre>
+				
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.dir--ltr { direction: ltr }
+.dir--rtl { direction: rtl }
+.dir--i { direction: inherit }</code></pre>
+
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="text-align">TEXT-ALIGN</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	txtan = text-align
+
+# Modifiers
+	--r = right
+	--l = left
+	--ctr = center
+	--j = justify
+	--i = inherit</code></pre>
+
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.txtan--r { text-align: right }
+.txtan--l { text-align: left }
+.txtan--ctr { text-align: center }
+.txtan--j { text-align: justify }
+.txtan--i { text-align: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+				<h4 id="text-indent">TEXT-INDENT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	txtit = text-indent
+
+# Modifiers
+	--1 = 1px
+	--2 = 2px
+	--3 = 4px
+	--4 = 8px
+	--5 = 16px
+	--6 = 32px
+	--7 = 64px
+	--8 = 128px</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.txtit--1 { text-indent: 1px }
+.txtit--2 { text-indent: 2px }
+.txtit--3 { text-indent: 4px }
+.txtit--4 { text-indent: 8px }
+.txtit--5 { text-indent: 16px }
+.txtit--6 { text-indent: 32px }
+.txtit--7 { text-indent: 64px }
+.txtit--8 { text-indent: 128px }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+
+				<h4 id="text-transform">TEXT-TRANSFORM</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	txttr = text-transform
+
+# Modifiers
+	--cap = capitalize
+	--lc = lowercase
+	--n = none
+	--uc = uppercase
+	--i = inherit</code></pre>
+
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.txttr--cap { text-transform: capitalize }
+.txttr--lc { text-transform: lowercase }
+.txttr--n { text-transform: none }
+.txttr--uc { text-transform: uppercase }
+.txttr--i { text-transform: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+
+				<h4 id="text-decoration">TEXT-DECORATION</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	txtdecor = text-decoration
+	txtdecorhvr = text-decoration:hover
+
+# Modifiers
+	--n = none
+	--u = underline</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.txtdecor--n { text-decoration: none }
+.txtdecor--u { text-decoration: underline }
+
+.txtdecorhvr--n:hover { text-decoration: none }
+.txtdecorhvr--u:hover { text-decoration: underline }</code></pre>
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+				<h3>TEXT-SPACING &amp; COLOR</h3>
+				<h4 id="line-height">LINE-HEIGHT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	lnh = line-height
+
+# Modifiers
+	--1 = 1
+	--2 = 1.25
+	--3 = 1.5
+	--4	= 1.75
+	--5 = 2
+	--6 = 2.25
+	--7 = 2.5
+	--8	= 2.75
+	--i = inherit
+	--nl = normal</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.lnh--1 { line-height: 1 }
+.lnh--2 { line-height: 1.25 }
+.lnh--3 { line-height: 1.5 }
+.lnh--4 { line-height: 1.75 }
+.lnh--5 { line-height: 2 }
+.lnh--6 { line-height: 2.25 }
+.lnh--7 { line-height: 2.5 }
+.lnh--8 { line-height: 2.75 }
+.lnh--i { line-height: inherit }
+.lnh--nl { line-height: normal }</code></pre>
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="word-spacing">WORD-SPACING</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	wdsp = word-spacing
+
+# Modifiers
+	--1 = 1px
+	--2 = 2px
+	--3 = 4px
+	--4 = 8px
+	--5 = 16px
+	--6 = 32px
+	--7 = 64px
+	--8 = 128px
+	--i = inherit
+	--nl = normal</code></pre>
+				
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.wdsp--1 { word-spacing: 1px }
+.wdsp--2 { word-spacing: 2px }
+.wdsp--3 { word-spacing: 4px }
+.wdsp--4 { word-spacing: 8px }
+.wdsp--5 { word-spacing: 16px }
+.wdsp--6 { word-spacing: 32px }
+.wdsp--7 { word-spacing: 64px }
+.wdsp--8 { word-spacing: 128px }
+.wdsp--i { word-spacing: inherit }
+.wdsp--nl { word-spacing: normal }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="letter-spacing">LETTER-SPACING</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	ltrsp = letter-spacing
+
+# Modifiers
+	--1 = .25px
+	--2 = .5px
+	--3 = .75px
+	--4	= 1px
+	--5 = 1.25px
+	--6 = 1.5px
+	--7 = 1.75px
+	--8	= 2px
+	--n1 = -.25px
+	--n2 = -.5px
+	--n3 = -.75px
+	--n4 = -1px
+	--n5 = -1.25px
+	--n6 = -1.5px
+	--n7 = -1.75px
+	--n8 = -2px
+	--i = inherit
+	--nl = normal</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.ltrsp--1 { letter-spacing: .25px }
+.ltrsp--2 { letter-spacing: .5px }
+.ltrsp--3 { letter-spacing: .75px }
+.ltrsp--4 { letter-spacing: 1px }
+.ltrsp--5 { letter-spacing: 1.25px }
+.ltrsp--6 { letter-spacing: 1.5px }
+.ltrsp--7 { letter-spacing: 1.75px }
+.ltrsp--8 { letter-spacing: 2px }
+.ltrsp--n1 { letter-spacing: -.25px }
+.ltrsp--n2 { letter-spacing: -.5px }
+.ltrsp--n3 { letter-spacing: -.75px }
+.ltrsp--n4 { letter-spacing: -1px }
+.ltrsp--n5 { letter-spacing: -1.25px }
+.ltrsp--n6 { letter-spacing: -1.5px }
+.ltrsp--n7 { letter-spacing: -1.75px }
+.ltrsp--n8 { letter-spacing: -2px }
+.ltrsp--i { letter-spacing: inherit }
+.ltrsp--nl { letter-spacing: normal }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="white-space">WHITE-SPACE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	wtsp = white-space
+
+# Modifiers
+	--nl = normal
+	--n = nowrap
+	--pre = pre
+	--i = inherit</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.wtsp--nl { white-space: normal }
+.wtsp--n { white-space: nowrap }
+.wtsp--pre { white-space: pre }
+.wtsp--i { white-space: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="word-wrap">WORD-WRAP</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	wdwp = word-wrap
+
+# Modifiers
+	--brkwd = break-wordd
+	--i = inherit
+	--nl = normal</code></pre>
+				
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.wdwp--brkwd { word-wrap: break-word }
+.wdwp--i { word-wrap: inherit }
+.wdwp--nl { word-wrap: normal }</code></pre>
+				
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="color">COLOR</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	c = color
+	chvr = color:hover
+
+# Modifiers
+	--gy1 = #fafafa (grey)
+	--gy2 = #ededed (grey)
+	--gy3 = #dddddd (grey)
+	--gy4 = #b1b1b1 (grey)
+	--gy5 = #878787 (grey)
+	--gy6 = #6a6a6a (grey)
+	--gy7 = #4d4d4d (grey)
+	--gy8 = #303030 (grey)
+	--rd1 = #c6262e (red)
+	--gn1 = #68b723 (green)
+	--bl1 = #3689e6 (blue)
+	--yl1 = #f9c440 (yellow)
+	--bk1 = #000000 (black)
+	--wt1 = #ffffff (white)
+	--tp = transparent
+	--i = inherit</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.c--gy1 { color: #fafafa }
+.c--gy2 { color: #ededed }
+.c--gy3 { color: #dddddd }
+.c--gy4 { color: #b1b1b1 }
+.c--gy5 { color: #878787 }
+.c--gy6 { color: #6a6a6a }
+.c--gy7 { color: #4d4d4d }
+.c--gy8 { color: #303030 }
+.c--rd1 { color: #c6262e }
+.c--gn1 { color: #68b723 }
+.c--bl1 { color: #3689e6 }
+.c--yl1 { color: #f9c440 }
+.c--bk1 { color: #000000 }
+.c--wt1 { color: #ffffff }
+.c--tp { color: transparent }
+.c--i { color: inherit }
+
+.chvr--gy1:hover { color: #fafafa }
+.chvr--gy2:hover { color: #ededed }
+.chvr--gy3:hover { color: #dddddd }
+.chvr--gy4:hover { color: #b1b1b1 }
+.chvr--gy5:hover { color: #878787 }
+.chvr--gy6:hover { color: #6a6a6a }
+.chvr--gy7:hover { color: #4d4d4d }
+.chvr--gy8:hover { color: #303030 }
+.chvr--rd1:hover { color: #c6262e }
+.chvr--gn1:hover { color: #68b723 }
+.chvr--bl1:hover { color: #3689e6 }
+.chvr--yl1:hover { color: #f9c440 }
+.chvr--bk1:hover { color: #000000 }
+.chvr--wt1:hover { color: #ffffff }
+.chvr--tp:hover { color: transparent }
+.chvr--i:hover { color: inherit }
+</code></pre>
+
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<hr />
+				<h3 id="font">FONT</h3>
+				<h4 id="font-family">FONT-FAMILY</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	ftfam = font-family
+
+# Modifiers
+	--sssrf =  sans-serif
+	--mosp =  monospace
+	--i = inherit
+
+# Note
+	Are you sure about changing the typeface using media queries?</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+
+				<pre><code class="language-css">.ftfam--sssrf { font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif }
+.ftfam--mosp { font-family: "SFMono-Regular",Menlo,Consolas,"Lucida Console","Liberation Mono","Courier New",monospace }
+.ftfam--i { font-family: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+				<h4 id="font-size">FONT-SIZE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	fts = font-size
+
+# Modifiers
+	--1 = 8px
+	--2 = 16px
+	--3 = 24px
+	--4 = 32px
+	--5 = 40px
+	--6 = 48px
+	--7 = 56px
+	--8 = 64px
+	--ext1 = 12px
+	--ext2 = 14px
+	--ext3 = 18px
+	--ext4 = 20px
+	--i = inherit</code></pre>
+
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="css language-css">fts--1 { font-size: 8px }
+fts--2 { font-size: 16px }
+fts--3 { font-size: 24px }
+fts--4 { font-size: 32px }
+fts--5 { font-size: 40px }
+fts--6 { font-size: 48px }
+fts--7 { font-size: 56px }
+fts--8 { font-size: 64px }
+fts--ext1 { font-size: 12px }
+fts--ext2 { font-size: 14px }
+fts--ext3 { font-size: 18px }
+fts--ext4 { font-size: 20px }
+fts--i { font-size: inherit }</code></pre>
+				<p><em><a href="#reference">top↑</a></em></p>
+				<h4 id="font-weight">FONT-WEIGHT</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	ftwgt = font-weight
+
+# Modifiers
+	--1 =  100
+	--2 =  200
+	--3 =  300
+	--4 =  400 (normal)
+	--5 =  500
+	--6 =  600
+	--7 =  700 (bold)
+	--8 =  800
+	--i = inherit</code></pre>
+				<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="language-css">.ftwgt--1 { font-weight: 100 }
+.ftwgt--2 { font-weight: 200 }
+.ftwgt--3 { font-weight: 300 }
+.ftwgt--4 { font-weight: 400 }
+.ftwgt--5 { font-weight: 500 }
+.ftwgt--6 { font-weight: 600 }
+.ftwgt--7 { font-weight: 700 } 
+.ftwgt--8 { font-weight: 800 }
+.ftwgt--i { font-weight: inherit }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				<h4 id="font-style">FONT-STYLE</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	ftsty = font-style
+
+# Modifiers
+	--ic = italic
+	--nl = normal
+	--i = inherit</code></pre>
+					<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="css language-css">.ftsty--ic { font-style: italic }
+.ftsty--nl { font-style: normal }
+.ftsty--i { font-style: inherit }</code></pre>
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				
+				<hr class="my--8">
+
+<h3 id="pointer-events">POINTER EVENTS</h3>
+<h4 id="pointer-events">POINTER EVENTS</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	ptres = pointer-events
+
+# Modifiers
+	--a = auto
+	--n = none</code></pre>
+					<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="css language-css">.ptres--a { pointer-events: auto }
+.ptres--n { pointer-events: none }</code></pre>
+				<p><em><a href="#reference">top↑</a></em>  </p>
+				
+				
+				<hr class="my--8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<h2 id="rules" class="fts--3 txttr--uc c--gy7 ftwgt--4">THE NAMING CONVENTION</h2>
+
+
+				<p class="maw--ext2">The CSS selector syntax is made of two or three parts: <code class="language-markup">base--modifier-media</code>. The last part - <code class="language-markup">media</code> - is optional, since it controls the media query extension. The naming convention used by Brevis for its base and modifier is short, simple and logical. It follows just two rules.</p>
+				
+				<ol class="maw--ext2">
+					<li>
+						<p>If the CSS property name is made of one word, Brevis uses its first letter. Like <code class="language-markup">display</code> becomes <code class="language-markup">d</code>. If the first letter is taken, Brevis uses the first and last letter of the word. Like <code class="language-markup">flex</code> becomes <code class="language-markup">fx</code>. If the first and last letters are taken, Brevis uses one or more letters from the middle of the word. Like <code class="language-markup">break</code> becomes <code class="language-markup">brk</code>.</p>
+					</li>
+					<li>
+						<p>If the CSS property name is made of two or more words, Brevis uses the existing abbreviation from each word and join them. Like <code class="language-markup">margin-top</code> becomes <code class="language-markup">mt</code>. If there's no abbreviation or its missing for a word, Brevis applies rules #1 and join them. Like <code class="language-markup">flex-basis</code> becomes <code class="language-markup">fxbs</code>.</p>
+					</li>
+				</ol>
+				
+				<p class="maw--ext2">Exceptions exist when there's a <strong>well known/better</strong> abbreviation. For example:</p>
+						<pre  class="bgc--gy1"><code class="language-markup">absolute = abs
+background = bg
+border = brdr
+center = ctr</code></pre>
+
+						
+				<h3 class="fts--2 txttr--uc c--gy7 ftwgt--6 mb--1">MODIFIERS</h3>
+
+				<p class="maw--ext2">A modifier is the value of a property identified by double hyphens <code class="language-markup">--</code> followed by the abbreviation.</p>
+					
+				<pre><code class="language-css">.txtdecor--n = { text-decoration: none }
+.fxgw--1 = { flex-grow: 1 }</code></pre>
+				
+				<p class="maw--ext2">The above properties have two values. They are <code class="language-markup">none</code> and <code class="language-markup">1</code>; respectively <code class="language-markup">--n</code> and <code class="language-markup">--1</code>.</p>
+				
+				<p>The modifiers follow the same naming convention stated for the base, with two additions.</p>
+
+				<ol class="maw--ext2">
+					<li>
+						<p>A modifier can have the same abbreviation as the base, <strong>as long as</strong> the meaning of the abbreviation is the same or very similar. For example <code class="language-css">--t</code>, <code class="language-css">--fx</code> and <code class="language-css">--v</code> are respectively <code class="language-css">top</code>, <code class="language-css">flex</code> and <code class="language-css">visibility|visible</code> for both base and modifier.</p>
+					</li>
+					<li>
+						<p>A modifier can group values within the similar context or meaning. For example, the modifier <code class="language-css">--n</code> represents <code class="language-css">no</code>, <code class="language-css">none</code>, <code class="language-css">nowrap</code> or <code class="language-css">no-repeat</code> as value.</p>
+					</li>
+				</ol>
+
+				<h4 class="fts--2 txttr--uc c--gy7 ftwgt--6 mb--1">The Extra Modifier</h4>
+
+				<p class="maw--ext2 mt--0">There is a special modifier called <code class="language-css">ext</code>. The modifier is available for <code class="language-css">flex-basis</code>, <code class="language-css">width</code>, <code class="language-css">min-width</code>, <code class="language-css">max-width</code> and <code class="language-css">font-size</code> classes. It works as a complement to the <a href="#scale">scale pattern</a>, presenting some useful <i>missing</i> values. Although, the modifier doesn't follow any particular pattern, we kept the 8-point scale in mind. For example, below are the values for the <code class="language-css">width</code> property:</p>
+
+				<pre><code class="language-css">.w--ext1 { width: 384px }
+.w--ext2 { width: 768px }
+.w--ext3 { width: 1152px }
+.w--ext4 { width: 1920px }</code></pre>
+
+				<p class="maw--ext2">To keep consistency, all the properties using the <code class="language-css">ext</code> modifier have four values defined by default.</p>
+
+				<p class="maw--ext2">Another use for the <code class="language-css">ext</code> modifier are the custom values. Whatever property you want to extend adding custom values, the <code class="language-css">ext</code> is the way to go (with an exception for the <a href="#palette">colour palette</a>). For example:</p>
+
+				<pre><code class="language-css">.m--ext1 { margin: 128px }
+.m--ext2 { margin: 256px }
+.lssty--ext1 { list-style: circle }
+.lssty--ext2 { list-style: decimal }
+.lssty--ext3 { list-style: square inside }</code></pre>
+
+
+				<h3 id="mediaquery" class="fts--2 txttr--uc c--gy7 ftwgt--6 mb--1">MEDIA QUERIES</h3>
+				
+				<p class="maw--ext2">For you to tweak Brevis responsiveness, use the media queries extension. The media extension is identified by a single hyphen <code class="language-markup">-</code>, followed by <code class="language-markup">s</code>, <code class="language-markup">m</code> or <code class="language-markup">l</code>. Respectively targeting small, medium or large devices. <b>The extensions are available for all classes</b>. And that's called <b>selector-first</b> design, where each class selector is responsive. This approach allows you to have a very granular responsive control. The breakpoints are:</p>
+				
+				<pre><code class="language-css">-l = @media (max-width: 1280px)
+-m = @media (max-width: 840px)
+-s = @media (max-width: 400px)</code></pre>
+				
+				<p>For exmaple <code class="language-css">.maw--6-l</code>, <code class="language-css">.w--50p-m</code> and <code class="language-css">.brdrrad--0-s</code> are translated into:</p>
+				
+				<pre><code class="language-css">@media (max-width: 1280px) {
+	.maw--6-l { max-width: 256px }
+}
+
+@media (max-width: 840px) {
+	.w--50p-m { width: 50% }
+}
+
+@media (max-width: 400px) {
+	.brdrrad--0-s { border-radius: 0 }
+}</code></pre>
+				
+			<p class="maw--ext2">The media queries don't follow the naming convention above, because there are only three extensions <code class="language-css">-s</code>, <code class="language-css">-m</code> and <code class="language-css">-l</code>, which are universally recognised as a representation of the breakpoints. So, we stick with them.</p>
+
+			<p class="maw--ext2">If you want to learn more about it, take a look at <a href="https://github.com/dlzi/brevis/blob/master/brevis.css">brevis.css</a> source file and see how the naming convention comes to live.</p>
+
+			<p><em><a href="#start">top↑</a></em>  </p>
+					
+			<hr class="my--8">
+
+
+			<h2 id="scale" class="fts--3 txttr--uc c--gy7 ftwgt--4">SCALE PATTERN</h2>
+			<p>Brevis uses three numerical scales for its properties' values. They are all 8-point scale.</p>
+				
+			<p class="mb--1 maw--ext2">The <b>linear scale</b> is used by top, right, bottom, left, margin, margin-top, margin-right, margin-bottom, margin-left, padding, padding-top, padding-right, padding-bottom, padding-left, height, min-height, max-height and font-size.</p>
+			<code class="language-markup">8</code>,<code class="language-markup">16</code>,<code class="language-markup">24</code>,<code class="language-markup">32</code>,<code class="language-markup">40</code>,<code class="language-markup">48</code>,<code class="language-markup">56</code>,<code class="language-markup">64</code>
+
+			<p class="mb--1">The <b>lower geometric scale</b> is used by z-index, border-width and border-radius.</p>
+			<code class="language-markup">1</code>,<code class="language-markup">2</code>,<code class="language-markup">4</code>,<code class="language-markup">8</code>,<code class="language-markup">16</code>,<code class="language-markup">32</code>,<code class="language-markup">64</code>,<code class="language-markup">128</code>
+			
+			<p class="mb--1">The <b>upper geometric scale</b> is used by flex-basis, width, min-width and max-width.</p>
+			<code class="language-markup">8</code>,<code class="language-markup">16</code>,<code class="language-markup">32</code>,<code class="language-markup">64</code>,<code class="language-markup">128</code>,<code class="language-markup">256</code>,<code class="language-markup">512</code>,<code class="language-markup">1024</code>
+
+			<p  class="maw--ext2">Note that the scales can have negative values when the numerical modifier is preceded by <code class="language-css">--n</code>. Example: <code class="language-css">--n2</code> is equal to <code class="language-css">-16px</code>. The <code class="language-css">0</code> is not part of any scale, but it's presented when appropriate.</p>
+
+						<p><em><a href="#start">top↑</a></em>  </p>
+
+
+			<hr class="my--8">
+
+			<h2 id="palette" class="fts--3 txttr--uc c--gy7 ftwgt--4">COLOUR PALETTE</h2>
+
+
+			<p class="maw--ext2">Colour is a very opinionated subject, and because of that, Brevis has a minimal palette. The current palettes are grey and contextual.</p>
+
+			<table class="py--2">
+				<thead>
+					<tr>
+						<th align="left">Grey Scale</th>
+						<th align="left">Contextual Colours</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td align="left"><img alt="#fafafa" src="https://placehold.it/15/fafafa/000000?text=+"> gy1 = <code>#fafafa</code></td>
+						<td><img alt="#c6262e" src="https://placehold.it/15/c6262e/000000?text=+"> rd1 = <code>#c6262e</code></td>
+					</tr>
+					<tr>
+						<td align="left"><img alt="#ededed" src="https://placehold.it/15/ededed/000000?text=+"> gy2 = <code>#ededed</code></td>
+						<td><img alt="#3689e6" src="https://placehold.it/15/3689e6/000000?text=+"> bl1 = <code>#3689e6</code></td>
+					</tr>
+					<tr>
+						<td align="left"><img alt="#dddddd" src="https://placehold.it/15/dddddd/000000?text=+"> gy3 = <code>#dddddd</code></td>
+						<td><img alt="#68b723" src="https://placehold.it/15/68b723/000000?text=+"> gn1 = <code>#68b723</code></td>
+					</tr>
+					<tr>
+						<td align="left"><img alt="#b1b1b1" src="https://placehold.it/15/b1b1b1/000000?text=+"> gy4 = <code>#b1b1b1</code></td>
+						<td><img alt="#f9c440" src="https://placehold.it/15/f9c440/000000?text=+"> yl1 = <code>#f9c440</code></td>
+					</tr>
+					<tr>
+						<td align="left"><img alt="#878787" src="https://placehold.it/15/878787/000000?text=+"> gy5 = <code>#878787</code></td>
+						<td><img alt="#000000" src="https://placehold.it/15/000000/000000?text=+"> bk1 = <code>#000000</code></td>
+					</tr>
+					<tr>
+						<td align="left"><img alt="#6a6a6a" src="https://placehold.it/15/6a6a6a/000000?text=+"> gy6 = <code>#6a6a6a</code></td>
+						<td><img alt="#ffffff" src="https://placehold.it/15/ffffff/000000?text=+"> wt1 = <code>#ffffff</code></td>
+					</tr>
+					<tr>
+						<td align="left"><img alt="#4d4d4d" src="https://placehold.it/15/4d4d4d/000000?text=+"> gy7 = <code>#4d4d4d</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td align="left"><img alt="#303030" src="https://placehold.it/15/303030/000000?text=+"> gy8 = <code>#303030</code></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+				
+			<p class="maw--ext2 mb--4">The colours follow the naming convetion. Note that their scale name is set to 1. So, any additional colour can use the naming convention. Example, if you want to extend the red colour, you start creating  <code class="language-css">rd2</code>, <code class="language-css">rd3</code> and so on.</p>
+		
+
+						<p><em><a href="#start">top↑</a></em>  </p>
+
+
+		</section>
+		
+		<footer class="bgc--bk1 py--3 c--gy5 txttr--uc fts--ext1">
+			<div class="maw--ext3 mx--a px--2">
+				<div class="d--fx fxwp--wp">
+					<div class="w--50p w--80p-m mx--a-m">
+						<ul class="mb--2 mt--0 p--0 txtan--ctr-m">
+							<li class="d--inblk mr--1"><a class="c--i chvr--wt1 txtdecor--n" target="_blank" rel="noopener" href="https://github.com/dlzi/brevis"><img class="h--ext1" src="img/github.svg"></a></li>
+							<li class="d--inblk mr--1"><a class="c--i chvr--wt1 txtdecor--n" target="_blank" rel="noopener" href="https://twitter.com/getbrevis"><img class="h--ext1" src="img/twitter.svg"></a></li>
+							<li class="d--inblk mr--1"><img class="h--ext1" src="img/analytics.svg"></li>
+							<li class="d--inblk"><img class="h--ext1" src="img/facebook.svg"></li>
+						</ul>
+						<p class="m--0 mb--2-m txtan--ctr-m">This website doesn't use Google Anayltics and Facebook, because respect for your privacy is the way we function.</p>
+					</div>
+
+					<div class="w--50p w--80p-m mx--a-m txtan--r txtan--ctr-m">
+						<p class="mt--0">&copy; 2019 Daniel Zilli - Code Licensed <a class="c--gy2" href="https://github.com/dlzi/brevis/blob/master/LICENSE" target="_blank" rel="license noopener">MIT</a>, Docs <a class="c--gy2" href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</p></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/prism.js"></script>
+	</body>
+</html>
