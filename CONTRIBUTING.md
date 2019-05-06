@@ -4,7 +4,7 @@ We'd love to accept your patches and contributions to this project. There are ju
 
 * First off, please be nice and follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-* If you’re new to Brevis, be sure to read our [wiki pages](https://github.com/dlzi/brevis/wiki) to get a real understanding what is Brevis and its design principles.
+* If you’re new to Brevis, be sure to read our [documentation](https://getbrevis.com) to get a real understanding what is Brevis and its design principles.
 
 ## Issue Tracker
 
@@ -13,6 +13,10 @@ The issue tracker is the **only** channel for bug reports and features requests]
 * **Do not** use the issue tracker for personal support requests.
 
 * **Do not** derail or troll issues. Remember to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+* Please close your own issue once it is resolved.
+
+* Please do search for duplicate or closed issues, before you open a new issue. Duplicate issues will be closed.
 
 ## Bug reports
 
@@ -52,6 +56,24 @@ Brevis conforms to a strict set of design principles. Before proposing changes, 
 
 If you’d like to propose a change, please look through and reference any existing issues that are related.
 Then, open an issue with the *Enhancement* label, links to related issues, and code demonstrating the proposal.
+
+All code MUST meet the below style guide to keep consistency. Pull requests that fail to follow it will be rejected.
+
+## Style Guide
+
+### Formatting
+
+- Files MUST use UTF-8 character set encoding without BOM.
+- Files MUST use UNIX line endings (LF: `\n`).
+- Files MUST end with a single empty line (i.e. LF: `\n`).
+- Indentation SHOULD use only tabs.
+- Alignment when applicable, SHOULD use only spaces.
+- If using tabs for anything, you MUST set the tab spacing to 4.
+
+### Naming
+
+- Class selectors MUST follow the naming convention. However, there's no guarantee that the name will be accepted. We reserve the right to change it as necessary.
+
 
 ## License
 
