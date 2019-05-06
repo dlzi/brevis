@@ -8,7 +8,7 @@ We'd love to accept your patches and contributions to this project. There are ju
 
 ## Issue Tracker
 
-The issue tracker is the **only** channel for bug reports and features requests], so please respect the following restrictions:
+The issue tracker is the **only** channel for bug reports and features requests, so please respect the following:
 
 * **Do not** use the issue tracker for personal support requests.
 
@@ -57,22 +57,28 @@ Brevis conforms to a strict set of design principles. Before proposing changes, 
 If you’d like to propose a change, please look through and reference any existing issues that are related.
 Then, open an issue with the *Enhancement* label, links to related issues, and code demonstrating the proposal.
 
-All code MUST meet the below style guide to keep consistency. Pull requests that fail to follow it will be rejected.
+All code **must**
+ meet the below style guide to keep consistency. Pull requests that fail to follow it will be rejected.
 
 ## Style Guide
 
 ### Formatting
 
-- Files MUST use UTF-8 character set encoding without BOM.
-- Files MUST use UNIX line endings (LF: `\n`).
-- Files MUST end with a single empty line (i.e. LF: `\n`).
-- Indentation SHOULD use only tabs.
-- Alignment when applicable, SHOULD use only spaces.
-- If using tabs for anything, you MUST set the tab spacing to 4.
+- Files **must**
+ use UTF-8 character set encoding without BOM.
+- Files **must**
+ use UNIX line endings (LF: `\n`).
+- Files **must**
+ end with a single empty line (i.e. LF: `\n`).
+- Indentation **must** use only tabs.
+- Alignment when applicable, **should** use only spaces.
+- If using tabs for anything, you **must**
+ set the tab spacing to 4.
 
 ### Naming
 
-- Class selectors MUST follow the naming convention. However, there's no guarantee that the name will be accepted. We reserve the right to change it as necessary.
+- Class selectors **must**
+ follow the naming convention. However, there's no guarantee that the name will be accepted. We reserve the right to change it as necessary.
 
 
 ## License
