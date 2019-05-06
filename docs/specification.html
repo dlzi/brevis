@@ -31,7 +31,7 @@
 
 			<h1 class="fts--4 lnh--4 txttr--uc c--gy7 ftwgt--4 mb--2">Specification</h1>
 
-			<h2 class="mb--6 maw--50p c--gy6 mt--0 fts--4 lnh--4 ftwgt--3">The primary documentation for Brevis is this specification file, that can be read online here. It's also included in the package downloads. This page lists all the classes and their modifiers used in Brevis. There are also information about the naming convention, scale pattern and colours.</h2>
+			<h2 class="mb--6 maw--60p c--gy6 mt--0 fts--4 lnh--4 ftwgt--3">The primary documentation for Brevis is this specification file, that can be read online here. It's also included in the package downloads. This page lists all the classes and their modifiers used in Brevis. There are also information about the naming convention, scale pattern and colour palette.</h2>
 
 
 			<div id="start" class="mb--6">
@@ -137,9 +137,9 @@
 						<tr>
 							<td>Border</td>
 							<td>
-								<a href="#border-radius">border-radius</a>,
-								<a href="#border-style">border-style</a>,
 								<a href="#border-width">border-width</a>,
+								<a href="#border-style">border-style</a>,
+								<a href="#border-radius">border-radius</a>,
 								<a href="#border-color">border-color</a>
 							</td>
 						</tr>
@@ -237,7 +237,7 @@
 								<a href="#white-space">white-space</a>,
 								<a href="#word-wrap">word-wrap</a>,
 								<a href="#color">color</a>,
-								<a href="#color-hover">color:hover</a>
+								<a href="#color">color:hover</a>
 							</td>
 						</tr>
 						<tr>
@@ -1418,7 +1418,7 @@
 				<hr />
 
 				<!-- BORDER -->
-				<h3 id="border">BORDER</h3>
+				<h3 id="border-width">BORDER</h3>
 				<h4>BORDER-WIDTH</h4>
 				<h5 class="mb--0">SYNTAX</h5>
 				<pre><code class="language-markup"># Base
@@ -1846,7 +1846,7 @@
 
 				<hr />
 
-				<h3 id="box-sshadow">BOX-SHADOW</h3>
+				<h3 id="box-shadow">BOX-SHADOW</h3>
 
 				<h4>BOX-SHADOW</h4>
 
@@ -2625,7 +2625,7 @@
 
 				<p><em><a href="#reference">top↑</a></em>  </p>
 				<hr />
-				<h3 id="table">TABLE</h3>
+				<h3 id="table-layout">TABLE</h3>
 				<h4>TABLE-LAYOUT</h4>
 				<h5 class="mb--0">SYNTAX</h5>
 				<pre><code class="language-markup"># Base
@@ -2826,8 +2826,8 @@
 	--6 = 46.5px | related to .fts--6 { font-size: 31px }
 	--7 = 58.5px | related to .fts--7 { font-size: 39px }
 	--8	= 73.5px | related to .fts--8 { font-size: 49px }
-	--i = inherit
-	--nl = normal</code></pre>
+	--nl = normal
+	--i = inherit</code></pre>
 				<h5 class="mb--0">CLASSES</h5>
 				<pre><code class="language-css">.lnh--1 { line-height: 15px }
 .lnh--2 { line-height: 19.5px }
@@ -2837,8 +2837,8 @@
 .lnh--6 { line-height: 46.5px }
 .lnh--7 { line-height: 58.5px }
 .lnh--8 { line-height: 73.5px }
-.lnh--i { line-height: inherit }
-.lnh--nl { line-height: normal }</code></pre>
+.lnh--nl { line-height: normal }
+.lnh--i { line-height: inherit }</code></pre>
 				<p><em><a href="#reference">top↑</a></em>  </p>
 				<h4 id="word-spacing">WORD-SPACING</h4>
 				<h5 class="mb--0">SYNTAX</h5>
@@ -3124,59 +3124,47 @@ fts--i { font-size: inherit }</code></pre>
 				<hr class="my--8">
 
 
-
-
-
-
-
-
-
-
-
-
-
 				<h2 id="rules" class="fts--4 lnh--4 txttr--uc c--gy7 ftwgt--4">THE NAMING CONVENTION</h2>
 
 
-				<p class="maw--50p">The CSS selector syntax is made of two or three parts: <code class="language-markup">base--modifier-media</code>. The last part - <code class="language-markup">media</code> - is optional, since it controls the media query extension. The naming convention used by Brevis for its base and modifier is short, simple and logical. It follows just two rules.</p>
+				<p class="maw--60p">The CSS selector syntax is made of two or three parts: <code class="language-markup">base--modifier-media</code>. The last part - <code class="language-markup">media</code> - is optional, since it controls the media query extension. The naming convention used by Brevis for its base and modifier is short, simple and logical. It follows just two rules.</p>
 				
-				<ol class="maw--50p">
+				<ol class="maw--60p">
 					<li>
 						<p>If the CSS property name is made of one word, Brevis uses its first letter. Like <code class="language-markup">display</code> becomes <code class="language-markup">d</code>. If the first letter is taken, Brevis uses the first and last letter of the word. Like <code class="language-markup">flex</code> becomes <code class="language-markup">fx</code>. If the first and last letters are taken, Brevis uses one or more letters from the middle of the word. Like <code class="language-markup">break</code> becomes <code class="language-markup">brk</code>.</p>
 					</li>
 					<li>
-						<p>If the CSS property name is made of two or more words, Brevis uses the existing abbreviation from each word and join them. Like <code class="language-markup">margin-top</code> becomes <code class="language-markup">mt</code>. If there's no abbreviation or its missing for a word, Brevis applies rules #1 and join them. Like <code class="language-markup">flex-basis</code> becomes <code class="language-markup">fxbs</code>.</p>
+						<p>If the CSS property name is made of two or more words, Brevis uses the existing abbreviation from each word and join them. Like <code class="language-markup">margin-top</code> becomes <code class="language-markup">mt</code>. If there's no abbreviation or it's missing for a word, Brevis applies rules #1 and join them. Like <code class="language-markup">flex-basis</code> becomes <code class="language-markup">fxbs</code>.</p>
 					</li>
 				</ol>
 				
-				<p class="maw--50p">Exceptions exist when there's a <strong>well known/better</strong> abbreviation. For example:</p>
+				<p class="maw--60p">Exceptions exist when there's a <strong>well known/better</strong> abbreviation. For example:</p>
 						<pre  class="bgc--gy1"><code class="language-markup">absolute = abs
 background = bg
 border = brdr
 center = ctr</code></pre>
 
 						
-				<h3 class="fts--2 txttr--uc c--gy7 ftwgt--6 mb--1">MODIFIERS</h3>
+				<h3 class="txttr--uc c--gy7 ftwgt--6 mb--1">MODIFIERS</h3>
 
-				<p class="maw--50p">A modifier is the value of a property identified by double hyphens <code class="language-markup">--</code> followed by the abbreviation.</p>
+				<p class="maw--60p">A modifier is the value of a property, and it's identified by double hyphens <code class="language-markup">--</code> followed by the abbreviation. For example:</p>
 					
-				<pre><code class="language-css">.txtdecor--n = { text-decoration: none }
-.fxgw--1 = { flex-grow: 1 }</code></pre>
+				<pre><code class="language-css">.txtdecor--n = { text-decoration: none }</code></pre>
 				
-				<p class="maw--50p">The above properties have two values. They are <code class="language-markup">none</code> and <code class="language-markup">1</code>; respectively <code class="language-markup">--n</code> and <code class="language-markup">--1</code>.</p>
+				<p class="maw--60p">The above property has the modifier <code class="language-markup">--n</code> with a respectively value of <code class="language-css">none</code>.</p>
 				
 				<p>The modifiers follow the same naming convention stated for the base, with two additions.</p>
 
-				<ol class="maw--50p">
+				<ol class="maw--60p">
 					<li>
 						<p>A modifier can have the same abbreviation as the base, <strong>as long as</strong> the meaning of the abbreviation is the same or very similar. For example <code class="language-css">--t</code>, <code class="language-css">--fx</code> and <code class="language-css">--v</code> are respectively <code class="language-css">top</code>, <code class="language-css">flex</code> and <code class="language-css">visibility|visible</code> for both base and modifier.</p>
 					</li>
 					<li>
-						<p>A modifier can group values within the similar context or meaning. For example, the modifier <code class="language-css">--n</code> represents <code class="language-css">no</code>, <code class="language-css">none</code>, <code class="language-css">nowrap</code> or <code class="language-css">no-repeat</code> as value.</p>
+						<p>A modifier can group values within similar context or meaning. For example, the modifier <code class="language-css">--n</code> represents <code class="language-css">no</code>, <code class="language-css">none</code>, <code class="language-css">nowrap</code> or <code class="language-css">no-repeat</code> as value.</p>
 					</li>
 				</ol>
 
-				<p class="maw--50p">Most properties with numerical values have modifiers scaling from 1 to 8. For example:</p>
+				<p class="maw--60p">Most properties with numerical values have modifiers scaling from 1 to 8. For example:</p>
 
 				<pre><code class="language-css">.h--0 { height: 0 }
 .h--1 { height: 1px }
@@ -3188,11 +3176,11 @@ center = ctr</code></pre>
 .h--7 { height: 256px }
 .h--8 { height: 512px }</code></pre>
 
-				<p class="maw--50p">The <code class="language-css">0</code> is not part of any scale, but it's presented when appropriate.</p>
+				<p class="maw--60p">The <code class="language-css">0</code> is not part of any scale, but it's presented when appropriate.</p>
 
-				<h3 id="mediaquery" class="fts--2 txttr--uc c--gy7 ftwgt--6 mb--1">MEDIA QUERIES</h3>
+				<h3 id="mediaquery" class="txttr--uc c--gy7 ftwgt--6 mb--1">MEDIA QUERIES</h3>
 				
-				<p class="maw--50p">For you to tweak Brevis responsiveness, use the media queries extension. The media extension is identified by a single hyphen <code class="language-markup">-</code>, followed by <code class="language-markup">s</code>, <code class="language-markup">m</code> or <code class="language-markup">l</code>. Respectively targeting small, medium or large devices. <b>The extensions are available for all classes</b>. And that's called <b>selector-first</b> design, where each class selector is responsive. This approach allows you to have a very granular responsive control. The breakpoints are:</p>
+				<p class="maw--60p">You can create responsive websites using the media queries extension. The media extension is identified by a single hyphen <code class="language-markup">-</code>, followed by <code class="language-markup">s</code>, <code class="language-markup">m</code> or <code class="language-markup">l</code>. Respectively targeting small, medium or large devices. <b>The extensions are available for all classes</b>. And that's why we call <b>selector-first</b> design, where each selector is responsive. This approach allows you to have a very granular responsive control. The breakpoints are:</p>
 				
 				<pre><code class="language-css">-l = @media (max-width: 1280px)
 -m = @media (max-width: 840px)
@@ -3212,9 +3200,9 @@ center = ctr</code></pre>
 	.brdrrad--0-s { border-radius: 0 }
 }</code></pre>
 				
-			<p class="maw--50p">The media queries don't follow the naming convention above, because there are only three extensions <code class="language-css">-s</code>, <code class="language-css">-m</code> and <code class="language-css">-l</code>, which are universally recognised as a representation of the breakpoints. So, we stick with them.</p>
+			<p class="maw--60p">The media queries don't follow the naming convention above, because there are only three extensions <code class="language-css">-s</code>, <code class="language-css">-m</code> and <code class="language-css">-l</code>, which are universally recognised as a representation of the breakpoints. So, we stick with them.</p>
 
-			<p class="maw--50p">If you want to learn more about it, take a look at <a href="https://github.com/dlzi/brevis/blob/master/brevis.css">brevis.css</a> source file and see how the naming convention comes to live.</p>
+			<p class="maw--60p">If you want to learn more about it, take a look at <a href="https://github.com/dlzi/brevis/blob/master/brevis.css">brevis.css</a> source file and see how the naming convention comes to live.</p>
 
 			<p><em><a href="#start">top↑</a></em>  </p>
 					
@@ -3222,25 +3210,27 @@ center = ctr</code></pre>
 
 
 			<h2 id="scale" class="fts--4 lnh--4 txttr--uc c--gy7 ftwgt--4">SCALE PATTERN</h2>
-			<p>Brevis uses three cardinal scales for properties with numerical values:</p>
+			<p>Brevis uses three 8pt scales for properties with numerical values:</p>
 				
 			<code class="language-markup">8px</code>,<code class="language-markup">16px</code>,<code class="language-markup">24px</code>,<code class="language-markup">32px</code>,<code class="language-markup">40px</code>,<code class="language-markup">48px</code>,<code class="language-markup">56px</code>,<code class="language-markup">64px</code>
 
-			<p class="mb--3 mt--1 maw--50p">Is used by top, right, bottom, left, margin, margin-top, margin-right, margin-bottom, margin-left, padding, padding-top, padding-right, padding-bottom and padding-left.</p>
+			<p class="mb--3 mt--1 maw--60p">Is used by top, right, bottom, left, margin, margin-top, margin-right, margin-bottom, margin-left, padding, padding-top, padding-right, padding-bottom and padding-left.</p>
 
 			<code class="language-markup">1px</code>,<code class="language-markup">2px</code>,<code class="language-markup">4px</code>,<code class="language-markup">8px</code>,<code class="language-markup">16px</code>,<code class="language-markup">32px</code>,<code class="language-markup">64px</code>,<code class="language-markup">128px</code>
 
-			<p class="mb--3 mt--1 maw--50p">Is used by z-index, border-spacing, border-width, border-radius, text-indent and word-spacing.</p>
+			<p class="mb--3 mt--1 maw--60p">Is used by z-index, border-spacing, border-width, border-radius, text-indent and word-spacing.</p>
 
 			<code class="language-markup">1px</code>,<code class="language-markup">8px</code>,<code class="language-markup">16px</code>,<code class="language-markup">32px</code>,<code class="language-markup">64px</code>,<code class="language-markup">128px</code>,<code class="language-markup">256px</code>,<code class="language-markup">512px</code>
 
-			<p class="mb--3 mt--1 maw--50p">Is used by flex-basis, width, min-width, max-width, height, min-height and max-height.</p>
+			<p class="mb--3 mt--1 maw--60p">Is used by flex-basis, width, min-width, max-width, height, min-height and max-height.</p>
 
 
 
-			<p><a href="#order">Order</a>, <a href="#opacity">opacity</a>, <a href="#z-index">z-index</a>, <a href="#line-height">line-height</a>, <a href="#letter-spacing">letter-spacing</a>, <a href="#font-size">font-size</a> and <a href="#font-weight">font-weight</a> properties use their own custom scale values.</p>
+			<p class="maw--60p"><a href="#order">Order</a>, <a href="#opacity">opacity</a>, <a href="#z-index">z-index</a>, <a href="#line-height">line-height</a>, <a href="#letter-spacing">letter-spacing</a>, <a href="#font-size">font-size</a> and <a href="#font-weight">font-weight</a> properties use their own custom scale.</p>
 
-			<p  class="maw--50p">Note that the scales can have negative values when the numerical modifier is preceded by <code class="language-css">--n</code>. Example: <code class="language-css">--n2</code> is equal to <code class="language-css">-16px</code>.</p>
+			<p  class="maw--60p">Note that some the scales can have negative values when the numerical modifier is preceded by <code class="language-css">--n</code>. For example:</p> 
+
+			<code class="language-css">.mt--n2 { margin-top: -16px }</code>
 
 						<p><em><a href="#start">top↑</a></em>  </p>
 
@@ -3250,7 +3240,7 @@ center = ctr</code></pre>
 			<h2 id="palette" class="fts--4 lnh--4 txttr--uc c--gy7 ftwgt--4">COLOUR PALETTE</h2>
 
 
-			<p class="maw--50p">Colour is a very opinionated subject, and because of that, Brevis has a minimal palette. The current palettes are grey and contextual.</p>
+			<p class="maw--60p">Colour is a very opinionated subject, and because of that, Brevis has a minimal palette. The current palettes are grey and contextual.</p>
 
 			<table class="py--2">
 				<thead>
@@ -3296,7 +3286,7 @@ center = ctr</code></pre>
 			</table>
 
 				
-			<p class="maw--50p mb--4">The colours follow the naming convetion. Note that their scale name is set to 1. So, any additional colour can use the naming convention. Example, if you want to extend the red colour, you start creating  <code class="language-css">rd2</code>, <code class="language-css">rd3</code> and so on.</p>
+			<p class="maw--60p mb--4">The colours follow the naming convetion. Note that their scale name is set to 1. So, any additional colour can use the naming convention. Example, if you want to extend the red colour, you start creating  <code class="language-css">rd2</code>, <code class="language-css">rd3</code> and so on.</p>
 		
 
 						<p><em><a href="#start">top↑</a></em>  </p>
