@@ -40,7 +40,7 @@ Brevis uses the 8-point scale pattern to ensure a consistent design.
 
 
 ## Documentation
-The documentation resides in the docs directory, and it reflects the master branch. Browse the online documentation at [getbrevis.com](https://getbrevis.com).
+The documentation resides in the docs directory, and it reflects the master branch. Browse the online documentation and a FAQ section at [getbrevis.com](https://getbrevis.com).
 
 ## Contributing
 
