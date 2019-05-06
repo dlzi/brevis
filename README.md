@@ -14,29 +14,29 @@
 
 ## More Features
 
+#### Utility-first
+
+Immutable classes behave exactly as expected. A class does one thing only and does it well.
+
 #### Lightweight
 
 Brevis is super fast, lean and play well with other technologies.
 
 #### Low Specificity
 
-Only the selectors with `:hover` pseudo-class has specificity of 20. All the other selectors have a specificity of 10.
-
-#### Uniqueness
-
-Immutable classes behave exactly as expected. A class does one thing only and does it well.
+Only the selectors with `:hover` pseudo-class have specificity of 20. All the other selectors have a specificity of 10.
 
 #### Consistency
 
 Consistency is in the heart of Brevis. Once you learn how it works, you'll see patterns everywhere.
 
-#### Unpretentious
+#### Neutral
 
 There's no default style to dictate how things should look like. That's entirely up to you.
 
 #### Cohesive Scale Pattern
 
-Brevis uses the 8-point scale pattern to ensure consistency design.
+Brevis uses the 8-point scale pattern to ensure a consistent design.
 
 
 ## Documentation
