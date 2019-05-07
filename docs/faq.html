@@ -56,7 +56,7 @@
 			<p>Brevis means short in latin.</p>
 
 			<h3 class="mb--1" id="idea-behind-brevis">What is the idea behind Brevis?</h3>
-			<p class="maw--8">Brevis was built on top of four pillars:
+			<p class="maw--60p">Brevis was built on top of four pillars:</p>
 
 			<ul>
 				<li>A class should do one thing only</li>
@@ -64,12 +64,12 @@
 				<li>A class should behave exactly as expect</li>
 				<li>A class once declared cannot be changed</li>
 			</ul>
-
+			<p class="maw--60p">
 			To get your head around it, think of classes that do only one thing. With Brevis, classes no longer represent objects - like buttons -, but single a function. Those classes once defined, cannot be changed. It's like Lego© blocks. Combine a bunch of those classes together and you can create just about any UI you want.</p>
 
 			<h3 class="mb--1" id="why-brevis">Why should I use Brevis?</h3>
 			<p>Let's enumerate a few things that set us apart:</p>
-			<ol class="maw--8">
+			<ol class="maw--60p">
 				<li>
 					<p>Brevis <strong>DOES NOT</strong> use a single <code class="language-css">!important</code> rule.</p>
 					<p>Per se, <code class="language-css">!important</code> is not evil, it's just a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception" rel="nofollow">bad practice</a> that breaks the natural cascading of the style sheet. That's why a <code class="language-css">!important</code> declaration should be treated as the <b>last resort</b>. Unfortunately, most frameworks like to use it a lot. See the table below:</p>
@@ -150,7 +150,7 @@
 			</ul>
 
 			<h3 class="mb--1" id="naming-the-approach">How do you call this CSS approach?</h3>
-			<p class="maw--8">There's no standard definition for this approach. You may find terms like functional, atomic, utility-first, low-level, toolkit, immutable and so on. Just pick one. It really doesn't matter, as long as you understand the concept.</p>
+			<p class="maw--60p">There's no standard definition for this approach. You may find terms like functional, atomic, utility-first, low-level, toolkit, immutable and so on. Just pick one. It really doesn't matter, as long as you understand the concept.</p>
 			
 			<h3 class="mb--1" id="brevis-vs-inline">What’s the difference between Brevis and inline styles?</h3>
 			<p>Same as comparing apples and oranges.</p>
@@ -169,28 +169,28 @@
 			<p>They are really completly two different things.</p>
 			
 			<h3 class="mb--1" id="learning-nomeclature">How do I memorize all those weird class names?</h3>
-			<p class="maw--8">You don't. Our naming convention is based on word's abbreviations and it follows simple and logical rules. No need to memorize names, just learn the rules and you are good to go.</p>
+			<p class="maw--60p">You don't. Our naming convention is based on word's abbreviations and it follows simple and logical rules. No need to memorize names, just learn the rules and you are good to go.</p>
 			
 			<h3 class="mb--1" id="separation-of-concerns">What about the separation of concerns?</h3>
-			<p class="maw--8">The concerns are still separated. The HTML gives you the structure, and it should work without the CSS. The styling is still applied via CSS.</p>
+			<p class="maw--60p">The concerns are still separated. The HTML gives you the structure, and it should work without the CSS. The styling is still applied via CSS.</p>
 			
 			<h3 class="mb--1" id="html-size">Will all those classes bloat the size of my HTML?</h3>
-			<p class="maw--8">The bloated stuff is already there, just take a look at yours CSS file(s). What most of CSS frameworks do is to <strong>transfer the complexity of UIs to the style sheet</strong>. Thus, because larger and similar components reuse the same CSS properties as others, you inevitably end up with duplicate code. So, to answer the question. On the one hand it <em>may</em> increase the HTML size, but on the other hand your CSS file can be incredibly smaller.</p>
+			<p class="maw--60p">The bloated stuff is already there, just take a look at yours CSS file(s). What most of CSS frameworks do is to <strong>transfer the complexity of UIs to the style sheet</strong>. Thus, because larger and similar components reuse the same CSS properties as others, you inevitably end up with duplicate code. So, to answer the question. On the one hand it <em>may</em> increase the HTML size, but on the other hand your CSS file can be incredibly smaller.</p>
 
 			<h3 class="mb--1" id="all-css-properties">Does Brevis have a class for each CSS property?</h3>
-			<p class="maw--8">It doesn't, and it may never will. Like other frameworks, Brevis doesn't try to cover all the CSS spectrum. We are focusing on best practices and real-world usage, to bring the best experience for the users and developers. However, you can always extend Brevis with custom classes for properties that are absent.</p>
+			<p class="maw--60p">It doesn't, and it may never will. Like other frameworks, Brevis doesn't try to cover all the CSS spectrum. We are focusing on best practices and real-world usage, to bring the best experience for the users and developers. However, you can always extend Brevis with custom classes for properties that are absent.</p>
 
 
 			<h3 class="mb--1" id="declaration-order">Does the CSS declaration order matter?</h3>
-			<p class="maw--8">In the CSS file, it does. Brevis ordering its classes starts from outside the box model and moves inward. Check out <a href="https://github.com/dlzi/brevis/blob/master/brevis.css">brevis.css</a> to see how we did.</p>
+			<p class="maw--60p">In the CSS file, it does. Brevis ordering its classes starts from outside the box model and moves inward. Check out <a href="https://github.com/dlzi/brevis/blob/master/brevis.css">brevis.css</a> to see how we did.</p>
 
 			<h3 class="mb--1" id="declaration-style">Does Brevis enforce any CSS declaration order style?</h3>
-			<p class="maw--8">No, it doesn’t. But you should have a methodology to order your classes. It will be helpful to you and whom you share your code. <strong><em>Remember the order of classes within the HTML class attribute is irrelevant. The order only matters in the CSS file</em>.</strong></p>
+			<p class="maw--60p">No, it doesn’t. But you should have a methodology to order your classes. It will be helpful to you and whom you share your code. <strong><em>Remember the order of classes within the HTML class attribute is irrelevant. The order only matters in the CSS file</em>.</strong></p>
 
 
 			<h3 class="mb--1" id="extra">How do I extend Brevis modifiers?</h3>
 
-			<p class="maw--90p mt--0">We recommend you to create a special modifier called <code class="language-css">ext</code>. It can work as a complement to some missing property values. So, whatever property you want to extend by adding custom values; the <code class="language-css">ext</code> is the way to go (with an exception for the <a href="#palette">colour palette</a>). You can create as many <code class="language-css">ext</code> modifier as you want. For example:</p>
+			<p class="maw--60p mt--0">We recommend you to create a special modifier called <code class="language-css">ext</code>. It can work as a complement to some missing property values. So, whatever property you want to extend by adding custom values; the <code class="language-css">ext</code> is the way to go (with an exception for the <a href="specification.html#palette">colour palette</a>). You can create as many <code class="language-css">ext</code> modifier as you want. For example:</p>
 
 				<pre><code class="language-css">.lssty--ext1 { list-style: circle }
 .w--ext1 { width: 768px }
