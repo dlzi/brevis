@@ -46,7 +46,7 @@
  *		fx = flex
  *		fxbs = flex-basis
  *		fxdir = flex-direction
- *		fxfw = flex-flow (shorthand for flex-direction and flex-wrap properties)
+ *		fxfw = flex-flow
  *		fxgw = flex-grow
  *		fxsk = flex-shrink
  *		fxwp = flex-wrap
@@ -1169,7 +1169,7 @@
  *	FLEX
  *	
  *	# Base
- *		fx = flex
+ *		fx = flex (horthand for flex-grow, flex-shrink, and flex-basis)
  *
  *	# Modifiers
  *		--1 = 1 | this is equivalent to setting "flex: 1 1 0%"
@@ -6230,8 +6230,8 @@
  *		--6 = 32px
  *		--7 = 64px
  *		--8 = 128px
- *		--i = inherit
  *		--nl = normal
+ *		--i = inherit
  */
 .wdsp--1 { word-spacing: 1px }
 .wdsp--2 { word-spacing: 2px }
@@ -6241,8 +6241,8 @@
 .wdsp--6 { word-spacing: 32px }
 .wdsp--7 { word-spacing: 64px }
 .wdsp--8 { word-spacing: 128px }
-.wdsp--i { word-spacing: inherit }
 .wdsp--nl { word-spacing: normal }
+.wdsp--i { word-spacing: inherit }
 
 	@media (max-width: 1280px) {
 		.wdsp--1-l { word-spacing: 1px }
@@ -6253,8 +6253,8 @@
 		.wdsp--6-l { word-spacing: 32px }
 		.wdsp--7-l { word-spacing: 64px }
 		.wdsp--8-l { word-spacing: 128px }
-		.wdsp--i-l { word-spacing: inherit }
 		.wdsp--nl-l { word-spacing: normal }
+		.wdsp--i-l { word-spacing: inherit }
 	}
 	
 	@media (max-width: 840px) {
@@ -6266,8 +6266,8 @@
 		.wdsp--6-m { word-spacing: 32px }
 		.wdsp--7-m { word-spacing: 64px }
 		.wdsp--8-m { word-spacing: 128px }
-		.wdsp--i-m { word-spacing: inherit }
 		.wdsp--nl-m { word-spacing: normal }
+		.wdsp--i-m { word-spacing: inherit }
 	}
 	
 	@media (max-width: 400px) {
@@ -6279,8 +6279,8 @@
 		.wdsp--6-s { word-spacing: 32px }
 		.wdsp--7-s { word-spacing: 64px }
 		.wdsp--8-s { word-spacing: 128px }
-		.wdsp--i-s { word-spacing: inherit }
 		.wdsp--nl-s { word-spacing: normal }
+		.wdsp--i-s { word-spacing: inherit }
 	}
 
 /*
@@ -6306,8 +6306,8 @@
  *		--n6 = -1.5px
  *		--n7 = -1.75px
  *		--n8 = -2px
- *		--i = inherit
  *		--nl = normal
+ *		--i = inherit
  */
 .ltrsp--1 { letter-spacing: .25px }
 .ltrsp--2 { letter-spacing: .5px }
@@ -6325,8 +6325,8 @@
 .ltrsp--n6 { letter-spacing: -1.5px }
 .ltrsp--n7 { letter-spacing: -1.75px }
 .ltrsp--n8 { letter-spacing: -2px }
-.ltrsp--i { letter-spacing: inherit }
 .ltrsp--nl { letter-spacing: normal }
+.ltrsp--i { letter-spacing: inherit }
 	
 	@media (max-width: 1280px) {
 		.ltrsp--1-l { letter-spacing: .25px }
@@ -6345,8 +6345,8 @@
 		.ltrsp--n6-l { letter-spacing: -1.5px }
 		.ltrsp--n7-l { letter-spacing: -1.75px }
 		.ltrsp--n8-l { letter-spacing: -2px }
-		.ltrsp--i-l { letter-spacing: inherit }
 		.ltrsp--nl-l { letter-spacing: normal }
+		.ltrsp--i-l { letter-spacing: inherit }
 	}
 
 	@media (max-width: 840px) {
@@ -6366,8 +6366,8 @@
 		.ltrsp--n6-m { letter-spacing: -1.5px }
 		.ltrsp--n7-m { letter-spacing: -1.75px }
 		.ltrsp--n8-m { letter-spacing: -2px }
-		.ltrsp--i-m { letter-spacing: inherit }
 		.ltrsp--nl-m { letter-spacing: normal }
+		.ltrsp--i-m { letter-spacing: inherit }
 	}
 	
 	@media (max-width: 400px) {
@@ -6387,8 +6387,8 @@
 		.ltrsp--n6-s { letter-spacing: -1.5px }
 		.ltrsp--n7-s { letter-spacing: -1.75px }
 		.ltrsp--n8-s { letter-spacing: -2px }
-		.ltrsp--i-s { letter-spacing: inherit }
 		.ltrsp--nl-s { letter-spacing: normal }
+		.ltrsp--i-s { letter-spacing: inherit }
 	}
 
 /*
@@ -6437,29 +6437,29 @@
  *
  *	# Modifiers
  *		--brkwd = break-word
- *		--i = inherit
  *		--nl = normal
+ *		--i = inherit
  */
 .wdwp--brkwd { word-wrap: break-word }
-.wdwp--i { word-wrap: inherit }
 .wdwp--nl { word-wrap: normal }
+.wdwp--i { word-wrap: inherit }
 	
 	@media (max-width: 1280px) {
 		.wdwp--brkwd-l { word-wrap: break-word }
-		.wdwp--i-l { word-wrap: inherit }
 		.wdwp--nl-l { word-wrap: normal }
+		.wdwp--i-l { word-wrap: inherit }
 	}
 
 	@media (max-width: 840px) {
 		.wdwp--brkwd-m { word-wrap: break-word }
-		.wdwp--i-m { word-wrap: inherit }
 		.wdwp--nl-m { word-wrap: normal }
+		.wdwp--i-m { word-wrap: inherit }
 	}
 
 	@media (max-width: 400px) {
 		.wdwp--brkwd-s { word-wrap: break-word }
-		.wdwp--i-s { word-wrap: inherit }
 		.wdwp--nl-s { word-wrap: normal }
+		.wdwp--i-s { word-wrap: inherit }
 	}
 
 /*
