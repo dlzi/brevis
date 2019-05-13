@@ -49,6 +49,7 @@
 				<li><a href="#declaration-style">Does Brevis enforce any CSS declaration order style?</a></li>			
 				<li><a href="#extra">How do I extend Brevis modifiers?</a></li>
 				<li><a href="#related">Are there autocomplete plugins?</a></li>
+				<li><a href="#comparison">Can I see some code comparison?</a></li>
 			</ul>
 
 
@@ -145,8 +146,7 @@
 				<li>Safari</li>
 				<li>Edge</li>
 				<li>Opera</li>
-				<li>Internet Explorer 10+ - <i><b>It may work, it may not. Who knows?</b></i>
-				</li>
+				<li>Internet Explorer 10+</li>
 			</ul>
 
 			<h3 class="mb--1" id="naming-the-approach">How do you call this CSS approach?</h3>
@@ -199,9 +199,392 @@
 
 
 			<h3 class="mb--1" id="related">Are there autocomplete plugins?</h3>
-			<ul class="mb--8 lssty--n mt--0 pl--0">
+			<ul class="lssty--n mt--0 pl--0">
 				<li><a href="https://github.com/dlzi/brevis-autocomplete" target="_blank">Brevis CSS Autocomplete for Sublime Text 3</a></li>
 			</ul>
+
+
+			<h3 class="mb--1" id="comparison">Can I see some code comparison?</h3>
+			<p>Below are the amount of CSS rules used for a standard single button on:</p>
+			<div class="d--fx mx--a fxdir--col-m mb--8">
+				
+				<div class="fxbs--25p ovfx--hid pr--2 bxs--brdrbx">
+					<h4 class="mb--0">Brevis 0.6.0</h4>
+					<pre><code class="language-css">.brdrw--0 {
+	border-width: 0;
+}
+
+.brdrrad--3 {
+	border-radius: 4px;
+}
+
+.bgc--bl1 {
+	background-color: #3689e6;
+}
+
+.py--1 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.cur--ptr {
+    cursor: pointer;
+}</code></pre>
+				</div>
+
+
+
+				<div class="fxbs--25p ovfx--hid pr--2 bxs--brdrbx">
+					<h4 class="mb--0">Bulma 0.7.4</h4>
+				<pre><code class="language-css">.button {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	align-items: center;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: none;
+	display: inline-flex;
+	font-size: 1rem;
+	height: 2.25em;
+	justify-content: flex-start;
+	line-height: 1.5;
+	padding-bottom: calc(.375em - 1px);
+	padding-left: calc(.625em - 1px);
+	padding-right: calc(.625em - 1px);
+	padding-top: calc(.375em - 1px);
+	position: relative;
+	vertical-align: top;
+}
+
+.button:active,
+.button:focus {
+	outline: 0;
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit;
+}
+
+a {
+	color: #3273dc;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #363636;
+}
+
+.button {
+	background-color: #fff;
+	border-color: #dbdbdb;
+	border-width: 1px;
+	color: #363636;
+	cursor: pointer;
+	justify-content: center;
+	padding-bottom: calc(.375em - 1px);
+	padding-left: .75em;
+	padding-right: .75em;
+	padding-top: calc(.375em - 1px);
+	text-align: center;
+	white-space: nowrap;
+}
+
+.button:hover {
+	border-color: #b5b5b5;
+	color: #363636;
+}
+
+.button:focus {
+	border-color: #3273dc;
+	color: #363636;
+}
+
+.button:active {
+	border-color: #4a4a4a;
+	color: #363636;
+}
+
+.button.is-primary {
+	background-color: #00d1b2;
+	border-color: transparent;
+	color: #fff;
+}
+
+.button.is-primary:hover {
+	background-color: #00c4a7;
+	border-color: transparent;
+	color: #fff;
+}
+
+.button.is-primary:focus {
+	border-color: transparent;
+	color: #fff;
+}
+
+.button.is-primary:active {
+	background-color: #00b89c;
+	border-color: transparent;
+	color: #fff;
+}
+
+.buttons .button {
+	margin-bottom: .5rem;
+}
+
+.buttons .button:not(:last-child):not(.is-fullwidth) {
+	margin-right: .5rem;
+}
+
+::-moz-selection {
+	background-color: #00d1b2;
+	color: #fff;
+}
+
+::selection {
+	background-color: #00d1b2;
+	color: #fff;
+}</code></pre></div>
+
+				<div class="fxbs--25p ovfx--hid pr--2  bxs--brdrbx">
+					<h4 class="mb--0">Materialize 1.0.0</h4>
+					<pre><code class="language-css">a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+a {
+	color: #039be5;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.btn {
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+	-webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	border: none;
+	border-radius: 2px;
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 16px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.btn:disabled {
+	pointer-events: none;
+	background-color: #DFDFDF !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #9F9F9F !important;
+	cursor: default;
+}
+
+.btn:disabled:hover {
+	background-color: #DFDFDF !important;
+	color: #9F9F9F !important;
+}
+
+.btn {
+	font-size: 14px;
+	outline: 0;
+}
+
+.btn:focus {
+	background-color: #1d7d74;
+}
+
+.btn {
+	text-decoration: none;
+	color: #fff;
+	background-color: #26a69a;
+	text-align: center;
+	letter-spacing: .5px;
+	-webkit-transition: background-color .2s ease-out;
+	transition: background-color .2s ease-out;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #2bbbad;
+}
+
+.waves-effect {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	vertical-align: middle;
+	z-index: 1;
+	-webkit-transition: .3s ease-out;
+	transition: .3s ease-out;
+}
+
+::-webkit-input-placeholder {
+	color: #d1d1d1;
+}
+
+::-moz-placeholder {
+	color: #d1d1d1;
+}
+
+:-ms-input-placeholder {
+	color: #d1d1d1;
+}
+
+::placeholder {
+	color: #d1d1d1;
+}</code></pre>
+
+
+				</div>
+
+				<div class="fxbs--25p ovfx--hid bxs--brdrbx">
+				<h4 class="mb--0">Bootstrap 4.3.1</h4>
+				<pre><code class="language-css">*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+button {
+	border-radius: 0;
+}
+
+button:focus {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+button {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+button {
+	overflow: visible;
+}
+
+button {
+	text-transform: none;
+}
+
+[type=button],
+button {
+	-webkit-appearance: button;
+}
+
+[type=button]:not(:disabled),
+button:not(:disabled) {
+	cursor: pointer;
+}
+
+[type=button]::-moz-focus-inner,
+button::-moz-focus-inner {
+	padding: 0;
+	border-style: none;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+@media (prefers-reduced-motion:reduce) {
+	.btn {
+		transition: none;
+	}
+
+}
+
+.btn:hover {
+	color: #212529;
+	text-decoration: none;
+}
+
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+.btn:disabled {
+	opacity: .65;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #0069d9;
+	border-color: #0062cc;
+}
+
+.btn-primary:focus {
+	box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5);
+}
+
+.btn-primary:disabled {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+}</code></pre></div>
+</div>
 
 
 		</section>
