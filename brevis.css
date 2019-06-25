@@ -181,6 +181,8 @@
  *	# POINTER EVENTS
  *		ptres = pointer-events
  *
+ *	# MISC
+ *		hidct = hidden content (a11y)
  *
  *	## MEDIA QUERY EXTENSIONS
  *		-l = @media (max-width: 1280px)
@@ -6859,4 +6861,80 @@
 	@media (max-width: 400px) {
 		.ptres--a-s { pointer-events: auto }
 		.ptres--n-s { pointer-events: none }
+	}
+
+
+/*
+ *	MISC
+ */
+
+ /*
+ *	HIDDEN CONTENT
+ *	
+ *	# Base
+ *		hidct = hidden content (a11y)
+ *
+ *	# Note
+ *		https://cloudfour.com/thinks/see-no-evil-hidden-content-and-accessibility/
+ */
+.hidct {
+	position: absolute;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+	clip: rect(0 0 0 0); 
+	clip-path: polygon(0 0, 0 0, 0 0);
+	-webkit-clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+	@media (max-width: 1280px) {
+		.hidct-l {
+			position: absolute;
+			margin: -1px;
+			border: 0;
+			padding: 0;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+			white-space: nowrap;
+			clip: rect(0 0 0 0); 
+			clip-path: polygon(0 0, 0 0, 0 0);
+			-webkit-clip-path: polygon(0 0, 0 0, 0 0)
+		}
+	}	
+	
+	@media (max-width: 840px) {
+		.hidct-m {
+			position: absolute;
+			margin: -1px;
+			border: 0;
+			padding: 0;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+			white-space: nowrap;
+			clip: rect(0 0 0 0); 
+			clip-path: polygon(0 0, 0 0, 0 0);
+			-webkit-clip-path: polygon(0 0, 0 0, 0 0)
+		}
+	}
+	
+	@media (max-width: 400px) {
+		.hidct-s {
+			position: absolute;
+			margin: -1px;
+			border: 0;
+			padding: 0;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+			white-space: nowrap;
+			clip: rect(0 0 0 0); 
+			clip-path: polygon(0 0, 0 0, 0 0);
+			-webkit-clip-path: polygon(0 0, 0 0, 0 0)
+		}
 	}
