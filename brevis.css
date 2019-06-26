@@ -182,7 +182,7 @@
  *		ptres = pointer-events
  *
  *	# MISC
- *		hidct = hidden content (a11y)
+ *		hidct = hide content (a11y)
  *
  *	## MEDIA QUERY EXTENSIONS
  *		-l = @media (max-width: 1280px)
@@ -6869,13 +6869,10 @@
  */
 
  /*
- *	HIDDEN CONTENT
+ *	HIDE CONTENT
  *	
  *	# Base
- *		hidct = hidden content (a11y)
- *
- *	# Note
- *		https://cloudfour.com/thinks/see-no-evil-hidden-content-and-accessibility/
+ *		hidct = hide content (a11y)
  */
 .hidct {
 	position: absolute;
@@ -6886,9 +6883,7 @@
 	height: 1px;
 	overflow: hidden;
 	white-space: nowrap;
-	clip: rect(0 0 0 0); 
-	clip-path: polygon(0 0, 0 0, 0 0);
-	-webkit-clip-path: polygon(0 0, 0 0, 0 0);
+	clip: rect(0, 0, 0, 0);
 }
 
 	@media (max-width: 1280px) {
@@ -6901,9 +6896,7 @@
 			height: 1px;
 			overflow: hidden;
 			white-space: nowrap;
-			clip: rect(0 0 0 0); 
-			clip-path: polygon(0 0, 0 0, 0 0);
-			-webkit-clip-path: polygon(0 0, 0 0, 0 0)
+			clip: rect(0, 0, 0, 0);
 		}
 	}	
 	
@@ -6917,9 +6910,7 @@
 			height: 1px;
 			overflow: hidden;
 			white-space: nowrap;
-			clip: rect(0 0 0 0); 
-			clip-path: polygon(0 0, 0 0, 0 0);
-			-webkit-clip-path: polygon(0 0, 0 0, 0 0)
+			clip: rect(0, 0, 0, 0);
 		}
 	}
 	
@@ -6933,8 +6924,6 @@
 			height: 1px;
 			overflow: hidden;
 			white-space: nowrap;
-			clip: rect(0 0 0 0); 
-			clip-path: polygon(0 0, 0 0, 0 0);
-			-webkit-clip-path: polygon(0 0, 0 0, 0 0)
+			clip: rect(0, 0, 0, 0);
 		}
 	}
