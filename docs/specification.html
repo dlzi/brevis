@@ -260,6 +260,12 @@
 								<a href="#pointer-events">pointer-events</a>
 							</td>
 						</tr>
+						<tr>
+							<td>Miscellaneous</td>
+							<td>
+								<a href="#hide-content">hide content (a11y)</a>
+							</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -3125,7 +3131,32 @@ fts--i { font-size: inherit }</code></pre>
 .ptres--n { pointer-events: none }</code></pre>
 				<p><em><a href="#reference">top↑</a></em>  </p>
 				
-				
+
+				<hr class="my--8">
+
+<h3 id="hide-content">MISCELLANEOUS</h3>
+<h4 id="hide-content">HIDE CONTENT (A11Y)</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	hidct = hide content</code></pre>
+					<h5 class="mb--0">CLASSES</h5>
+				<pre><code class="css language-css">.hidct {
+	position: absolute;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+	clip: rect(0, 0, 0, 0);
+}</code></pre>
+				<p><em><a href="#reference">top↑</a></em>  </p>
+
+
+
+
+
 				<hr class="my--8">
 
 
