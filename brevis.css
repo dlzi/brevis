@@ -6403,17 +6403,20 @@
  *		--nl = normal
  *		--n = nowrap
  *		--pre = pre
+ *		--prewp = pre-wrap
  *		--i = inherit
  */
 .wtsp--nl { white-space: normal }
 .wtsp--n { white-space: nowrap }
 .wtsp--pre { white-space: pre }
+.wtsp--prewp { white-space: pre-wrap }
 .wtsp--i { white-space: inherit }
 	
 	@media (max-width: 1280px) {
 		.wtsp--nl-l { white-space: normal }
 		.wtsp--n-l { white-space: nowrap }
 		.wtsp--pre-l { white-space: pre }
+		.wtsp--prewp-l { white-space: pre-wrap }
 		.wtsp--i-l { white-space: inherit }
 	}
 
@@ -6421,6 +6424,7 @@
 		.wtsp--nl-m { white-space: normal }
 		.wtsp--n-m { white-space: nowrap }
 		.wtsp--pre-m { white-space: pre }
+		.wtsp--prewp-m { white-space: pre-wrap }
 		.wtsp--i-m { white-space: inherit }
 	}
 
@@ -6428,6 +6432,7 @@
 		.wtsp--nls { white-space: normal }
 		.wtsp--n-s { white-space: nowrap }
 		.wtsp--pre-s { white-space: pre }
+		.wtsp--prewp-s { white-space: pre-wrap }
 		.wtsp--i-s { white-space: inherit }
 	}
 
