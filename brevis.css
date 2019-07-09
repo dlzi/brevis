@@ -7,7 +7,7 @@
  *	|____/  |_|  \_\ |______|     \/     |_____| |_____/ 
  *
  *
- *	@version: 0.7.0
+ *	@version: 0.7.1
  *	@link: https://github.com/dlzi/brevis
  *	@license: http://opensource.org/licenses/MIT - MIT License
  *
@@ -1655,20 +1655,20 @@
  *		--ein = ease-in
  *		--eot = ease-out
  *		--einot = ease-in-out
- *		--lr = linear
+ *		--lnr = linear
  */
 .tntgfn--e { transition-timing-function: ease }
 .tntgfn--ein { transition-timing-function: ease-in }
 .tntgfn--eot { transition-timing-function: ease-out }
 .tntgfn--einot { transition-timing-function: ease-in-out }
-.tntgfn--lr { transition-timing-function: linear }
+.tntgfn--lnr { transition-timing-function: linear }
 
 	@media (max-width: 1280px) {
 		.tntgfn--e-l { transition-timing-function: ease }
 		.tntgfn--ein-l { transition-timing-function: ease-in }
 		.tntgfn--eot-l { transition-timing-function: ease-out }
 		.tntgfn--einot-l { transition-timing-function: ease-in-out }
-		.tntgfn--lr-l { transition-timing-function: linear }
+		.tntgfn--lnr-l { transition-timing-function: linear }
 	}
 
 	@media (max-width: 840px) {
@@ -1676,7 +1676,7 @@
 		.tntgfn--ein-m { transition-timing-function: ease-in }
 		.tntgfn--eot-m { transition-timing-function: ease-out }
 		.tntgfn--einot-m { transition-timing-function: ease-in-out }
-		.tntgfn--lr-m { transition-timing-function: linear }
+		.tntgfn--lnr-m { transition-timing-function: linear }
 	}
 
 	@media (max-width: 400px) {
@@ -1684,7 +1684,7 @@
 		.tntgfn--ein-s { transition-timing-function: ease-in }
 		.tntgfn--eot-s { transition-timing-function: ease-out }
 		.tntgfn--einot-s { transition-timing-function: ease-in-out }
-		.tntgfn--lr-s { transition-timing-function: linear }
+		.tntgfn--lnr-s { transition-timing-function: linear }
 	}
 
 /*
