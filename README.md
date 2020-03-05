@@ -59,4 +59,4 @@ If you have a question or need help feel free to [open an issue](https://github.
 
 ## Copyright and license
 
-©2019 Daniel Zilli - code licensed [MIT](LICENSE), docs [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+©2020 Daniel Zilli - code licensed [MIT](LICENSE), docs [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
