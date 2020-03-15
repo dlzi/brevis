@@ -60,7 +60,7 @@
 
 
 			<h3 class="mb--1" id="brevis-meaning">What does Brevis mean?</h3>
-			<p>Brevis means short in latin.</p>
+			<p>Brevis means short in Latin.</p>
 
 			<h3 class="mb--1" id="idea-behind-brevis">What is the idea behind Brevis?</h3>
 			<p class="maw--60p">Brevis was built on top of four pillars:</p>
@@ -175,7 +175,7 @@
 			<p>Brevis:</p>
 			<pre><code class="language-html">&lt;body class="ftwt--7"&gt;</code></pre>
 			
-			<p>They are really completly two different things.</p>
+			<p>They are completely two different things.</p>
 			
 			<h3 class="mb--1" id="learning-nomeclature">How do I memorize all those weird class names?</h3>
 			<p class="maw--60p">You don't. Our naming convention is based on word's abbreviations and it follows simple and logical rules. No need to memorize names, just learn the rules and you are good to go.</p>
@@ -199,14 +199,19 @@
 
 			<h3 class="mb--1" id="extra">How do I extend Brevis modifiers?</h3>
 
-			<p class="maw--60p mt--0">We recommend you to create a special modifier called <code class="language-css">ext</code>. It can work as a complement to some missing property values. So, whatever property you want to extend by adding custom values; the <code class="language-css">ext</code> is the way to go (with an exception for the <a href="specification.html#palette">colour palette</a>). You can create as many <code class="language-css">ext</code> modifier as you want. For example:</p>
+			<p class="maw--60p mt--0">We recommend you to create a special modifier called <code class="language-css">extN</code>. It can work as a complement to some missing property values. So, whatever property you want to extend by adding custom values; the <code class="language-css">ext</code> is the way to go (with an exception for the <a href="specification.html#palette">colour palette</a>). You can create as many <code class="language-css">ext</code> modifier as you want. For example:</p>
 
 				<pre><code class="language-css">.lsst--ext1 { list-style: circle }
 .w--ext1 { width: 768px }
 .w--ext2 { width: 1024px }
+.w--ext3 { width: 2048px }
 .fts--ext1 { font-size: 128px }</code></pre>
 
-			<p>This is not a rule, just a suggestion of how to do it. The key to keep things scalable and simple is consistency. However way you choose to extend Brevis, just sticky with it.</p>
+			<p>This is not a rule, it's just a suggestion of how to do it. The key to keep consistency. However way you choose to extend Brevis, just sticky with it.</p>
+
+			<b>PS:</b> it's OK to have more than one declaration per class, as long as you keep the class immutable. <br>
+			<b>PPS:</b> it's highly recommended to follow the naming convention. If you don't do it, you may end up with a second naming convention if you create a lot of custom classes.
+
 
 			<h3 class="mb--1" id="related">Are there autocomplete plugins?</h3>
 			<ul class="lsst--n mt--0 pl--0">
@@ -219,7 +224,7 @@
 			<div class="d--fx mx--a fxdn--col-m mb--8">
 				
 				<div class="fxbs--25p ofx--hid pr--2 bxs--brbx">
-					<h4 class="mb--0">Brevis 0.7.0</h4>
+					<h4 class="mb--0">Brevis 0.7.1</h4>
 					<pre><code class="language-css">.brw--0 {
 	border-width: 0;
 }
@@ -245,7 +250,7 @@
 
 
 				<div class="fxbs--25p ofx--hid pr--2 bxs--brbx">
-					<h4 class="mb--0">Bulma 0.7.5</h4>
+					<h4 class="mb--0">Bulma 0.8.0</h4>
 				<pre><code class="language-css">.button {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -486,7 +491,7 @@ a {
 				</div>
 
 				<div class="fxbs--25p ofx--hid bxs--brbx">
-				<h4 class="mb--0">Bootstrap 4.3.1</h4>
+				<h4 class="mb--0">Bootstrap 4.4.1</h4>
 				<pre><code class="language-css">*,
 ::after,
 ::before {
