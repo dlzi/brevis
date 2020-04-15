@@ -98,3 +98,6 @@ $RECYCLE.BIN/
 
 ### Misc ###
 TODO.txt
+
+# Cudatext
+*.cuda-proj
