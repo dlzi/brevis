@@ -21,21 +21,21 @@
 		<header class="bgc--gy8 py--1 mb--8">
 			<div class="maw--90p mx--a px--2">
 				<nav class="d--fx jct--spbtw anis--ctr fxdn--col-m mih--4">
-					<a href="index.html" class="my--1-m"><img class="w--6 vlan--mid" src="img/brevis-white.svg" alt="Brevis logo"></a>
-					<ul class="d--iefx lsst--n fts--2 lnh--2 lrsp--2 ftwt--1 txttm--uc c--gy3 m--0 pl--0-m d--blk-m txtan--ctr-m">
-						<li class="mr--4 mr--0-m"><a class="c--i chvr--wh1 txtdec--n" href="index.html">Home</a></li>
-						<li class="mr--4 mr--0-m"><a class="c--i chvr--wh1 txtdec--n" href="specification.html">Specification</a></li>
-						<li class="mr--4 mr--0-m"><a class="c--i chvr--wh1 txtdec--n" href="examples.html">Examples</a></li>
-						<li class="txtan--ctr-m"><a class="c--wh1 txtdec--n" href="faq.html">FAQ</a></li>
+					<a href="index.html" class="my--1-m"><img class="w--6 vlan--mid" src="img/logo-brevis-white.svg" alt="Brevis logo"></a>
+					<ul class="d--iefx lsst--n fts--2 lnh--2 lrsp--2 txttm--uc c--wh1 m--0 pl--0-m d--blk-m txtan--ctr-m">
+						<li class="mr--4 mr--0-m"><a class="c--wh1 txtdec--n brbc--tp brbchvr--1 brbst--sol" href="index.html">Home</a></li>
+						<li class="mr--4 mr--0-m"><a class="c--i txtdec--n brbw--1 brbc--tp brbchvr--wh1 brbst--sol" href="documentation.html">Documentation</a></li>
+						<li class="mr--4 mr--0-m"><a class="c--i txtdec--n brbw--1 brbc--tp brbchvr--wh1 brbst--sol" href="examples.html">Examples</a></li>
+						<li class="mr--4 mr--0-m"><a class="c--i txtdec--n brbw--1 brbc--wh1 brbst--sol" href="faq.html">FAQ</a></li>
+						<li class="txtan--ctr-m"><a class="c--yl1 txtdec--n brbw--1 brbc--tp brbchvr--yl1 brbst--sol" href="https://github.com/dlzi/brevis/releases">Download</a></li>
 					</ul>
-
 				</nav>
 			</div>
 		</header>
 
 		<section class="maw--90p mx--a px--2">
 
-			<h1 class="fts--4 lnh--4 txttm--uc c--gy7 ftwt--4 mb--2">Frequently Asked Questions</h1>
+			<h1 class="txttm--uc mb--2">Frequently Asked Questions</h1>
 
 
 			<ul class="mb--8 lsst--n">
@@ -55,7 +55,6 @@
 				<li><a href="#declaration-style">Does Brevis enforce any CSS declaration order style?</a></li>			
 				<li><a href="#extra">How do I extend Brevis modifiers?</a></li>
 				<li><a href="#related">Are there autocomplete plugins?</a></li>
-				<li><a href="#comparison">Can I see some code comparison?</a></li>
 			</ul>
 
 
@@ -78,7 +77,7 @@
 			<p class="maw--60p">There's no standard definition for this approach. You may find terms like functional, atomic, utility-first, low-level, toolkit, immutable and so on. Just pick one. It really doesn't matter, as long as you understand the concept.</p>
 
 			<h3 class="mb--1" id="differences">How different is Brevis from others utility-first toolkits?</h3>
-			<p class="maw--60p">While Brevis and others utility-first toolkits share the same philosophy, under the hood we can be quite different. Brevis has a very logical and easier naming convention, based on abbreviations and <a href="specification.html#rules">two simple rules</a>. A consistent <a href="specification.html#scale">numerical scale</a> and an improved <a href="#why-brevis">specificity control</a>, without a single <code class="language-css">!important</code> rule. We also focus on being as neutral as possible, like our minimal colour palette. There are also differences in the way we handle responsiveness.</p>
+			<p class="maw--60p">While Brevis and others utility-first toolkits share the same philosophy, under the hood we can be quite different. Brevis has a quite logical and easier naming convention, based on abbreviations and <a href="documentation.html#rules">two simple rules</a>. A consistent <a href="documentation.html#scale">numerical scale</a> and an improved <a href="#why-brevis">specificity control</a>, without a single <code class="language-css">!important</code> rule. We also focus on being as neutral as possible, like our minimal colour palette. There are also differences in the way we handle responsiveness.</p>
 
 			<h3 class="mb--1" id="why-brevis">Why should I use Brevis?</h3>
 			<p>Let's enumerate a few things that set us apart:</p>
@@ -98,7 +97,7 @@
 						<tbody>
 							<tr>
 								<td>Brevis</td>
-								<td>0.7.1</td>
+								<td>0.7.2</td>
 								<td>0</td>
 							</tr>
 							<tr>
@@ -107,14 +106,14 @@
 								<td>286</td>
 							</tr>
 							<tr>
-								<td>Materialize</td>
-								<td>1.0.0</td>
-								<td>578</td>
-							</tr>
-							<tr>
 								<td>Bootstrap</td>
 								<td>4.4.1</td>
 								<td>1031</td>
+							</tr>
+							<tr>
+								<td>Tailwind</td>
+								<td>1.2.0</td>
+								<td>1813</td>
 							</tr>
 						</tbody>
 					</table>
@@ -133,7 +132,7 @@
 					<p>Brevis is a CSS only toolkit, which is a major benefit for its high performance and scalability nature. For a website where every byte and second counts, a CSS framework with built-in JavaScript components is more trouble than it's worth. Simply, because you may use your own customised JavaScript code that is compatible with your unique website's requirements.</p>
 				</li>
 				<li>
-					<p>Naming things is hard. But with Brevis, you don't ever have to think about naming your classes, thanks to our <a href="specification.html#rules">naming convention</a>.</p>
+					<p>Naming things is hard. But with Brevis, you don't ever have to think about naming your classes, thanks to our <a href="documentation.html#rules">naming convention</a>.</p>
 				</li>
 				<li>
 					<p>Brevis makes easier to visualize what something looks like just by reading the markup.</p>
@@ -199,7 +198,7 @@
 
 			<h3 class="mb--1" id="extra">How do I extend Brevis modifiers?</h3>
 
-			<p class="maw--60p mt--0">We recommend you to create a special modifier called <code class="language-css">extN</code>. It can work as a complement to some missing property values. So, whatever property you want to extend by adding custom values; the <code class="language-css">ext</code> is the way to go (with an exception for the <a href="specification.html#palette">colour palette</a>). You can create as many <code class="language-css">ext</code> modifier as you want. For example:</p>
+			<p class="maw--60p mt--0">We recommend you to create a special modifier called <code class="language-css">extN</code>. It can work as a complement to some missing property values. So, whatever property you want to extend by adding custom values; the <code class="language-css">ext</code> is the way to go (with an exception for the <a href="documentation.html#palette">colour palette</a>). You can create as many <code class="language-css">ext</code> modifier as you want. For example:</p>
 
 				<pre><code class="language-css">.lsst--ext1 { list-style: circle }
 .w--ext1 { width: 768px }
@@ -210,7 +209,7 @@
 			<p>This is not a rule, it's just a suggestion of how to do it. The key to keep consistency. However way you choose to extend Brevis, just sticky with it.</p>
 
 			<b>PS:</b> it's OK to have more than one declaration per class, as long as you keep the class immutable. <br>
-			<b>PPS:</b> it's highly recommended to follow the naming convention. If you don't do it, you may end up with a second naming convention if you create a lot of custom classes.
+			<b>PPS:</b> it's highly recommended to follow the naming convention. If you don't do it, you may end up with a second naming convention system to remember.
 
 
 			<h3 class="mb--1" id="related">Are there autocomplete plugins?</h3>
@@ -219,392 +218,13 @@
 			</ul>
 
 
-			<h3 class="mb--1" id="comparison">Can I see some code comparison?</h3>
-			<p>Below are the amount of CSS rules used for a standard single button on:</p>
-			<div class="d--fx mx--a fxdn--col-m mb--8">
-				
-				<div class="fxbs--25p ofx--hid pr--2 bxs--brbx">
-					<h4 class="mb--0">Brevis 0.7.1</h4>
-					<pre><code class="language-css">.brw--0 {
-	border-width: 0;
-}
 
-.brrad--3 {
-	border-radius: 4px;
-}
-
-.bgc--bl1 {
-	background-color: #006eb6;
-}
-
-.py--1 {
-	padding-top: 8px;
-	padding-bottom: 8px;
-}
-
-.cur--ptr {
-    cursor: pointer;
-}</code></pre>
-				</div>
-
-
-
-				<div class="fxbs--25p ofx--hid pr--2 bxs--brbx">
-					<h4 class="mb--0">Bulma 0.8.0</h4>
-				<pre><code class="language-css">.button {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.button {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	align-items: center;
-	border: 1px solid transparent;
-	border-radius: 4px;
-	box-shadow: none;
-	display: inline-flex;
-	font-size: 1rem;
-	height: 2.25em;
-	justify-content: flex-start;
-	line-height: 1.5;
-	padding-bottom: calc(.375em - 1px);
-	padding-left: calc(.625em - 1px);
-	padding-right: calc(.625em - 1px);
-	padding-top: calc(.375em - 1px);
-	position: relative;
-	vertical-align: top;
-}
-
-.button:active,
-.button:focus {
-	outline: 0;
-}
-
-*,
-::after,
-::before {
-	box-sizing: inherit;
-}
-
-a {
-	color: #3273dc;
-	cursor: pointer;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #363636;
-}
-
-.button {
-	background-color: #fff;
-	border-color: #dbdbdb;
-	border-width: 1px;
-	color: #363636;
-	cursor: pointer;
-	justify-content: center;
-	padding-bottom: calc(.375em - 1px);
-	padding-left: .75em;
-	padding-right: .75em;
-	padding-top: calc(.375em - 1px);
-	text-align: center;
-	white-space: nowrap;
-}
-
-.button:hover {
-	border-color: #b5b5b5;
-	color: #363636;
-}
-
-.button:focus {
-	border-color: #3273dc;
-	color: #363636;
-}
-
-.button:active {
-	border-color: #4a4a4a;
-	color: #363636;
-}
-
-.button.is-primary {
-	background-color: #00d1b2;
-	border-color: transparent;
-	color: #fff;
-}
-
-.button.is-primary:hover {
-	background-color: #00c4a7;
-	border-color: transparent;
-	color: #fff;
-}
-
-.button.is-primary:focus {
-	border-color: transparent;
-	color: #fff;
-}
-
-.button.is-primary:active {
-	background-color: #00b89c;
-	border-color: transparent;
-	color: #fff;
-}
-
-.buttons .button {
-	margin-bottom: .5rem;
-}
-
-.buttons .button:not(:last-child):not(.is-fullwidth) {
-	margin-right: .5rem;
-}
-
-::-moz-selection {
-	background-color: #00d1b2;
-	color: #fff;
-}
-
-::selection {
-	background-color: #00d1b2;
-	color: #fff;
-}</code></pre></div>
-
-				<div class="fxbs--25p ofx--hid pr--2  bxs--brbx">
-					<h4 class="mb--0">Materialize 1.0.0</h4>
-					<pre><code class="language-css">a {
-	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
-}
-
-*,
-*:before,
-*:after {
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
-}
-
-a {
-	color: #039be5;
-	text-decoration: none;
-	-webkit-tap-highlight-color: transparent;
-}
-
-.btn {
-	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-.btn:hover {
-	-webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-}
-
-a {
-	text-decoration: none;
-}
-
-.btn {
-	border: none;
-	border-radius: 2px;
-	display: inline-block;
-	height: 36px;
-	line-height: 36px;
-	padding: 0 16px;
-	text-transform: uppercase;
-	vertical-align: middle;
-	-webkit-tap-highlight-color: transparent;
-}
-
-.btn:disabled {
-	pointer-events: none;
-	background-color: #DFDFDF !important;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	color: #9F9F9F !important;
-	cursor: default;
-}
-
-.btn:disabled:hover {
-	background-color: #DFDFDF !important;
-	color: #9F9F9F !important;
-}
-
-.btn {
-	font-size: 14px;
-	outline: 0;
-}
-
-.btn:focus {
-	background-color: #1d7d74;
-}
-
-.btn {
-	text-decoration: none;
-	color: #fff;
-	background-color: #26a69a;
-	text-align: center;
-	letter-spacing: .5px;
-	-webkit-transition: background-color .2s ease-out;
-	transition: background-color .2s ease-out;
-	cursor: pointer;
-}
-
-.btn:hover {
-	background-color: #2bbbad;
-}
-
-.waves-effect {
-	position: relative;
-	cursor: pointer;
-	display: inline-block;
-	overflow: hidden;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: transparent;
-	vertical-align: middle;
-	z-index: 1;
-	-webkit-transition: .3s ease-out;
-	transition: .3s ease-out;
-}
-
-::-webkit-input-placeholder {
-	color: #d1d1d1;
-}
-
-::-moz-placeholder {
-	color: #d1d1d1;
-}
-
-:-ms-input-placeholder {
-	color: #d1d1d1;
-}
-
-::placeholder {
-	color: #d1d1d1;
-}</code></pre>
-
-
-				</div>
-
-				<div class="fxbs--25p ofx--hid bxs--brbx">
-				<h4 class="mb--0">Bootstrap 4.4.1</h4>
-				<pre><code class="language-css">*,
-::after,
-::before {
-	box-sizing: border-box;
-}
-
-button {
-	border-radius: 0;
-}
-
-button:focus {
-	outline: 1px dotted;
-	outline: 5px auto -webkit-focus-ring-color;
-}
-
-button {
-	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-}
-
-button {
-	overflow: visible;
-}
-
-button {
-	text-transform: none;
-}
-
-[type=button],
-button {
-	-webkit-appearance: button;
-}
-
-[type=button]:not(:disabled),
-button:not(:disabled) {
-	cursor: pointer;
-}
-
-[type=button]::-moz-focus-inner,
-button::-moz-focus-inner {
-	padding: 0;
-	border-style: none;
-}
-
-.btn {
-	display: inline-block;
-	font-weight: 400;
-	color: #212529;
-	text-align: center;
-	vertical-align: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	background-color: transparent;
-	border: 1px solid transparent;
-	padding: .375rem .75rem;
-	font-size: 1rem;
-	line-height: 1.5;
-	border-radius: .25rem;
-	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-@media (prefers-reduced-motion:reduce) {
-	.btn {
-		transition: none;
-	}
-
-}
-
-.btn:hover {
-	color: #212529;
-	text-decoration: none;
-}
-
-.btn:focus {
-	outline: 0;
-	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
-}
-
-.btn:disabled {
-	opacity: .65;
-}
-
-.btn-primary {
-	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff;
-}
-
-.btn-primary:hover {
-	color: #fff;
-	background-color: #0069d9;
-	border-color: #0062cc;
-}
-
-.btn-primary:focus {
-	box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5);
-}
-
-.btn-primary:disabled {
-	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff;
-}</code></pre></div>
 </div>
 
 
 		</section>
 
-		<footer class="bgc--bk1 py--3 c--gy5 txttm--uc fts--2 lnh--2">
+		<footer class="bgc--bk1 py--3 c--wh1 txttm--uc fts--2 lnh--2">
 			<div class="maw--90p mx--a px--2">
 				<div class="d--fx fxwp--wp">
 					<div class="w--50p w--80p-m mx--a-m">
@@ -616,6 +236,7 @@ button::-moz-focus-inner {
 						</ul>
 						<p class="m--0 mb--2-m txtan--ctr-m">This website doesn't use Google Anayltics and Facebook, because respect for your privacy is the way we function.</p>
 					</div>
+
 					<div class="w--50p w--80p-m mx--a-m txtan--r txtan--ctr-m">
 						<p class="mt--0">&copy; 2020 Daniel Zilli - Code Licensed <a class="c--gy2" href="https://github.com/dlzi/brevis/blob/master/LICENSE" target="_blank" rel="license noopener">MIT</a>, Docs <a class="c--gy2" href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</p></a>
 					</div>
