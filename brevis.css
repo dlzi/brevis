@@ -7,11 +7,11 @@
  *	|____/  |_|  \_\ |______|     \/     |_____| |_____/ 
  *
  *
- *	@version: 0.7.1
+ *	@version: 0.7.2
  *	@link: https://github.com/dlzi/brevis
  *	@license: http://opensource.org/licenses/MIT - MIT License
  *
- *	Copyright (c) 2019 Daniel Zilli
+ *	Copyright (c) 2020 Daniel Zilli
  */
 
 /*
@@ -186,9 +186,6 @@
  *
  *	# POINTER EVENTS
  *		ptres = pointer-events
- *
- *	# MISC
- *		hidct = hide content (a11y)
  *
  *	## MEDIA QUERY EXTENSIONS
  *		-l = @media (max-width: 1280px)
@@ -6679,6 +6676,39 @@
 	}
 
 /*
+ *	WORD BREAK
+ *	
+ *	# Base
+ *		wdbrk = word-break
+ *
+ *	# Modifiers
+ *		--nl = normal
+ *		--kpal = keep-all
+ *		--brkal = break-all
+ */
+.wdbrk--nl { word-break: normal }
+.wdbrk--kpal { word-break: keep-all }
+.wdbrk--brkal { word-break: break-all }
+	
+	@media (max-width: 1280px) {
+		.wdbrk--nl-l { word-break: normal }
+		.wdbrk--kpal-l { word-break: keep-all }
+		.wdbrk--brkal-l { word-break: break-all }
+	}
+
+	@media (max-width: 840px) {
+		.wdbrk--nl-m { word-break: normal }
+		.wdbrk--kpal-m { word-break: keep-all }
+		.wdbrk--brkal-m { word-break: break-all }
+	}
+
+	@media (max-width: 400px) {
+		.wdbrk--nl-s { word-break: normal }
+		.wdbrk--kpal-s { word-break: keep-all }
+		.wdbrk--brkal-s { word-break: break-all }
+	}
+
+/*
  *	WORD WRAP
  *	
  *	# Base
@@ -6895,27 +6925,27 @@
  *		--i = inherit
  *
  *	# Note
- *		Are you REALLY sure about changing the typeface using media queries?
+ *		Are you REALLY REALLY sure about changing the typeface using media queries? 
  */
-.ftfam--sssrf { font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif }
-.ftfam--mosp { font-family: "SFMono-Regular",Menlo,Consolas,"Lucida Console","Liberation Mono","Courier New",monospace }
+.ftfam--sssrf { font-family: -apple-system,"Segoe UI",Roboto,Ubuntu,"Open Sans",Helvetica,sans-serif }
+.ftfam--mosp { font-family: "SF Mono","Lucida Console","Liberation Mono","Courier New",monospace }
 .ftfam--i { font-family: inherit }
 
 	@media (max-width: 1280px) {
-		.ftfam--sssrf-l { font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif }
-		.ftfam--mosp-l { font-family: "SFMono-Regular",Menlo,Consolas,"Lucida Console","Liberation Mono","Courier New",monospace }
+		.ftfam--sssrf-l { font-family: -apple-system,"Segoe UI",Roboto,Ubuntu,"Open Sans",Helvetica,sans-serif }
+		.ftfam--mosp-l { font-family: "SF Mono","Lucida Console","Liberation Mono","Courier New",monospace }
 		.ftfam--i-l { font-family: inherit }
 	}	
 	
 	@media (max-width: 840px) {
-		.ftfam--sssrf-m { font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif }
-		.ftfam--mosp-m { font-family: "SFMono-Regular",Menlo,Consolas,"Lucida Console","Liberation Mono","Courier New",monospace }
+		.ftfam--sssrf-m { font-family: -apple-system,"Segoe UI",Roboto,Ubuntu,"Open Sans",Helvetica,sans-serif }
+		.ftfam--mosp-m { font-family: "SF Mono","Lucida Console","Liberation Mono","Courier New",monospace }
 		.ftfam--i-m { font-family: inherit }
 	}
 	
 	@media (max-width: 400px) {
-		.ftfam--sssrf-s { font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif }
-		.ftfam--mosp-s { font-family: "SFMono-Regular",Menlo,Consolas,"Lucida Console","Liberation Mono","Courier New",monospace }
+		.ftfam--sssrf-s { font-family: -apple-system,"Segoe UI",Roboto,Ubuntu,"Open Sans",Helvetica,sans-serif }
+		.ftfam--mosp-s { font-family: "SF Mono","Lucida Console","Liberation Mono","Courier New",monospace }
 		.ftfam--i-s { font-family: inherit }
 	}
 
@@ -7108,69 +7138,4 @@
 	@media (max-width: 400px) {
 		.ptres--a-s { pointer-events: auto }
 		.ptres--n-s { pointer-events: none }
-	}
-
-
-/*
- *	MISC
- */
-
- /*
- *	HIDE CONTENT
- *	
- *	# Base
- *		hidct = hide content (a11y)
- */
-.hidct {
-	position: absolute;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	white-space: nowrap;
-	clip: rect(0, 0, 0, 0);
-}
-
-	@media (max-width: 1280px) {
-		.hidct-l {
-			position: absolute;
-			margin: -1px;
-			border: 0;
-			padding: 0;
-			width: 1px;
-			height: 1px;
-			overflow: hidden;
-			white-space: nowrap;
-			clip: rect(0, 0, 0, 0);
-		}
-	}	
-	
-	@media (max-width: 840px) {
-		.hidct-m {
-			position: absolute;
-			margin: -1px;
-			border: 0;
-			padding: 0;
-			width: 1px;
-			height: 1px;
-			overflow: hidden;
-			white-space: nowrap;
-			clip: rect(0, 0, 0, 0);
-		}
-	}
-	
-	@media (max-width: 400px) {
-		.hidct-s {
-			position: absolute;
-			margin: -1px;
-			border: 0;
-			padding: 0;
-			width: 1px;
-			height: 1px;
-			overflow: hidden;
-			white-space: nowrap;
-			clip: rect(0, 0, 0, 0);
-		}
 	}
