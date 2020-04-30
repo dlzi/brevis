@@ -11,6 +11,7 @@
 * Not a single `!important` rule :tada:
 * Selector-First responsive design
 * Logical and super easy naming convention
+* FDFD (fast development faster deployment)
 
 ## More Features
 
