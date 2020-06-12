@@ -21,7 +21,7 @@
  *		bxs = box-sizing
  *
  *	# POSITION
- *		d = display	
+ *		d = display
  *		pos = position
  *		t = top
  *		r = right
@@ -5198,6 +5198,7 @@
  *		--90p = 90%
  *		--100p = 100%
  *		--a = auto
+ *		--i = inherit
  */
 .w--1 { width: 1px }
 .w--2 { width: 8px }
@@ -5222,6 +5223,7 @@
 .w--90p { width: 90% }
 .w--100p { width: 100% }
 .w--a { width: auto }
+.w--i { width: inherit }
 
 	@media (max-width: 1280px) {
 		.w--1-l { width: 1px }
@@ -5247,6 +5249,7 @@
 		.w--90p-l { width: 90% }
 		.w--100p-l { width: 100% }
 		.w--a-l { width: auto }
+		.w--i-l { width: inherit }
 	}
 
 	@media (max-width: 840px) {
@@ -5273,6 +5276,7 @@
 		.w--90p-m { width: 90% }
 		.w--100p-m { width: 100% }
 		.w--a-m { width: auto }
+		.w--i-m { width: inherit }
 	}
 	
 	@media (max-width: 400px) {
@@ -5299,6 +5303,7 @@
 		.w--90p-s { width: 90% }
 		.w--100p-s { width: 100% }
 		.w--a-s { width: auto }
+		.w--i-s { width: inherit }
 	}
 
 /*
@@ -5331,6 +5336,7 @@
  *		--90p = 90%
  *		--100p = 100%	
  *		--a = auto
+ *		--i = inherit
  */
 .miw--1 { min-width: 1px }
 .miw--2 { min-width: 8px }
@@ -5355,6 +5361,7 @@
 .miw--90p { min-width: 90% }
 .miw--100p { min-width: 100% }
 .miw--a { min-width: auto }
+.miw--i { min-width: inherit }
 
 	@media (max-width: 1280px) {
 		.miw--1-l { min-width: 1px }
@@ -5380,6 +5387,7 @@
 		.miw--90p-l { min-width: 90% }
 		.miw--100p-l { min-width: 100% }
 		.miw--a-l { min-width: auto }
+		.miw--i-l { min-width: inherit }
 	}
 
 	@media (max-width: 840px) {
@@ -5406,6 +5414,7 @@
 		.miw--90p-m { min-width: 90% }
 		.miw--100p-m { min-width: 100% }
 		.miw--a-m { min-width: auto }
+		.miw--i-m { min-width: inherit }
 	}
 	
 	@media (max-width: 400px) {
@@ -5432,6 +5441,7 @@
 		.miw--90p-s { min-width: 90% }
 		.miw--100p-s { min-width: 100% }
 		.miw--a-s { min-width: auto }
+		.miw--i-s { min-width: inherit }
 	}
 
 
@@ -5465,6 +5475,7 @@
  *		--90p = 90%
  *		--100p = 100%
  *		--n = none
+ *		--i = inherit
  */
 .maw--1 { max-width: 1px }
 .maw--2 { max-width: 8px }
@@ -5489,6 +5500,7 @@
 .maw--90p { max-width: 90% }
 .maw--100p { max-width: 100% }
 .maw--n { max-width: none }
+.maw--i { max-width: inherit }
 
 	@media (max-width: 1280px) {
 		.maw--1-l { max-width: 1px }
@@ -5514,6 +5526,7 @@
 		.maw--90p-l { max-width: 90% }
 		.maw--100p-l { max-width: 100% }
 		.maw--n-l { max-width: none }
+		.maw--i-l { max-width: inherit }
 	}
 
 	@media (max-width: 840px) {
@@ -5540,6 +5553,7 @@
 		.maw--90p-m { max-width: 90% }
 		.maw--100p-m { max-width: 100% }
 		.maw--n-m { max-width: none }
+		.maw--i-m { max-width: inherit }
 	}
 	
 	@media (max-width: 400px) {
@@ -5566,6 +5580,7 @@
 		.maw--90p-s { max-width: 90% }
 		.maw--100p-s { max-width: 100% }
 		.maw--n-s { max-width: none }
+		.maw--i-s { max-width: inherit }
 	}
 
 
@@ -5598,6 +5613,7 @@
  *		--75vh = three-quarter of viewport height
  *		--100vh = full viewport height
  *		--a = auto
+ *		--i = inherit
  */
 .h--0 { height: 0 }
 .h--1 { height: 1px }
@@ -5617,6 +5633,7 @@
 .h--75vh { height: 75vh }
 .h--100vh { height: 100vh }
 .h--a { height: auto }
+.h--i { height: inherit }
 
 	@media (max-width: 1280px) {
 		.h--0-l { height: 0 }
@@ -5637,6 +5654,7 @@
 		.h--75vh-l { height: 75vh }
 		.h--100vh-l { height: 100vh }
 		.h--a-l { height: auto }
+		.h--i-l { height: inherit }
 	}
 
 	@media (max-width: 840px) {
@@ -5658,6 +5676,7 @@
 		.h--75vh-m { height: 75vh }
 		.h--100vh-m { height: 100vh }
 		.h--a-m { height: auto }
+		.h--i-m { height: inherit }
 	}
 	
 	@media (max-width: 400px) {
@@ -5679,6 +5698,7 @@
 		.h--75vh-s { height: 75vh }
 		.h--100vh-s { height: 100vh }
 		.h--a-s { height: auto }
+		.h--i-s { height: inherit }
 	}
 	
 
@@ -5707,6 +5727,7 @@
  *		--75vh = three-quarter of viewport height
  *		--100vh = full viewport height
  *		--a = auto
+ *		--i = inherit
  */
 .mih--0 { min-height: 0 }
 .mih--1 { min-height: 1px }
@@ -5726,6 +5747,7 @@
 .mih--75vh { min-height: 75vh }
 .mih--100vh { min-height: 100vh }
 .mih--a { min-height: auto }
+.mih--i { min-height: inherit }
 
 	@media (max-width: 1280px) {
 		.mih--0-l { min-height: 0 }
@@ -5746,6 +5768,7 @@
 		.mih--75vh-l { min-height: 75vh }
 		.mih--100vh-l { min-height: 100vh }
 		.mih--a-l { min-height: auto }
+		.mih--i-l { min-height: inherit }
 	}
 	
 	@media (max-width: 840px) {
@@ -5767,6 +5790,7 @@
 		.mih--75vh-m { min-height: 75vh }
 		.mih--100vh-m { min-height: 100vh }
 		.mih--a-m { min-height: auto }
+		.mih--i-m { min-height: inherit }
 	}
 	
 	@media (max-width: 400px) {
@@ -5788,6 +5812,7 @@
 		.mih--75vh-s { min-height: 75vh }
 		.mih--100vh-s { min-height: 100vh }
 		.mih--a-s { min-height: auto }
+		.mih--i-s { min-height: inherit }
 	}
 
 /*
@@ -5814,6 +5839,7 @@
  *		--75vh = three-quarter of viewport height
  *		--100vh = full viewport height
  *		--n = none
+ *		--i = inherit
  */
 .mah--1 { max-height: 1px }
 .mah--2 { max-height: 8px }
@@ -5832,6 +5858,7 @@
 .mah--75vh { max-height: 75vh }
 .mah--100vh { max-height: 100vh }
 .mah--n { max-height: none }
+.mah--i { max-height: inherit }
 
 	@media (max-width: 1280px) {
 		.mah--1-l { max-height: 1px }
@@ -5851,6 +5878,7 @@
 		.mah--75vh-l { max-height: 75vh }
 		.mah--100vh-l { max-height: 100vh }
 		.mah--n-l { max-height: none }
+		.mah--i-l { max-height: inherit }
 	}
 	
 	@media (max-width: 840px) {
@@ -5871,6 +5899,7 @@
 		.mah--75vh-m { max-height: 75vh }
 		.mah--100vh-m { max-height: 100vh }
 		.mah--n-m { max-height: none }
+		.mah--i-m { max-height: inherit }
 	}
 	
 	@media (max-width: 400px) {
@@ -5891,6 +5920,7 @@
 		.mah--75vh-s { max-height: 75vh }
 		.mah--100vh-s { max-height: 100vh }
 		.mah--n-s { max-height: none }
+		.mah--i-s { max-height: inherit }
 	}
 
 
@@ -7005,24 +7035,24 @@
  *	# Note
  *		Are you REALLY REALLY sure about changing the typeface using media queries? 
  */
-.ftfam--sssrf { font-family: -apple-system,"Segoe UI",Roboto,Ubuntu,"Open Sans",Helvetica,sans-serif }
+.ftfam--sssrf { font-family: -apple-system,"Segoe UI",Roboto,"Open Sans",Ubuntu,Helvetica,sans-serif }
 .ftfam--mosp { font-family: "SF Mono","Lucida Console","Liberation Mono","Courier New",monospace }
 .ftfam--i { font-family: inherit }
 
 	@media (max-width: 1280px) {
-		.ftfam--sssrf-l { font-family: -apple-system,"Segoe UI",Roboto,Ubuntu,"Open Sans",Helvetica,sans-serif }
+		.ftfam--sssrf-l { font-family: -apple-system,"Segoe UI",Roboto,"Open Sans",Ubuntu,Helvetica,sans-serif }
 		.ftfam--mosp-l { font-family: "SF Mono","Lucida Console","Liberation Mono","Courier New",monospace }
 		.ftfam--i-l { font-family: inherit }
 	}	
 	
 	@media (max-width: 840px) {
-		.ftfam--sssrf-m { font-family: -apple-system,"Segoe UI",Roboto,Ubuntu,"Open Sans",Helvetica,sans-serif }
+		.ftfam--sssrf-m { font-family: -apple-system,"Segoe UI",Roboto,"Open Sans",Ubuntu,Helvetica,sans-serif }
 		.ftfam--mosp-m { font-family: "SF Mono","Lucida Console","Liberation Mono","Courier New",monospace }
 		.ftfam--i-m { font-family: inherit }
 	}
 	
 	@media (max-width: 400px) {
-		.ftfam--sssrf-s { font-family: -apple-system,"Segoe UI",Roboto,Ubuntu,"Open Sans",Helvetica,sans-serif }
+		.ftfam--sssrf-s { font-family: -apple-system,"Segoe UI",Roboto,"Open Sans",Ubuntu,Helvetica,sans-serif }
 		.ftfam--mosp-s { font-family: "SF Mono","Lucida Console","Liberation Mono","Courier New",monospace }
 		.ftfam--i-s { font-family: inherit }
 	}
@@ -7034,62 +7064,62 @@
  *		fts = font-size
  *
  *	# Modifiers
- *		--1 = 10px
-  *		--2 = 13px
- *		--3 = 16px
- *		--4 = 20px
-  *		--5 = 25px
- *		--6 = 31px
- *		--7 = 39px
- *		--8 = 49px
+ *		--1 = 13px
+  *		--2 = 16px
+ *		--3 = 20px
+ *		--4 = 25px
+  *		--5 = 31px
+ *		--6 = 39px
+ *		--7 = 49px
+ *		--8 = 61px
  *		--i = inherit
  *
  *	# Note
- *		https://type-scale.com/?size=16&scale=1.250&text=The%20Awesome%20Brevis&font=Open%20Sans
+ *		Based on https://type-scale.com/?size=16&scale=1.250&text=The%20Awesome%20Brevis&font=Open%20Sans
  */
-.fts--1 { font-size: 10px }
-.fts--2 { font-size: 13px }
-.fts--3 { font-size: 16px }
-.fts--4 { font-size: 20px }
-.fts--5 { font-size: 25px }
-.fts--6 { font-size: 31px }
-.fts--7 { font-size: 39px }
-.fts--8 { font-size: 49px }
+.fts--1 { font-size: 13px }
+.fts--2 { font-size: 16px }
+.fts--3 { font-size: 20px }
+.fts--4 { font-size: 25px }
+.fts--5 { font-size: 31px }
+.fts--6 { font-size: 39px }
+.fts--7 { font-size: 49px }
+.fts--8 { font-size: 61px }
 .fts--i { font-size: inherit }
 
 	@media (max-width: 1280px) {
-		.fts--1-l { font-size: 10px }
-		.fts--2-l { font-size: 13px }
-		.fts--3-l { font-size: 16px }
-		.fts--4-l { font-size: 20px }
-		.fts--5-l { font-size: 25px }
-		.fts--6-l { font-size: 31px }
-		.fts--7-l { font-size: 39px }
-		.fts--8-l { font-size: 49px }
+		.fts--1-l { font-size: 13px }
+		.fts--2-l { font-size: 16px }
+		.fts--3-l { font-size: 20px }
+		.fts--4-l { font-size: 25px }
+		.fts--5-l { font-size: 31px }
+		.fts--6-l { font-size: 39px }
+		.fts--7-l { font-size: 49px }
+		.fts--8-l { font-size: 61px }
 		.fts--i-l { font-size: inherit }
 	}
 	
 	@media (max-width: 840px) {
-		.fts--1-m { font-size: 10px }
-		.fts--2-m { font-size: 13px }
-		.fts--3-m { font-size: 16px }
-		.fts--4-m { font-size: 20px }
-		.fts--5-m { font-size: 25px }
-		.fts--6-m { font-size: 31px }
-		.fts--7-m { font-size: 39px }
-		.fts--8-m { font-size: 49px }
+		.fts--1-m { font-size: 13px }
+		.fts--2-m { font-size: 16px }
+		.fts--3-m { font-size: 20px }
+		.fts--4-m { font-size: 25px }
+		.fts--5-m { font-size: 31px }
+		.fts--6-m { font-size: 39px }
+		.fts--7-m { font-size: 49px }
+		.fts--8-m { font-size: 61px }
 		.fts--i-m { font-size: inherit }
 	}
 	
 	@media (max-width: 400px) {
-		.fts--1-s { font-size: 10px }
-		.fts--2-s { font-size: 13px }
-		.fts--3-s { font-size: 16px }
-		.fts--4-s { font-size: 20px }
-		.fts--5-s { font-size: 25px }
-		.fts--6-s { font-size: 31px }
-		.fts--7-s { font-size: 39px }
-		.fts--8-s { font-size: 49px }
+		.fts--1-s { font-size: 13px }
+		.fts--2-s { font-size: 16px }
+		.fts--3-s { font-size: 20px }
+		.fts--4-s { font-size: 25px }
+		.fts--5-s { font-size: 31px }
+		.fts--6-s { font-size: 39px }
+		.fts--7-s { font-size: 49px }
+		.fts--8-s { font-size: 61px }
 		.fts--i-s { font-size: inherit }
 	}
 
