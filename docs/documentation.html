@@ -152,6 +152,7 @@
 						<tr>
 							<td>Border</td>
 							<td>
+								<a href="#border">border</a>,
 								<a href="#border-width">border-width</a>,
 								<a href="#border-style">border-style</a>,
 								<a href="#border-radius">border-radius</a>,
@@ -1551,8 +1552,37 @@
 				<hr />
 
 				<!-- BORDER -->
-				<h3 id="border-width">BORDER</h3>
-				<h4>BORDER-WIDTH</h4>
+				<h3 id="border">BORDER</h3>
+				<h4>BORDER</h4>
+				<h5 class="mb--0">SYNTAX</h5>
+				<pre><code class="language-markup"># Base
+	br = border (shorthand for the border-width:* and border-style:solid properties)
+
+# Modifiers
+	--0 = 0
+	--1 = 1px
+	--2 = 2px
+	--3 = 4px
+	--4 = 8px
+	--5 = 16px
+	--6 = 32px
+	--7 = 64px
+	--8 = 128px</code></pre>
+	<h5 class="mb--0">CLASSES</h5>
+		<pre><code class="language-css">.br--0 { border-width: 0; border-style: none }
+.br--1 { border-width: 1px; border-style: solid }
+.br--2 { border-width: 2px; border-style: solid }
+.br--3 { border-width: 4px; border-style: solid }
+.br--4 { border-width: 8px; border-style: solid }
+.br--5 { border-width: 16px; border-style: solid }
+.br--6 { border-width: 32px; border-style: solid }
+.br--7 { border-width: 64px; border-style: solid }
+.br--8 { border-width: 128px; border-style: solid }</code></pre>
+
+				<p><em><a href="#reference">top↑</a></em></p>
+
+
+				<h4 id="border-width">BORDER-WIDTH</h4>
 				<h5 class="mb--0">SYNTAX</h5>
 				<pre><code class="language-markup"># Base
 	brw = border-width (shorthand for the border-*-width properties)
