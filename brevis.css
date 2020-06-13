@@ -78,6 +78,7 @@
  *		oe = outline
  *
  *	# BORDER
+ *		br = border
  *		brw = border-width
  *		brtw = border-top-width
  *		brrw = border-right-width
@@ -2783,6 +2784,69 @@
  *	BORDER
  */
 
+/*
+ *	BORDER
+ *	
+ *	# Base
+ *		br = border (shorthand for the border-width:* and border-style:solid properties)
+ *
+ *	# Modifiers
+ *		--0 = 0
+ *		--1 = 1px
+ *		--2 = 2px
+ *		--3 = 4px
+ *		--4 = 8px
+ *		--5 = 16px
+ *		--6 = 32px
+ *		--7 = 64px
+ *		--8 = 128px
+ */
+.br--0 { border-width: 0; border-style: none }
+.br--1 { border-width: 1px; border-style: solid }
+.br--2 { border-width: 2px; border-style: solid }
+.br--3 { border-width: 4px; border-style: solid }
+.br--4 { border-width: 8px; border-style: solid }
+.br--5 { border-width: 16px; border-style: solid }
+.br--6 { border-width: 32px; border-style: solid }
+.br--7 { border-width: 64px; border-style: solid }
+.br--8 { border-width: 128px; border-style: solid }
+
+	@media (max-width: 1280px) {
+		.br--0-l { border-width: 0; border-style: none }
+		.br--1-l { border-width: 1px; border-style: solid }
+		.br--2-l { border-width: 2px; border-style: solid }
+		.br--3-l { border-width: 4px; border-style: solid }
+		.br--4-l { border-width: 8px; border-style: solid }
+		.br--5-l { border-width: 16px; border-style: solid }
+		.br--6-l { border-width: 32px; border-style: solid }
+		.br--7-l { border-width: 64px; border-style: solid }
+		.br--8-l { border-width: 128px; border-style: solid }
+	}
+
+	@media (max-width: 840px) {
+		.br--0-m { border-width: 0; border-style: none }
+		.br--1-m { border-width: 1px; border-style: solid }
+		.br--2-m { border-width: 2px; border-style: solid }
+		.br--3-m { border-width: 4px; border-style: solid }
+		.br--4-m { border-width: 8px; border-style: solid }
+		.br--5-m { border-width: 16px; border-style: solid }
+		.br--6-m { border-width: 32px; border-style: solid }
+		.br--7-m { border-width: 64px; border-style: solid }
+		.br--8-m { border-width: 128px; border-style: solid }
+	}
+
+	@media (max-width: 400px) {
+		.br--0-s { border-width: 0; border-style: none }
+		.br--1-s { border-width: 1px; border-style: solid }
+		.br--2-s { border-width: 2px; border-style: solid }
+		.br--3-s { border-width: 4px; border-style: solid }
+		.br--4-s { border-width: 8px; border-style: solid }
+		.br--5-s { border-width: 16px; border-style: solid }
+		.br--6-s { border-width: 32px; border-style: solid }
+		.br--7-s { border-width: 64px; border-style: solid }
+		.br--8-s { border-width: 128px; border-style: solid }
+	}
+	
 /*
  *	BORDER-WIDTH
  *	
